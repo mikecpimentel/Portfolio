@@ -1,11 +1,42 @@
 body {
   margin: 0;
-  font-family: JetBrains;
+  font-family: "JetBrains Mono";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #292F36;
+  font-size: 16px;
+  font-weight: 600;
+  color:#fff;
+  padding:50px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p.light-text {
+  color:#ffffffd4;
+}
+
+h1 {
+  font-size: 50px;
+  color:#fff;
+}
+
+h3 {
+  color: #FF6B6B;
+}
+
+h4.skill {
+  color:#fff;
+  font-weight:600;
+  font-size:1.25em;
+}
+
+ul.vertical-nav li {
+  color: #ffffff1a;
+  font-size: 1em;
+  list-style-type: none;
+  line-height:2;
 }
