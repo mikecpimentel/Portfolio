@@ -11,6 +11,11 @@ import { Interests } from './features/sections/Interests'
 import { NavList } from './features/nav/NavList';
 import { RecentBooks } from './features/sections/RecentBooks';
 import { Podcasts } from './features/sections/Podcasts'
+import { LetsAskBobby } from './features/projects/LetsAskBobby'
+import { GellerPortal } from './features/projects/GellerPortal'
+import { Collabolist } from './features/projects/Collabolist'
+import { Year2053 } from './features/projects/Year2053'
+import { WordPressProjects } from './features/projects/WordPressProjects'
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -22,13 +27,19 @@ ReactDOM.render(
       <div>
         <Routes>
           <Route path="skills" element={<Skills />} />
-          <Route path="projects" element={<Projects />} />
           <Route path="interests" element={<Interests />}>
             <Route path="reading-list" element={<RecentBooks />} />
             <Route path="podcasts" element={<Podcasts />} />
           </Route>
           <Route path="extra-credit" element={<ExtraCredit />} />
           <Route path="education" element={<Education />} />
+          <Route path="projects" element={<Projects />}>
+            <Route path="lets-ask-bobby" element={<LetsAskBobby />} />
+            <Route path="geller-portal" element={<GellerPortal />} />
+            <Route path="collabolist" element={<Collabolist />} />
+            <Route path="year-2053" element={<Year2053 />} />
+            <Route path="wordpress-tinkerings" element={<WordPressProjects />} />
+          </Route>
         </Routes>
       </div>
     </div>

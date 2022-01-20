@@ -7,7 +7,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   color:#fff;
-  padding:50px;
+  padding: 50px;
 }
 
 code {
@@ -21,7 +21,7 @@ p.light-text {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 1.25em;
   color:#fff;
 }
 
@@ -29,18 +29,31 @@ h3 {
   color: #FF6B6B;
 }
 
+
+
+
+
+/*! SkillItem.js  */
+
 span.skill {
   color:#fff;
   font-weight:600;
-  font-size:1.25em;
-  line-height: 1em;
+  font-size:1em;
   display:inline-block;
   min-width:180px;
 }
+span.skill-unit {
+  
+}
+span.skill-unit:hover {
+  color:#4ecdc4;
+  cursor:pointer;
+}
 span.levelBlock, span.fillerBlock {
   font-size:3.041em;
-  line-height: .8;
-  vertical-align: -5px;
+  line-height: 1;
+  vertical-align:top;
+  letter-spacing: 0.1em;
   display:inline-block;
 }
 span.levelBlock {
@@ -50,21 +63,26 @@ span.fillerBlock {
   color:#fff1;
 }
 
+
+
+
+
+/* !  */
+
 ul.vertical-nav {
   padding:0;
 }
 ul.vertical-nav li {
   color: #ffffff1a;
-  font-size: 1em;
   list-style-type: none;
   line-height:1;
   padding:15px 0;
 }
 
 ul.vertical-nav li a {
-  color: #ffffff1a;
+  color: #ffffff11;
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1.56em;
 }
 
 ul.vertical-nav li a:hover {
