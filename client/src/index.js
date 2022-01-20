@@ -9,20 +9,29 @@ import { Projects } from './features/sections/Projects'
 import { Education } from './features/sections/Education'
 import { Interests } from './features/sections/Interests'
 import { NavList } from './features/nav/NavList';
+import { RecentBooks } from './features/sections/RecentBooks';
+import { Podcasts } from './features/sections/Podcasts'
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
     <BrowserRouter>
+    <div style={{display:"flex"}}>
       <NavList />
-      <Routes>
-        <Route path="skills" element={<Skills />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="interests" element={<Interests />} />
-        <Route path="extra-credit" element={<ExtraCredit />} />
-        <Route path="education" element={<Education />} />
-      </Routes>
+      <div>
+        <Routes>
+          <Route path="skills" element={<Skills />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="interests" element={<Interests />}>
+            <Route path="reading-list" element={<RecentBooks />} />
+            <Route path="podcasts" element={<Podcasts />} />
+          </Route>
+          <Route path="extra-credit" element={<ExtraCredit />} />
+          <Route path="education" element={<Education />} />
+        </Routes>
+      </div>
+    </div>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

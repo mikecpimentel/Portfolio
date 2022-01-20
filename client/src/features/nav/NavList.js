@@ -3,9 +3,8 @@ import { NavLink } from 'react-router-dom'
 export const NavList = () => {
 
     return (
-        <div>
+        <div style={{minWidth:"250px"}}>
             <ul className="vertical-nav">
-                <li>Testing</li>
                 <li><NavLink to="/skills">What I'm Good At</NavLink></li>
                 <li><NavLink to="/extra-credit">Extra Credit</NavLink></li>
                 <li><NavLink to="/education">Education</NavLink></li>
