@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import { Skills } from './features/sections/Skills';
+import { Skills } from './features/skills/Skills';
 import { ExtraCredit } from './features/sections/ExtraCredit';
 import { Projects } from './features/sections/Projects'
 import { Education } from './features/sections/Education'
@@ -16,6 +16,11 @@ import { GellerPortal } from './features/projects/GellerPortal'
 import { Collabolist } from './features/projects/Collabolist'
 import { Year2053 } from './features/projects/Year2053'
 import { WordPressProjects } from './features/projects/WordPressProjects'
+import { PreUniversity } from './features/education/PreUniversity';
+import { University } from './features/education/University';
+import { Online } from './features/education/Online';
+import { FAQ } from './features/sections/FAQ';
+import { BaseSkills } from './features/skills/BaseSkills';
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -24,15 +29,21 @@ ReactDOM.render(
     <BrowserRouter>
     <div style={{display:"flex"}}>
       <NavList />
-      <div>
+      <div style={{maxWidth:"800px", paddingLeft:"50px"}}>
         <Routes>
-          <Route path="skills" element={<Skills />} />
+          <Route path="skills" element={<Skills />} >
+            <Route path="base-skills" element={<BaseSkills />} />
+            <Route path="extra-credit" element={<ExtraCredit />} />
+          </Route>
           <Route path="interests" element={<Interests />}>
             <Route path="reading-list" element={<RecentBooks />} />
             <Route path="podcasts" element={<Podcasts />} />
           </Route>
-          <Route path="extra-credit" element={<ExtraCredit />} />
-          <Route path="education" element={<Education />} />
+          <Route path="education" element={<Education />} >
+            <Route path="pre-university" element={<PreUniversity />} />
+            <Route path="university" element={<University />} />
+            <Route path="online" element={<Online />} />
+          </Route>
           <Route path="projects" element={<Projects />}>
             <Route path="lets-ask-bobby" element={<LetsAskBobby />} />
             <Route path="geller-portal" element={<GellerPortal />} />
@@ -40,6 +51,7 @@ ReactDOM.render(
             <Route path="year-2053" element={<Year2053 />} />
             <Route path="wordpress-tinkerings" element={<WordPressProjects />} />
           </Route>
+          <Route path="FAQ" element={<FAQ />} />
         </Routes>
       </div>
     </div>

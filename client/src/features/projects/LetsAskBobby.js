@@ -1,7 +1,7 @@
 
 export const LetsAskBobby = () => {
     return (
-        <div>
+        <div className="floating-white">
             <p>This is Let's Ask Bobby stuff</p>
             <p>Let's Ask Bobby
 Production Period: Sept 2007 to July 2008

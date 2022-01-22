@@ -1,6 +1,6 @@
 export const Collabolist = () => {
     return (
-        <div>
+        <div className="floating-white">
             <p>This is Collabolist stuff</p>
             <p>Production Period: Aug 2012 to Feb 2013; Feb 2015 to Jan 2016
 Technologies Used: HTML, CSS, JavaScript, PHP, SQL, MySQL, AJAX, XML, Apache, Windows (WAMP)

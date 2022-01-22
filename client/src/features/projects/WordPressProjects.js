@@ -1,6 +1,6 @@
 export const WordPressProjects = () => {
     return (
-        <div>
+        <div className="floating-white">
             <p>This is WordPress Tinkerings stuff</p>
             <p>Production Period: Mar 2019 to Apr 2020
 Technologies Used: WordPress, Elementor, PHP, CSS, HTML, Photoshop, Illustrator, Google Analytics, Ahrefs, and many others

@@ -1,6 +1,6 @@
 export const GellerPortal = () => {
     return (
-        <div>
+        <div className="floating-white">
             <p>This is Geller Portal stuff</p>
             <p>Production Period: Jan 2012 to June 2012
 Technologies Used: HTML, CSS, JavaScript, PHP, SQL, MySQL, AJAX, XML, Apache, Windows (WAMP)

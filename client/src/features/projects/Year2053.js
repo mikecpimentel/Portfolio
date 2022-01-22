@@ -1,6 +1,6 @@
 export const Year2053 = () => {
     return (
-        <div>
+        <div className="floating-white">
             <p>This is Year 2053 stuff</p>
             <p>Production Period: Sept 2016 to Jan 2018
 Technologies Used: Java, SQLite, Android Studio, Audacity, Photoshop

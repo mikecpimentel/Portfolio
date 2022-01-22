@@ -1,37 +1,18 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
+import { SubSectionButton } from '../components/SubSectionButton'
 
 export const Projects = () => {
     return (
         <div>
-            <h3>Projects</h3>
-            <p className="light-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. I'm still around the beginning of my journey, but I plan on making rapid progress. I still have much to learn, but..</p>
-            <div style={{display:"flex", flexDirection:"row", flexWrap:"wrap", justifyContent:"space-between"}}>
-                <Link to="lets-ask-bobby">
-                    <div className="floating-white floating-white-3">
-                        <p>Let's Ask Bobby</p>
-                    </div>
-                </Link>
-                <Link to="geller-portal">
-                    <div className="floating-white floating-white-3">
-                        <p>Geller Portal</p>
-                    </div>
-                </Link>
-                <Link to="collabolist">
-                    <div className="floating-white floating-white-3">
-                        <p>Collabolist</p>
-                    </div>
-                </Link>
-                <Link to="year-2053">
-                    <div className="floating-white floating-white-3">
-                        <p>Year 2053</p>
-                    </div>
-                </Link>
-                <Link to="wordpress-tinkerings">
-                    <div className="floating-white floating-white-3">
-                        <p>WordPress Tinkerings</p>
-                    </div>
-                </Link>
+            <h3 className="section-header">Projects</h3>
+            <div className='sub-section-links'>
+                <SubSectionButton text="Let's Ask Bobby" page="lets-ask-bobby" />
+                <SubSectionButton text="Geller Portal" page="geller-portal" />
+                <SubSectionButton text="Collabolist" page="collabolist" />
+                <SubSectionButton text="Year 2053" page="year-2053" />
+                <SubSectionButton text="WordPress Tinkerings" page="wordpress-tinkerings" />
             </div>
+            <p className="light-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. I'm still around the beginning of my journey, but I plan on making rapid progress. I still have much to learn, but..</p>
             <Outlet />
         </div>
     )
