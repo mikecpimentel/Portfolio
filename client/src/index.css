@@ -18,6 +18,9 @@ code {
 p.light-text {
   color: #ffffffd4;
   padding-bottom: 20px;
+  line-height: 1.66;
+  font-weight: 400;
+  font-size: 1.25em;
 }
 
 h1 {
@@ -37,8 +40,25 @@ h3.section-header {
   margin-bottom: 30px;
 }
 
+div.welcome-wrapper {
+  width: 50vw;
+}
+
+p.welcome-1 {
+  font-size: 20px;
+  color: #fffa;
+  letter-spacing: 0.05em;
+}
+
+p.welcome-2 {
+  font-size: 80px;
+  color: #fffa;
+  font-weight: 800;
+  margin: 0;
+}
+
 div.sub-section-links {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   border-bottom: 1px dashed #fff1;
   margin-bottom: 30px;
   word-wrap: wrap;
@@ -47,52 +67,128 @@ div.sub-section-links {
 div.sub-section-links a {
   text-decoration: none;
   font-size: 1em;
-  padding: 12px 30px;
+  font-weight: 400;
+  padding: 15px 25px;
+  margin-right: 20px;
+  margin-bottom: 10px;
   /* border-bottom: 5px solid #292f36; */
   transition: border-bottom 300ms;
-  background-color: #ffffff0a;
+  transition: background-color 500ms;
+  background-color: #ffffff05;
+  border-bottom: 2px solid #ffffff05;
   color: #fffd;
   display: inline-block;
 }
 div.sub-section-links a.active {
-  color: #000;
-  background-color: #4ecdc4;
+  color: #fff;
+  /* background-color: #4ecdc4; */
+  border-bottom: 8px solid #4ecdc4;
+  transition: 200ms;
+  font-weight: 600;
+  border-radius: 0 0 10px 10px;
 }
 div.sub-section-links a:not(.active):hover {
-  /* border-bottom: 5px solid #4ecdc4; */
+  border-bottom: 3px solid #4ecdc4;
+  padding-bottom: 13px;
   color: #fff;
-  background-color: #ffffff05;
-  transition: 300ms;
+  /* background-color: #4ecdc4; */
+  transition: 200ms;
 }
 
 /*! SkillItem.js  */
 
 span.skill {
-  color: #fff;
+  color: #fffc;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1.25em;
   display: inline-block;
-  min-width: 180px;
+  min-width: 220px;
 }
 span.skill-unit {
 }
+/*
 span.skill-unit:hover {
   color: #4ecdc4;
   cursor: pointer;
 }
+*/
 span.levelBlock,
 span.fillerBlock {
   font-size: 2.441em;
-  line-height: 1;
-  vertical-align: top;
-  letter-spacing: 0.1em;
-  display: inline-block;
+  letter-spacing: 0.15em;
+  margin-top: 25px;
+  display: block;
+  line-height: 0.3;
 }
 span.levelBlock {
-  color: #fff;
+  color: #fffc;
 }
 span.fillerBlock {
   color: #fff1;
+}
+span.levelBlock-open {
+  color: #fff;
+}
+
+a.intro-button {
+  padding: 20px;
+  display: inline-block;
+  border: 1px solid #4ecdc4;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+}
+
+.skill-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 20px;
+}
+.skill-div-outer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  transition: 500ms;
+}
+.skill-div-outer:hover {
+  cursor: pointer;
+}
+.skill-div-outer-open {
+  background-color: #fff1;
+  padding: 10px 0;
+  transition: padding 500ms;
+  box-shadow: 3px 3px 0 #4ecdc4;
+  margin: 10px 0;
+}
+.skill-div-outer-closed:hover {
+  box-shadow: 3px 3px 0 #4ecdc4;
+  background-color: #fff1;
+  padding: 5px 0;
+  transition: 300ms;
+}
+.skill-div-outer-closed:hover span.levelBlock {
+  color: #fff;
+}
+
+.skill-info-div {
+  padding: 20px;
+  font-size: 0.86em;
+  color: #fffa;
+  font-weight: 400;
+  width: 500px;
+  transition: 500ms;
+}
+
+.skill-info-button {
+  padding-left: 15px;
+}
+
+div.skill-open {
+}
+
+div.skill-closed {
+  display: none;
 }
 
 /* ! NavList.js  */
@@ -129,18 +225,24 @@ ul.vertical-nav a li {
   /* height: 60px; */
 }
 
+div.baseskills-info {
+}
+
 /* ! Projects.js */
 
 div.floating-white {
   background-color: #fff;
   padding: 30px;
-  box-shadow: -10px -10px 0 3px #4ecdc4;
+  font-size: 1.25em;
+  line-height: 1.5;
+  box-shadow: -8px -8px 0 0px #4ecdc4;
   margin-top: 10px;
   margin-left: 10px;
+  margin-top: 30px;
   transition: 300ms;
+  overflow: hidden;
 }
 div.floating-white-1 {
-  max-width: 500px;
 }
 div.floating-white-3 {
   padding: 20px;
@@ -150,13 +252,17 @@ div.floating-white-3:hover {
   box-shadow: 0 0 0 0;
   transition: 300ms;
 }
+
+div.project p {
+  margin-bottom: 10px;
+}
+
 div.projects-links a {
   text-decoration: none;
 }
 div.floating-white p {
   color: #292f36;
   padding: 0;
-  margin: 0;
 }
 
 div.books-wrapper {
@@ -166,10 +272,12 @@ div.books-wrapper {
   height: 400px;
 }
 div.book {
-  margin: 10px 0;
+  margin-bottom: 20px;
+  margin-right: 50px;
 }
 p.book-title {
   margin: 0;
+  font-size: 1.25em;
   padding-bottom: 0px;
   text-transform: uppercase;
 }
