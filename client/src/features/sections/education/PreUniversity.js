@@ -1,8 +1,17 @@
+import { Institution } from "../../components/education/Institution"
+import chaffeyLogo from "../../../images/education/logo-and-type.png"
+import ivcLogo from "../../../images/education/ivc-logo-color.png"
+import mtSacLogo from "../../../images/education/fullcolor_email.jpg"
+
 export const PreUniversity = () => {
     return (
         <div>
-            <p>Pre-university section</p>
-            <div className="floating-white floating-white-1">
+            <div style={{display:"flex", justifyContent:"space-between"}}>
+                <Institution name="Mt. San Antonio College" city="Walnut, CA" logo={mtSacLogo} />
+                <Institution name="Irvine Valley College" city="Irvine, CA" logo={ivcLogo} />
+                <Institution name="Chaffey College" city="Rancho Cucamonga, CA" logo={chaffeyLogo} />
+            </div>
+            <div className="floating-white-education floating-white-1">
                 <p>Select classes, with earned grade</p>
                 <p>
                     A | Calculus III (Multivariate &amp; Vector Calculus)<br />

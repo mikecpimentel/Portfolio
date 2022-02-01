@@ -26,6 +26,7 @@ import { Educationintro } from './features/sections/education/EducationIntro';
 import { ProjectsIntro } from './features/sections/projects/ProjectsIntro';
 import { InterestsIntro } from './features/sections/interests/InterestsIntro';
 import { SkillsIntro } from './features/sections/skills/SkillsIntro';
+import { Contact } from './features/sections/Contact';
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
@@ -34,7 +35,7 @@ ReactDOM.render(
     <App />
     <div style={{display:"flex"}}>
       <NavList />
-      <div style={{maxWidth:"1000px", paddingLeft:"60px"}}>
+      <div style={{width:"850px", paddingLeft:"60px"}}>
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="skills" element={<Skills />} >
@@ -62,6 +63,7 @@ ReactDOM.render(
             <Route index element={<ProjectsIntro />} />
           </Route>
           <Route path="FAQ" element={<FAQ />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
       </div>
     </div>

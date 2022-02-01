@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export const SkillsIntro = () => {
   return (
     <>
-    <p className="light-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. I'm still around the beginning of my journey, but I plan on making rapid progress. I still have much to learn, but.. this list is ever-growing</p>
+    <p className="light-text">I've been fortunate to pick up a few skills over the years. I list the skills I currently have at this moment, as well as a few potentially relevant "extra credit" skills that might be helpful in my next role.</p>
     <Link to="base-skills" className="intro-button">View Current Skills</Link>
     </>
   )

@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Link to="/"><h1>Michael Pimentel</h1></Link>
+        <Link to="/"><h1 style={{textDecoration:"none"}}>Michael Pimentel</h1></Link>
       </header>
       <main>
       </main>

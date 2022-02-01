@@ -1,11 +1,15 @@
+import { Institution } from '../../components/education/Institution'
 import logo from './navy-seal.gif'
 
 export const University = () => {
     return (
         <div>
-            <div className="floating-white floating-white-1" >
-            <p style={{fontSize:"1em"}}>University of California, Santa Barbara (UCSB)</p>
-            <img src={logo} alt="ucsb-logo" style={{width:"100px", display:"block"}} />
+            <div style={{display:"flex"}}>
+                <Institution name="University of California" city="Santa Barbara, CA" logo={logo} />
+            </div>
+            <div className="floating-white-education floating-white-1" >
+            
+            <p>A few of the classes I took while at UCSB:</p>
                 <p>
                     
                     Econometrics I<br />
