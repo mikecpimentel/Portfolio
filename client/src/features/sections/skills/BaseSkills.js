@@ -22,7 +22,7 @@ export const BaseSkills = () => {
                 One of my . I have a decent amount of experience designing efficient databases. I have most recently been working with PostgreSQL, but I also have past MySQL experience. I gave myself a level 6 because I have not yet had much experience working with large databases and have not dealt much with maintenance and migration. I know how to write SQL queries very well.
             </SkillItem>
             <SkillItem skillType="Algorithms" level="6">I pay close attention to runtime and space-efficiency concerns. big-o analyses.</SkillItem>
-            
+            <div style={{backgroundColor:"#292f3655", padding:"5px", fontWeight:"200", marginTop:"30px", fontSize:"0.8em"}}>Click row for more information</div>
         </div>
     )
 }

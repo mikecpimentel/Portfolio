@@ -5,7 +5,7 @@ import { FAQBlock } from '../../components/faq/FAQBlock'
 export const FAQ = () => {
     return (
         <>
-            <h3 className="section-header animate__animated animate__fadeIn animate__faster">FAQ section</h3>
+            <h3 className="section-header animate__animated animate__fadeIn animate__faster" style={{marginBottom:"50px"}}>FAQ section</h3>
             <div className="questions-wrapper">
                 <FAQBlock>
                     <Question>

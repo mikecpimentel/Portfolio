@@ -51,12 +51,13 @@ export const Project = (props) => {
 
   return (
     <div className="floating-white-project animate__animated animate__fadeIn animate__faster">
-      <div style={{columnCount:"2", columnGap:"40px", padding:"30px"}}>
+      <div className='project-text-area'>
         <h3 style={{color:"#000",marginTop:"0"}}>{props.title}</h3>
         <p style={{fontSize:"0.8em", margin:"0", padding:"0"}}>Period: {props.period}</p>
         <p style={{fontSize:"0.8em", margin:"0", padding:"0"}}>Technologies: {props.tech}</p>
         {props.children}
       </div>
+      <p style={{color:"#000", fontWeight:"200", fontSize:"0.8em", margin:"0", padding:"5px"}}>Click images to enlarge</p>
       <div style={{display:"flex", backgroundColor:"#292f3655", padding:"5px"}}>
         {images}
       </div>

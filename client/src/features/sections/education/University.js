@@ -3,7 +3,7 @@ import logo from './navy-seal.gif'
 
 export const University = () => {
     return (
-        <div className="animate__animated animate__fadeIn animate__faster">
+        <div className="education-bottom animate__animated animate__fadeIn animate__faster">
             <div style={{display:"flex"}}>
                 <Institution name="University of California" city="Santa Barbara, CA (INCOMPLETE)" logo={logo} />
             </div>
