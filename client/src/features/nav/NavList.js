@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 export const NavList = () => {
 
     return (
-        <div style={{minWidth:"240px"}}>
+        <div className="nav-list">
             <ul className="vertical-nav">
                 <NavLink to="/skills">{({isActive}) => isActive ? <li>&#x27F6;&#x27F6;&#x27F6;</li> : <li>Skills</li>}</NavLink>
                 <NavLink to="/education">{({isActive}) => isActive ? <li>&#x27F6;&#x27F6;&#x27F6;</li> : <li>Education</li>}</NavLink>

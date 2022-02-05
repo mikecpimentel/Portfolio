@@ -7,8 +7,10 @@ export const SkillItem = (props) => {
 
     const handleClick = () => {
         if (open) {
+            console.log('element is false');
             setOpen(false);
         } else {
+            console.log('element is true');
             setOpen(true);
         }
     }
@@ -25,7 +27,7 @@ export const SkillItem = (props) => {
         <div onClick={handleClick} className={open ? 'skill-div-outer skill-div-outer-open' : 'skill-div-outer skill-div-outer-closed'} >
             <div className="skill-div">
                 <span className={open ? 'skill skill-open' : 'skill skill-closed'}>{props.skillType}</span>
-                <span>
+                <span style={{whiteSpace:"nowrap"}}>
                     <span className={open ? 'levelBlock levelBlock-open' : 'levelBlock levelBlock-closed'}>{levelMeter}</span>
                     <span className={open ? 'fillerBlock fillerBlock-open' : 'fillerBlock fillerBlock-closed'}>{filler}</span>
                 </span>

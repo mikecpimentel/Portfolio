@@ -7,7 +7,25 @@ body {
   font-size: 16px;
   font-weight: 600;
   color: #fff;
-  padding: 0 20px;
+  overflow: hidden;
+}
+/*
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+*/
+div.travel p,
+div.travel ul li {
+  font-weight: 200;
 }
 
 code {
@@ -24,29 +42,23 @@ p.light-text {
   width: 700px;
 }
 
-header a {
-  text-decoration: none;
-}
-
 h1 {
   font-size: 1.25em;
   color: #fffe;
-  border-bottom: 1px solid #4ecdc4;
-  padding: 10px 10px 20px 10px;
-  margin-bottom: 20px;
+  padding: 5px 10px 0px 10px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  display: inline-block;
+  text-decoration: none;
 }
 
 h3.section-header {
   color: #ff6b6b;
   font-size: 1.563em;
   transition: 300ms;
-  margin-bottom: 30px;
 }
 
 div.welcome-wrapper {
-  width: 50vw;
 }
 
 p.welcome-1 {
@@ -63,24 +75,20 @@ p.welcome-2 {
   margin: 0;
 }
 
-div.section-top {
-  height: 140px;
-  border-bottom: 1px dashed #fff1;
-  margin-bottom: 20px;
-}
-
 div.sub-section-links {
   padding-bottom: 10px;
-  margin-bottom: 10px;
-  word-wrap: wrap;
+  gap: 10px;
+  display: flex;
 }
 
 div.sub-section-links a {
   text-decoration: none;
   font-size: 1em;
   font-weight: 400;
-  padding: 15px 20px;
-  margin-right: 10px;
+  text-align: center;
+  padding: 15px 15px;
+  flex: 1 1 fit-content;
+
   border-radius: 4px;
   margin-bottom: 10px;
   /* border-bottom: 5px solid #292f36; */
@@ -106,6 +114,28 @@ div.sub-section-links a:not(.active):hover {
   /* background-color: #4ecdc4; */
   transition: 200ms;
 }
+@media only screen and (max-width: 1000px) {
+  div.sub-section-links a {
+    font-size: 0.8em;
+  }
+}
+
+div.intro-text-area p {
+  color: #fff;
+  padding: 0;
+  margin-bottom: 30px;
+  line-height: 2;
+  font-weight: 200;
+  font-size: 1em;
+  width: 700px;
+}
+div.intro-text-area ul li {
+  font-weight: 200;
+  padding: 2px 0;
+}
+div.intro-text-area ul {
+  margin-bottom: 30px;
+}
 
 /*! SkillItem.js  */
 
@@ -113,7 +143,8 @@ span.skill {
   font-weight: 400;
   font-size: 1.25em;
   display: inline-block;
-  min-width: 220px;
+  flex-basis: 200px;
+  padding-right: 20px;
 }
 span.skill-closed {
   color: #fffe;
@@ -228,43 +259,39 @@ div.skill-closed {
 
 /* ! NavList.js  */
 
-ul.vertical-nav {
-  padding: 0;
-  margin: 0;
-}
-ul.vertical-nav a {
-  color: #fffc;
-  list-style-type: none;
-  font-weight: 400;
-  /* line-height: 1; */
-  font-size: 1.563em;
-  text-decoration: none;
-  transition: color 300ms;
-}
-ul.vertical-nav a:hover {
-  color: #fff9;
-  transition: 300ms;
-}
-ul.vertical-nav a.active {
-  /* color: #ff6b6b; */
-  font-size: 40px;
-  line-height: 0;
-  letter-spacing: 0em;
-  transition: font-size 300ms;
-}
-ul.vertical-nav a.active li {
-  padding: 36px 10px;
-}
-ul.vertical-nav a li {
-  padding: 20px 10px;
-  border-bottom: 1px solid #fff2;
-  /* height: 60px; */
-}
-ul.vertical-nav a li:hover {
-  /* background-color: #4ecdc4; */
+div.baseskills-info, div.extra-credit, div.quick-fade-in-up {
+  animation: fadeInUp2;
 }
 
-div.baseskills-info {
+@keyframes fadeInUp2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeInUp2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 25%, 0);
+    transform: translate3d(0, 25%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInUp {
+  -webkit-animation-name: fadeInUp2;
+  animation-name: fadeInUp2;
 }
 
 /* ! Projects.js */
@@ -288,8 +315,9 @@ div.floating-white {
   overflow: hidden;
 }
 div.floating-white-institution {
-  width: 255px;
-  flex: 0 1 auto;
+  flex: 1 1 190px;
+  min-width: 160px;
+  max-width: 260px;
   background-color: #fff;
   padding: 0px 5px;
   box-shadow: -3px -3px 0 0px #4ecdc4;
@@ -317,23 +345,79 @@ div.floating-white-education {
 }
 div.floating-white-project {
   background-color: #fff;
-  padding: 25px;
-  font-size: 1em;
+  padding: 0px;
+  font-size: 0.8rem;
   color: #000;
   line-height: 1.5;
   box-shadow: -3px -3px 0 0px #4ecdc4;
   margin-top: 3px;
   margin-left: 3px;
   transition: 300ms;
-  overflow: hidden;
   display: flex;
+  flex-direction: column;
 }
 div.floating-white-project p {
   margin-bottom: 20px;
+  text-align: justify;
 }
 div.floating-white-project img {
   width: 100%;
 }
+.project-buttons {
+  width: 50%;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.8em;
+  font-weight: 400;
+  background-color: #ffffff11;
+  /* border: 1px solid #fff1;*/
+}
+.project-buttons:hover {
+  cursor: pointer;
+  background-color: #ffffff05;
+  transition: background-color 300ms;
+}
+.project-buttons-disabled {
+  background-color: #292f36;
+  width: 50%;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.modal-content-style {
+  background-color: #292f36ee;
+
+  padding: 0;
+  width: 1000px;
+  height: 70vh;
+  margin: 50px auto;
+  border: 2px solid #fff1;
+  text-align: center;
+  position: relative;
+}
+.modal-overlay-style {
+  background-color: #fff5;
+}
+div.modal-link-image {
+  cursor: pointer;
+  padding: 5px;
+}
+.modal-link-image:hover {
+  background-color: #4ecdc4;
+  transition: 300ms;
+}
+.modal-link-image img {
+  padding: 0;
+  margin: 0;
+  display: block;
+  object-fit: cover;
+  height: 130px;
+  max-width: 200px;
+}
+.modal-link-image:hover img {
+  opacity: 0.7;
+}
+
 div.floating-white-3 {
   padding: 20px;
 }
@@ -359,11 +443,12 @@ div.books-wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 400px;
+  height: 50vh;
 }
 div.book {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-right: 50px;
+  width: 50%;
 }
 p.book-title {
   margin: 0;
@@ -376,4 +461,32 @@ p.book-author {
   font-weight: 200;
   color: #fffa;
   margin: 0;
+}
+div.podcast {
+  padding: 10px 0;
+  font-weight: 400;
+}
+.contact-info-heading {
+  color: #fffa;
+  font-size: 0.8em;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+.contact-info {
+  font-size: 1.563em;
+  font-weight: 200;
+  margin-bottom: 50px;
+  margin-top: 5px;
+}
+
+.online-certs-links {
+  margin: 20px 0;
+}
+.online-certs-links a {
+  text-decoration: none;
+  color: #4ecdc4;
+}
+.online-certs-links a:hover {
+  text-decoration: underline;
 }

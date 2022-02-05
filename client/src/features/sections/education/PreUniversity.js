@@ -5,14 +5,14 @@ import mtSacLogo from "../../../images/education/fullcolor_email.jpg"
 
 export const PreUniversity = () => {
     return (
-        <div>
-            <div style={{display:"flex", justifyContent:"space-between"}}>
+        <div className="animate__animated animate__fadeIn animate__faster">
+            <div style={{display:"flex", justifyContent:"space-between", gap:"20px"}}>
                 <Institution name="Mt. San Antonio College" city="Walnut, CA" logo={mtSacLogo} />
                 <Institution name="Irvine Valley College" city="Irvine, CA" logo={ivcLogo} />
                 <Institution name="Chaffey College" city="Rancho Cucamonga, CA" logo={chaffeyLogo} />
             </div>
             <div className="floating-white-education floating-white-1">
-                <p>Select classes, with earned grade</p>
+                <p>Select classes I took before transferring to university. Course grade indicated on left.</p>
                 <p>
                     A | Calculus III (Multivariate &amp; Vector Calculus)<br />
                     A | Linear Algebra &amp; Differential Equations<br />

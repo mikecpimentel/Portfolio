@@ -3,13 +3,13 @@ import logo from './navy-seal.gif'
 
 export const University = () => {
     return (
-        <div>
+        <div className="animate__animated animate__fadeIn animate__faster">
             <div style={{display:"flex"}}>
-                <Institution name="University of California" city="Santa Barbara, CA" logo={logo} />
+                <Institution name="University of California" city="Santa Barbara, CA (INCOMPLETE)" logo={logo} />
             </div>
             <div className="floating-white-education floating-white-1" >
             
-            <p>A few of the classes I took while at UCSB:</p>
+            <p>A few of the upper-division economics courses I completed at UCSB before my withdrawal.</p>
                 <p>
                     
                     Econometrics I<br />
