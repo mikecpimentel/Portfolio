@@ -79,6 +79,7 @@ div.welcome-wrapper {
 p.welcome-1 {
   font-size: 1em;
   color: #fffa;
+  margin-bottom: 20px;
   font-weight: 200;
   letter-spacing: 0.05em;
 }
@@ -94,12 +95,13 @@ div.sub-section-links {
   padding: 10px 0;
   gap: 10px;
   display: flex;
+  text-transform: uppercase;
 }
 
 div.sub-section-links a {
   text-decoration: none;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 200;
   text-align: center;
   padding: 15px 15px;
   height: fit-content;
@@ -117,10 +119,10 @@ div.sub-section-links a {
 div.sub-section-links a.active {
   color: #fff;
   /* background-color: #4ecdc4; */
-  border-bottom: 6px solid #4ecdc4;
+  border-bottom: 5px solid #4ecdc4;
   padding-bottom: 16px;
   transition: 200ms;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 0 0 8px 8px;
 }
 div.sub-section-links a:not(.active):hover {
@@ -151,6 +153,7 @@ div.intro-text-area p {
 div.intro-text-area ul li {
   font-weight: 200;
   padding: 4px 0;
+  color: #fffc;
 }
 div.intro-text-area ul {
   margin-bottom: 30px;
@@ -237,7 +240,7 @@ a.intro-button {
   cursor: pointer;
 }
 .skill-div-outer-open {
-  background-color: #fff1;
+  background-color: #ffffff05;
   box-shadow: 3px 3px 0 #4ecdc4;
   margin: 10px 0;
   padding-top: 10px;
@@ -260,13 +263,18 @@ a.intro-button {
 }
 
 .skill-info-div {
-  padding: 30px 20px 10px 20px;
+  padding: 20px 20px 10px 20px;
   font-size: 1em;
-  color: #fff;
+  color: #fffc;
   line-height: 1.5;
   font-weight: 200;
-
   transition: 500ms;
+}
+@media only screen and (max-width: 1000px) {
+  .skill-info-div {
+    font-size: 0.8em;
+    padding: 10px 10px 5px 10px;
+  }
 }
 
 .skill-info-button {
@@ -371,8 +379,9 @@ div.floating-white-institution {
 div.floating-white-education {
   background-color: #fff;
   padding: 10px 25px;
-  color: #292f36;
+  color: #000;
   font-size: 1em;
+  font-weight: 200;
   line-height: 1.5;
   box-shadow: -3px -3px 0 0px #4ecdc4;
   margin-top: 3px;
@@ -520,7 +529,7 @@ div.podcast {
   padding: 0;
 }
 .contact-info {
-  font-size: 1.563em;
+  font-size: 1.25em;
   font-weight: 200;
   margin-bottom: 50px;
   margin-top: 5px;

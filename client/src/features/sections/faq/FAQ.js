@@ -44,7 +44,7 @@ export const FAQ = () => {
                         How many hours per week can you work?
                     </Question>
                     <Answer>
-                        I am not bound by any time constraints. My focus is on delivering results and growing as an individual and professional. My hard limit, though, is 168 hours per week.
+                        I am not bound by any time constraints. My focus is on delivering results and growing as an individual and professional. My hard limit, though, is 168 hours per week. I can't do much about that.
                     </Answer>
                 </FAQBlock>
             </div>
