@@ -21,12 +21,12 @@ export const Year2053 = () => {
         images={[[photo1, photo1Big], [photo2, photo2Big], [photo3, photo3Big], [photo4, photo4Big], [photo5, photo5Big], [photo6, photo6]]}>
             <ProjectDescription>
                 <p>
-                    Year 2053 was a text-based choose-your-own-adventure-type text game complete with background sound effects and voice acting (myself doing all the voices). Every choice the user makes in the game affects the story. It seemed like a fun-ish project to work on.
+                    Year 2053 was a text-based choose-your-own-adventure-type text game complete with background sound effects and voice acting (myself doing all the voices). Every choice the app user makes in the game affects the story. It seemed like a fun-ish project to work on.
 
                     This was my one and only foray into Android development.
                 </p>
                 <p>
-                    There were so many challenging components to this project that I had to overcome. I had to figure out how to program the evolving nature of the story, especially with the algorithmic diverging and intersecting of storylines. I had to dynamically and seamlessly connect over a hundred audio files in different orders and patterns depending on choices made in the past. I made huge online diagrams to help me connect all the pieces.
+                    There were so many challenging components to this project that I had to solve. I had to figure out how to program the evolving nature of the story, especially with the algorithmic diverging and intersecting of storylines. I programmed the game to dynamically and seamlessly connect over a hundred audio files in different orders and patterns depending on choices made in the past. I made huge online diagrams to help me connect all the pieces.
                 </p>
                 <p>
                     One interesting challenge was developing the functions that enabled the audio and text to sync up perfectly.

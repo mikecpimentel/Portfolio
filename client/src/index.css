@@ -78,32 +78,31 @@ div.welcome-wrapper {
 
 p.welcome-1 {
   font-size: 1em;
-  color: #fffa;
+  color: #fffc;
   margin-bottom: 20px;
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 0.05em;
 }
 
 p.welcome-2 {
   font-size: 1.953em;
-  color: #fffc;
+  color: #fff;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 25px 0;
 }
 
 div.sub-section-links {
   padding: 10px 0;
   gap: 10px;
   display: flex;
-  text-transform: uppercase;
 }
 
 div.sub-section-links a {
   text-decoration: none;
   font-size: 1em;
-  font-weight: 200;
+  font-weight: 300;
   text-align: center;
-  padding: 15px 15px;
+  padding: 18px 15px;
   height: fit-content;
   flex: 1 1 fit-content;
 
@@ -114,20 +113,20 @@ div.sub-section-links a {
   transition: background-color 500ms;
   background-color: #ffffff05;
   border-bottom: 2px solid #ffffff05;
-  color: #fffd;
+  color: #fff;
 }
 div.sub-section-links a.active {
   color: #fff;
   /* background-color: #4ecdc4; */
   border-bottom: 5px solid #4ecdc4;
-  padding-bottom: 16px;
+  padding-bottom: 19px;
   transition: 200ms;
   font-weight: 400;
   border-radius: 0 0 8px 8px;
 }
 div.sub-section-links a:not(.active):hover {
   border-bottom: 3px solid #4ecdc4;
-  padding-bottom: 13px;
+  padding-bottom: 16px;
   color: #fff;
   /* background-color: #4ecdc4; */
   transition: 200ms;
@@ -142,18 +141,18 @@ div.intro-text-area {
   padding-top: 10px;
 }
 div.intro-text-area p {
-  color: #fffc;
+  color: #fff;
   padding: 0;
   margin-bottom: 30px;
   line-height: 2;
-  font-weight: 200;
+  font-weight: 300;
   margin-top: 0;
   font-size: 1em;
 }
 div.intro-text-area ul li {
-  font-weight: 200;
+  font-weight: 300;
   padding: 4px 0;
-  color: #fffc;
+  color: #fff;
 }
 div.intro-text-area ul {
   margin-bottom: 30px;
@@ -265,9 +264,9 @@ a.intro-button {
 .skill-info-div {
   padding: 20px 20px 10px 20px;
   font-size: 1em;
-  color: #fffc;
+  color: #fff;
   line-height: 1.5;
-  font-weight: 200;
+  font-weight: 300;
   transition: 500ms;
 }
 @media only screen and (max-width: 1000px) {
@@ -381,7 +380,7 @@ div.floating-white-education {
   padding: 10px 25px;
   color: #000;
   font-size: 1em;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5;
   box-shadow: -3px -3px 0 0px #4ecdc4;
   margin-top: 3px;
@@ -396,7 +395,7 @@ div.floating-white-project {
   max-width: 1000px;
   font-size: 1rem;
   color: #000;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5;
   box-shadow: -3px -3px 0 0px #4ecdc4;
   margin-top: 3px;
@@ -420,8 +419,8 @@ div.floating-white-project img {
   width: 50%;
   text-align: center;
   padding: 15px;
-  font-size: 0.8em;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 300;
   background-color: #ffffff11;
   /* border: 1px solid #fff1;*/
 }

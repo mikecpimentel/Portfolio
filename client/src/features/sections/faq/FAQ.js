@@ -9,14 +9,6 @@ export const FAQ = () => {
             <div className="questions-wrapper">
                 <FAQBlock>
                     <Question>
-                        Are you willing to relocate?
-                    </Question>
-                    <Answer>
-                        Yes, to anywhere on Earth. I would love to live in a large city though — the larger, the better.
-                    </Answer>
-                </FAQBlock>
-                <FAQBlock>
-                    <Question>
                         When can you start?
                     </Question>
                     <Answer>
@@ -25,15 +17,15 @@ export const FAQ = () => {
                 </FAQBlock>
                 <FAQBlock>
                     <Question>
-                        Are you open to traveling for work?
+                        Are you willing to work inside an office?
                     </Question>
                     <Answer>
-                        Yes. I am an experienced traveler and can easily navigate new and unfamiliar places.
+                        Yes, I would be very glad to.
                     </Answer>
                 </FAQBlock>
                 <FAQBlock>
                     <Question>
-                        Are you willing to work inside an office?
+                        Would you be willing to work remotely?
                     </Question>
                     <Answer>
                         Yes.
@@ -41,10 +33,26 @@ export const FAQ = () => {
                 </FAQBlock>
                 <FAQBlock>
                     <Question>
+                        Are you willing to relocate if necessary?
+                    </Question>
+                    <Answer>
+                        Yes, to anywhere on this planet, especially large cities.
+                    </Answer>
+                </FAQBlock>
+                <FAQBlock>
+                    <Question>
                         How many hours per week can you work?
                     </Question>
                     <Answer>
-                        I am not bound by any time constraints. My focus is on delivering results and growing as an individual and professional. My hard limit, though, is 168 hours per week. I can't do much about that.
+                        I am not bound by any time constraints. My focus is on delivering results and growing as an individual and professional.
+                    </Answer>
+                </FAQBlock>
+                <FAQBlock>
+                    <Question>
+                        Are you fully vaccinated?
+                    </Question>
+                    <Answer>
+                        Yes, three (3) Modernas: two (2) Moderna standard doses + one (1) Moderna booster. My bloodstream is full of delicious antibodies.
                     </Answer>
                 </FAQBlock>
             </div>

@@ -25,13 +25,16 @@ export const Collabolist = () => {
                     Collabolist was my attempt at creating a quicker, simpler, and more convenient alternative to Excel for list creation.
                 </p>
                 <p>
-                    At the time, I worked at a company called TransPerfect and once again felt the frustration and inefficiency of Excel spreadsheets. We frequently used unwieldy Excel files which took forever to sync and load. Collabolist was my attempt at a solution.
+                    At the time, I worked at a company called TransPerfect where I helped set up computers, essentially. We frequently used unwieldy Excel files for managing passwords, and these files usually took several minutes to sync and load. I was once again witness to the inefficiency of Excel spreadsheets. Collabolist was my attempt at a solution.
                 </p>
                 <p>
-                    I worked on Collabolist every hour I was not at work. Fortunately, I had just recently finished work on Geller Portal, so programming was still fresh in my mind. As with my previous projects, I used AJAX extensively to enable functionality without the need to refresh the browser page.
+                    I worked on Collabolist every hour I was not at work. I had just recently finished work on Geller Portal, so programming was still fresh in my mind. As with my previous projects, I used AJAX extensively to enable functionality without the need to refresh the browser page.
                 </p>
                 <p>
-                    I know I completed a lot more development on this than the photos suggest, but I cannot locate other, more recent screenshots.
+                    The photos do not reflect the final product, but I cannot locate other, more recent screenshots.
+                </p>
+                <p>
+                    Note: The images have the plural "Collabolists" since I ultimately changed the name due to the singular already being reserved. I preferred the singular, however.
                 </p>
             </ProjectDescription>
         </Project>

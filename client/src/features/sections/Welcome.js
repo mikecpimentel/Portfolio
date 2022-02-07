@@ -7,9 +7,9 @@ export const Welcome = () => {
     return (
         <div className="welcome-wrapper">
             <img src={myPhoto} className="profile-photo" />
-            <p style={{fontWeight:"200", fontSize:"1.25em", color:"#fffc"}}>Hello 👋🏼 and Welcome</p>
+            <p style={{fontWeight:"300", fontSize:"1.25em", color:"#fffc"}}>Hello 👋🏼 and Welcome. I am a..</p>
             <p className="welcome-2">Full-Stack Software Dev/Eng</p>
-            <p className="welcome-1">Thank you so much for visiting!
+            <p className="welcome-1">Thank you for visiting!
             </p>
             <p className="welcome-1">
                 Entry-level developer here, experienced with many of the latest frontend and backend tools, including React, Redux, and Node.

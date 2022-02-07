@@ -12,7 +12,7 @@ export const PreUniversity = () => {
                 <Institution name="Chaffey College" city="Rancho Cucamonga, CA" logo={chaffeyLogo} />
             </div>
             <div className="floating-white-education floating-white-1">
-                <p>Select classes I took before transferring to university. Course grade indicated on left.</p>
+                <p>Select classes I took before transferring to university. The overall course grade I received is indicated on the left.</p>
                 <p>
                     A | Calculus III (Multivariate &amp; Vector Calculus)<br />
                     A | Linear Algebra &amp; Differential Equations<br />
@@ -20,7 +20,6 @@ export const PreUniversity = () => {
                     A | Financial Accounting<br />
                     A | Managerial Accounting<br />
                     A | Microeconomics<br />
-                    A | Business Law<br />
                     A | Programming in C++<br />
                     A | General Chemistry (I) &amp; Laboratory<br />
                     B | General Chemistry (II) &amp; Laboratory<br />
