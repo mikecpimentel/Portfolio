@@ -1,6 +1,6 @@
 import 'animate.css'
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 import { Skills } from './features/sections/skills/Skills';
 import { ExtraCredit } from './features/sections/skills/ExtraCredit';
@@ -28,6 +28,9 @@ import { SkillsIntro } from './features/sections/skills/SkillsIntro';
 import { Contact } from './features/sections/Contact';
 import { Travel } from './features/sections/interests/Travel';
 import { FutureSkills } from './features/sections/skills/FutureSkills';
+import { CurrentProjects } from './features/sections/current-projects/CurrentProjects';
+import { Section } from './features/components/Section';
+
 
 
 function App() {
@@ -43,24 +46,35 @@ function App() {
             
               <Routes>
                 <Route path="/" element={<Welcome />} />
+                <Route path="current-projects" element={<CurrentProjects />} />
+
                 <Route path="skills" element={<Skills />} >
                   <Route path="base-skills" element={<BaseSkills />} />
                   <Route path="extra-credit" element={<ExtraCredit />} />
                   <Route path="future" element={<FutureSkills />} />
                   <Route index element={<SkillsIntro />} />
                 </Route>
+
                 <Route path="interests" element={<Interests />}>
                   <Route path="reading-list" element={<RecentBooks />} />
                   <Route path="podcasts" element={<Podcasts />} />
                   <Route path="travel" element={<Travel />} />
                   <Route index element={<InterestsIntro />} />
                 </Route>
-                <Route path="education" element={<Education />} >
+
+                <Route path="education" element={
+                  <Section name="Education">
+                    <NavLink to="/education" end>Intro</NavLink>
+                    <NavLink to="pre-university">Pre-University</NavLink>
+                    <NavLink to="university">University</NavLink>
+                    <NavLink to="online">Online</NavLink>
+                  </Section>} >
                   <Route path="pre-university" element={<PreUniversity />} />
                   <Route path="university" element={<University />} />
                   <Route path="online" element={<Online />} />
                   <Route index element={<Educationintro />} />
                 </Route>
+
                 <Route path="projects" element={<Projects />}>
                   <Route path="lets-ask-bobby" element={<LetsAskBobby />} />
                   <Route path="geller-portal" element={<GellerPortal />} />
