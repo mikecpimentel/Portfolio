@@ -11,6 +11,7 @@ export const NavList = () => {
                 <NavLink to="/interests">{({isActive}) => isActive ? <li>&#x27F6;&#x27F6;&#x27F6;</li> : <li>Interests</li>}</NavLink>
                 <NavLink to="/FAQ">{({isActive}) => isActive ? <li>&#x27F6;&#x27F6;&#x27F6;</li> : <li>FAQ</li>}</NavLink>
                 <NavLink to="/contact">{({isActive}) => isActive ? <li>&#x27F6;&#x27F6;&#x27F6;</li> : <li>Contact</li>}</NavLink>
+                <NavLink to="/new-projects">{({isActive}) => isActive ? <li>&#x27F6;&#x27F6;&#x27F6;</li> : <li>New Projects</li>}</NavLink>
             </ul>
             
         </div>

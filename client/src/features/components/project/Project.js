@@ -3,8 +3,15 @@ import ReactModal from 'react-modal';
 
 export const Project = (props) => {
 
+const imageArray = props.data.images;
+const title = props.data.title;
+const period = props.data.period;
+const tech = props.data.tech;
+const description = props.data.description;
+
+
   const modalObjects = {};
-  for (let i=0; i<props.images.length; i++) {
+  for (let i=0; i<imageArray.length; i++) {
     modalObjects['modal_' + i] = false;
   }
   const [modalStatuses, setModalStatuses] = useState(modalObjects);
@@ -27,7 +34,7 @@ export const Project = (props) => {
 
  
 
-  const images = props.images ? props.images.map((photo, index) => (
+  const images = imageArray ? imageArray.map((photo, index) => (
       <>
         <div className='modal-link-image'><img src={photo[0]} id={index} onClick={handleClick} /></div>
         <ReactModal
@@ -42,7 +49,7 @@ export const Project = (props) => {
           <p style={{padding:"0px", fontWeight:"200"}}>{photo[2]}</p>
           <div style={{display:"flex", justifyContent:"space-between", gap:"3px", position:"absolute", bottom:"0", width:"100%"}}>
             {index-1 >= 0 ? <div id={index-1} className='project-buttons' onClick={handleClick}>&#x27F5; Previous Image</div> : <div className='project-buttons-disabled'></div>}
-            {index+1 < props.images.length ? <div id={index+1} className='project-buttons' onClick={handleClick}>Next image &#x27F6;</div> : <div className='project-buttons-disabled' id={index+1} onClick={handleClick}>Close</div>}
+            {index+1 < imageArray.length ? <div id={index+1} className='project-buttons' onClick={handleClick}>Next image &#x27F6;</div> : <div className='project-buttons-disabled' id={index+1} onClick={handleClick}>Close</div>}
           </div>
         </ReactModal>
       </>
@@ -52,10 +59,10 @@ export const Project = (props) => {
   return (
     <div className="floating-white-project animate__animated animate__fadeIn animate__faster">
       <div className='project-text-area'>
-        <h3 style={{color:"#000",marginTop:"0"}}>{props.title}</h3>
-        <p style={{fontSize:"0.8em", margin:"0", padding:"0"}}>Period: {props.period}</p>
-        <p style={{fontSize:"0.8em", margin:"0", padding:"0"}}>Technologies: {props.tech}</p>
-        {props.children}
+        <h3 style={{color:"#000",marginTop:"0"}}>{title}</h3>
+        <p style={{fontSize:"0.8em", margin:"0", padding:"0"}}>Period: {period}</p>
+        <p style={{fontSize:"0.8em", margin:"0", padding:"0"}}>Technologies: {tech}</p>
+        {description.map(item => item[0] === 'p' ? <p>{item[1]}</p> : item[0] === 'ul' ? <ul>{item[1].map(listItem => <li>{listItem}</li>)}</ul> : null)}  
       </div>
       <p style={{color:"#000", fontWeight:"200", fontSize:"0.8em", margin:"0", padding:"5px"}}>Click images to enlarge</p>
       <div style={{display:"flex", backgroundColor:"#292f3655", padding:"5px"}}>
