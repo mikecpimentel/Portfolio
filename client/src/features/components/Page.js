@@ -1,36 +1,40 @@
-import { useOutletContext, useParams } from "react-router-dom"
-import { Project } from "./Project"
-
-
-
+import { useOutletContext, useParams } from "react-router-dom";
+import { Books } from "./Books";
+import { Description } from "./Description";
+import { FAQ } from "./FAQ";
+import { Institutions } from "./Institutions";
+import { PokemonList } from "./PokemonList";
+import { Projects } from "./Projects";
+import { Skills } from "./Skills";
+import { v4 as uuid } from "uuid";
 
 export const Page = (props) => {
+   const currentSectionState = useOutletContext();
+   const whichPage = useParams();
+   console.log(whichPage.which);
+   let pageState;
 
-  const sectionState = useOutletContext();
-  const whichPage = useParams();
-  console.log(sectionState);
-  console.log(whichPage);
-  
-  return (
-    <Project data={sectionState.pages.byName[whichPage.which]} />
-  )
-/*
+   if (whichPage.which) {
+      pageState = currentSectionState.byPage[whichPage.which];
+   } else {
+      pageState = currentSectionState.byPage["index"];
+   }
 
-  if (props.type === 'project') {
-    return (
-        <Project
-        title={portfolioState.projects[0].title}
-        period={portfolioState.projects[0].period}
-        tech={portfolioState.projects[0].tech}
-        images={portfolioState.projects[0].images}>
-            {description.map(item => item[0] === 'p' ? <p>{item[1]}</p> : item[0] === 'ul' ? <ul>{item[1].map(listItem => <li>{listItem}</li>)}</ul> : null)}  
-        </Project>
-    )
-  } else {
-
-    return (
-      <div></div>
-    )
-  }
-*/
-}
+   return pageState.content.map((item) =>
+      item.type === "description" ? (
+         <Description key={uuid()} data={item.data} />
+      ) : item.type === "skills" ? (
+         <Skills key={uuid()} data={item.data} />
+      ) : item.type === "institution-box" ? (
+         <Institutions key={uuid()} data={item.data} />
+      ) : item.type === "project" ? (
+         <Projects key={uuid()} data={item.data} />
+      ) : item.type === "books" ? (
+         <Books key={uuid()} data={item.data} />
+      ) : item.type === "faq" ? (
+         <FAQ key={uuid()} data={item.data} />
+      ) : item.type === "pokemon" ? (
+         <PokemonList key={uuid()} />
+      ) : null
+   );
+};
