@@ -5,27 +5,30 @@ ul.vertical-nav {
 ul.vertical-nav a {
    color: #fff;
    list-style-type: none;
-   font-weight: 400;
+   font-weight: 300;
    font-size: var(--text-size-2);
    text-decoration: none;
    transition: color 300ms;
 }
 ul.vertical-nav a:hover {
-   color: #fff9;
+   color: #fffc;
    transition: 300ms;
 }
+ul.vertical-nav a.active:hover {
+   color: #fff;
+}
 ul.vertical-nav a.active {
-   font-size: 40px;
+   font-size: 32px;
    line-height: 0;
    letter-spacing: 0em;
    transition: font-size 300ms;
 }
 ul.vertical-nav a.active li {
-   padding: 36px 10px;
+   padding: 30px 10px;
 }
 ul.vertical-nav a li {
-   padding: 20px 10px;
-   border-bottom: 1px solid #fff2;
+   padding: 14px 10px;
+   border-bottom: 1px solid #fff1;
 }
 
 @media only screen and (max-width: 1000px) {

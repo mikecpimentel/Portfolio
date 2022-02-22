@@ -1,11 +1,11 @@
+import "./Institution.css";
 import { v4 as uuid } from "uuid";
 
 export const Institutions = (props) => {
    const data = props.data;
-   // .name, .subheading, .logo
-   // name, subheading, logo
+
    return (
-      <div style={{ display: "flex" }}>
+      <div className="institution-list">
          {data.map((item) => (
             <Institution
                key={uuid()}
@@ -44,6 +44,7 @@ const Institution = (props) => {
             </p>
          </div>
          <div
+            className="logo-div"
             style={{
                position: "absolute",
                right: "10px",

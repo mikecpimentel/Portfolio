@@ -2,31 +2,20 @@ import { Description } from "./Description";
 import "./Projects.css";
 import { v4 as uuid } from "uuid";
 
-const imageStyles = {};
-const pStyle = {
-   fontSize: "0.8em",
-   margin: "0",
-   padding: "0",
-};
-
 export const Projects = (props) => {
    const data = props.data;
 
-   return (
-      <div className="project-wrapper">
-         {data.map((item) => (
-            <Project
-               key={uuid()}
-               title={item.title}
-               period={item.period}
-               tech={item.tech}
-               images={item.images}
-            >
-               <Description key={uuid()} data={item.description} />
-            </Project>
-         ))}
-      </div>
-   );
+   return data.map((item) => (
+      <Project
+         key={uuid()}
+         title={item.title}
+         period={item.period}
+         tech={item.tech}
+         images={item.images}
+      >
+         <Description key={uuid()} data={item.description} />
+      </Project>
+   ));
 };
 
 const Project = (props) => {
@@ -45,7 +34,10 @@ const Project = (props) => {
          </div>
          {imageArray
             ? imageArray.map((photo, index) => (
-                 <img key={uuid()} src={photo.large} alt={photo[2]} />
+                 <div className="image-div">
+                    <img key={uuid()} src={photo.large} alt={photo.subtitle} />
+                    <p className="caption">{photo.subtitle}</p>
+                 </div>
               ))
             : "No images"}
       </>

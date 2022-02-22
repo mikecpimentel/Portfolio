@@ -59,104 +59,7 @@ const sectionState = {
       skills: {
          byPage: {
             index: {
-               title: "Intro",
-               content: [
-                  {
-                     type: "description",
-                     data: [
-                        {
-                           element: "p",
-                           children: [
-                              'I\'m fortunate to have been able to accumulate a few skills over the years. The next few tabs will introduce a bit of what I can currently offer your organization, including a few "extra credit" skills that could potentially of use.',
-                           ],
-                        },
-                        {
-                           element: "p",
-                           children: [
-                              "These lists are, of course, non-exhaustive and subject to frequent expansion. I continue learning each and every day.",
-                           ],
-                        },
-                     ],
-                  },
-               ],
-            },
-            "base-skills": {
-               title: "Base Skills",
-               content: [
-                  {
-                     type: "skills",
-                     data: [
-                        [
-                           "HTML",
-                           9,
-                           "Extensive experience using HTML and CSS, including many advanced concepts. I'm also great at optimizing pages for small screens. I have not yet fully optimized this site for mobile, however 😐 It's coming soon.",
-                        ],
-                        [
-                           "React",
-                           4,
-                           "I am relatively new with React but have a firm grasp of the technology (this site was created using React). I know the latest API features and have used various common libraries, including react-router-dom, which is used extensively on this site. I will no doubt gain a lot more advanced knowledge over the coming months.",
-                        ],
-                        [
-                           "Redux",
-                           4,
-                           "Like with React, my experience with Redux is relatively recent but growing. I have used it for managing application state, and have implemented many of its modern features including those included in Redux Toolkit (e.g., RTK Query). I am gaining more experience with Redux every day.",
-                        ],
-                        [
-                           "JavaScript",
-                           8,
-                           "I have extensive knowledge of JavaScript, from many of its most modern features to some of its older, now-obsolete features (useful for understanding legacy code, perhaps). My recent use of JavaScript has centered much around Node development.",
-                        ],
-                        [
-                           "APIs",
-                           4,
-                           "My understanding is solid but my experience is incomplete. I have some experience using and creating REST APIs, but I have room to learn things in greater depth. I have used Express and have a basic knowledge of authentication and security concerns, including the use of Express middlewares.",
-                        ],
-                        [
-                           "Databases",
-                           7,
-                           "I love databases (perhaps it reflects my love for data in general). I have a decent amount of experience designing stable and efficient tables, and using SQL to find exactly what I need. I have been using PostgreSQL recently, but I also have much past experience using MySQL. I have much to learn to fully master many of the most advanced features, but I have already had a pretty good start.",
-                        ],
-                        [
-                           "Algorithms",
-                           5,
-                           "I have earned 6 / 6 stars for Problem Solving (i.e., Algorithms) on HackerRank. There's still much to learn, but I think I have a lot of the basics down. I can create algorithms that are efficient in runtime and memory use.",
-                        ],
-                        [
-                           "Design",
-                           7,
-                           "I have an intermediate understanding of web design and usability principles. I have designed many websites (including this one, of course), but I certainly have more to improve upon.",
-                        ],
-                        [
-                           "Mandarin",
-                           5,
-                           "One of my greastest passions in life is learning and using foreign languages. I have learned so many in my life, far more than the two listed here, but I have lost language skills in many of them due to lack of opportunity for use. Mandarin is one language I can still communicate in with at least marginal competence. I used to be able to read and write many traditional characters, but that knowledge has recently grown a bit stale.",
-                        ],
-                        [
-                           "Spanish",
-                           5,
-                           "I can speak and understand a lot of Spanish, but I've never spent too much time around Spanish speakers. When I was younger, I used to work in a warehouse where virtually all the other employees spoke only Spanish. Working there allowed me to practice my Spanish over a relatively extended period of time, but that time has long passed.",
-                        ],
-                        [
-                           "Writing",
-                           6,
-                           "I read a lot and can write somewhat well, but I do not produce as much content as I would like. I hope to become a lot more prolific in my online writings.",
-                        ],
-                        [
-                           "PHP",
-                           5,
-                           "My first several personal projects were coded in PHP. However, it has been a long while since I have used it.",
-                        ],
-                        [
-                           "Java",
-                           3,
-                           "I have created an Android app using Java, but that was years ago. I have also used c++ in the past, so overall I have some experience with object-oriented programming.",
-                        ],
-                     ],
-                  },
-               ],
-            },
-            "future-skills": {
-               title: "Future Skills",
+               title: "List",
                content: [
                   {
                      type: "description",
@@ -204,50 +107,287 @@ const sectionState = {
                         },
                      ],
                   },
+                  {
+                     type: "skills",
+                     data: [
+                        {
+                           id: "skill-1",
+                           skill: "HTML",
+                           level: 9,
+                           description:
+                              "Extensive experience using HTML and CSS, including many advanced concepts. I'm also great at optimizing pages for small screens. I have not yet fully optimized this site for mobile, however 😐 It's coming soon.",
+                        },
+                        {
+                           id: "skill-2",
+                           skill: "React",
+                           level: 4,
+                           description:
+                              "I am relatively new with React but have a firm grasp of the technology (this site was created using React). I know the latest API features and have used various common libraries, including react-router-dom, which is used extensively on this site. I will no doubt gain a lot more advanced knowledge over the coming months.",
+                        },
+                        {
+                           id: "skill-3",
+                           skill: "Redux",
+                           level: 4,
+                           description:
+                              "Like with React, my experience with Redux is relatively recent but growing. I have used it for managing application state, and have implemented many of its modern features including those included in Redux Toolkit (e.g., RTK Query). I am gaining more experience with Redux every day.",
+                        },
+                        {
+                           id: "skill-4",
+                           skill: "JavaScript",
+                           level: 8,
+                           description:
+                              "I have extensive knowledge of JavaScript, from many of its most modern features to some of its older, now-obsolete features (useful for understanding legacy code, perhaps). My recent use of JavaScript has centered much around Node development.",
+                        },
+                        {
+                           id: "skill-5",
+                           skill: "APIs",
+                           level: 4,
+                           description:
+                              "My understanding is solid but my experience is incomplete. I have some experience using and creating REST APIs, but I have room to learn things in greater depth. I have used Express and have a basic knowledge of authentication and security concerns, including the use of Express middlewares.",
+                        },
+                        {
+                           id: "skill-6",
+                           skill: "Databases",
+                           level: 7,
+                           description:
+                              "I love databases (perhaps it reflects my love for data in general). I have a decent amount of experience designing stable and efficient tables, and using SQL to find exactly what I need. I have been using PostgreSQL recently, but I also have much past experience using MySQL. I have much to learn to fully master many of the most advanced features, but I have already had a pretty good start.",
+                        },
+                        {
+                           id: "skill-7",
+                           skill: "Algorithms",
+                           level: 5,
+                           description:
+                              "I have earned 6 / 6 stars for Problem Solving (i.e., Algorithms) on HackerRank. There's still much to learn, but I think I have a lot of the basics down. I can create algorithms that are efficient in runtime and memory use.",
+                        },
+                        {
+                           id: "skill-8",
+                           skill: "Design",
+                           level: 7,
+                           description:
+                              "I have an intermediate understanding of web design and usability principles. I have designed many websites (including this one, of course), but I certainly have more to improve upon.",
+                        },
+                        {
+                           id: "skill-9",
+                           skill: "Mandarin",
+                           level: 5,
+                           description:
+                              "One of my greastest passions in life is learning and using foreign languages. I have learned so many in my life, far more than the two listed here, but I have lost language skills in many of them due to lack of opportunity for use. Mandarin is one language I can still communicate in with at least marginal competence. I used to be able to read and write many traditional characters, but that knowledge has recently grown a bit stale.",
+                        },
+                        {
+                           id: "skill-10",
+                           skill: "Spanish",
+                           level: 5,
+                           description:
+                              "I can speak and understand a lot of Spanish, but I've never spent too much time around Spanish speakers. When I was younger, I used to work in a warehouse where virtually all the other employees spoke only Spanish. Working there allowed me to practice my Spanish over a relatively extended period of time, but that time has long passed.",
+                        },
+                        {
+                           id: "skill-12",
+                           skill: "PHP",
+                           level: 5,
+                           description:
+                              "My first several personal projects were coded in PHP. However, it has been a long while since I have used it.",
+                        },
+                        {
+                           id: "skill-13",
+                           skill: "Java",
+                           level: 3,
+                           description:
+                              "I have created an Android app using Java, but that was years ago. I have also used c++ in the past, so overall I have some experience with object-oriented programming.",
+                        },
+                     ],
+                  },
                ],
             },
          },
-         allPages: ["index", "base-skills", "future-skills"],
+         allPages: ["index"],
       },
       education: {
          byPage: {
             index: {
-               title: "Education Intro",
+               title: "Formal Ed",
                content: [
+                  {
+                     type: "description",
+                     data: [
+                        {
+                           element: "h3",
+                           children: ["Pre-University"],
+                        },
+                     ],
+                  },
+                  {
+                     type: "institution-box",
+                     data: [
+                        {
+                           name: "Mt. San Antonio College",
+                           subheading: "Walnut, CA",
+                           logo: mtSacLogo,
+                        },
+                        {
+                           name: "Irvine Valley College",
+                           subheading: "Irvine, CA",
+                           logo: ivcLogo,
+                        },
+                        {
+                           name: "Chaffey College",
+                           subheading: "Rancho Cucamonga, CA",
+                           logo: chaffeyLogo,
+                        },
+                     ],
+                  },
+                  {
+                     type: "description",
+                     data: [
+                        {
+                           element: "p",
+                           attr: [],
+                           children: [
+                              "Select classes I took before transferring to university. The overall course grade I received is indicated on the left.",
+                           ],
+                        },
+                        {
+                           element: "ul",
+                           attr: [],
+                           children: [
+                              {
+                                 element: "li",
+                                 attr: [],
+                                 children: [
+                                    "A | Calculus III (Multivariate & Vector Calculus)",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 attr: [],
+                                 children: [
+                                    "A | Linear Algebra & Differential Equations",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 attr: [],
+                                 children: ["A | Statistics"],
+                              },
+                              {
+                                 element: "li",
+                                 attr: [],
+                                 children: ["A | Financial Accounting"],
+                              },
+                              {
+                                 element: "li",
+                                 attr: [],
+                                 children: ["A | Managerial Accounting"],
+                              },
+                              {
+                                 element: "li",
+                                 attr: [],
+                                 children: ["A | Microeconomics"],
+                              },
+                              {
+                                 element: "li",
+                                 attr: [],
+                                 children: ["A | Programming in C++"],
+                              },
+                              {
+                                 element: "li",
+                                 attr: [],
+                                 children: [
+                                    "A | General Chemistry (I) w/ Lab",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 attr: [],
+                                 children: [
+                                    "B | General Chemistry (II) w/ Lab",
+                                 ],
+                              },
+                           ],
+                        },
+                     ],
+                  },
+                  {
+                     type: "description",
+                     data: [
+                        {
+                           element: "h3",
+                           children: ["University"],
+                        },
+                     ],
+                  },
+                  {
+                     type: "institution-box",
+                     data: [
+                        {
+                           name: "University of California",
+                           subheading: "Santa Barbara, CA (INCOMPLETE)",
+                           logo: logo,
+                        },
+                     ],
+                  },
                   {
                      type: "description",
                      data: [
                         {
                            element: "p",
                            children: [
-                              "My life's endeavor to educate myself has been fraught but unceasing. Owing to a largely chaotic childhood, my life has been decidedly nontraditional, especially when it came to education. I was expelled from 7th grade, dropped out permanently in 9th grade — but ultimately got into community college.",
+                              "A few of the upper-division economics courses I completed at UCSB before my withdrawal.",
                            ],
                         },
                         {
-                           element: "p",
+                           element: "ul",
                            children: [
-                              "By the time I got accepted to university, my mind had essentially melted from a lifetime of sickening stress and anxiety. I had health insurance and decent medical care for the first time in my life through the university, but world-class health insurance was not enough to erase two decades of insecurity. I withdrew — in good standing — from the university shortly before graduating in order to work on myself full-time.",
-                           ],
-                        },
-                        {
-                           element: "p",
-                           children: [
-                              "I've lived in my car in the past and have gone almost my entire life without a bed, but my optimism for the future has been unrelenting. A bright-eyed vision for the future is how I stay alive.",
-                           ],
-                        },
-                        {
-                           element: "p",
-                           children: [
-                              "The next few tabs offer some of the educational highlights from my life.",
+                              {
+                                 element: "li",
+                                 children: ["Econometrics I"],
+                              },
+                              {
+                                 element: "li",
+                                 children: ["Probability and Statistics I"],
+                              },
+                              {
+                                 element: "li",
+                                 children: [
+                                    "Intermediate Microeconomic Theory I",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 children: [
+                                    "Intermediate Microeconomic Theory II",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 children: [
+                                    "Intermediate Macroeconomic Theory",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 children: ["Economic Development"],
+                              },
+                              {
+                                 element: "li",
+                                 children: ["Intermediate Accounting I"],
+                              },
+                              {
+                                 element: "li",
+                                 children: ["Foundations of Computer Science"],
+                              },
                            ],
                         },
                      ],
                   },
-               ],
-            },
-            online: {
-               title: "Online",
-               content: [
+                  {
+                     type: "description",
+                     data: [
+                        {
+                           element: "h3",
+                           children: ["Online"],
+                        },
+                     ],
+                  },
                   {
                      type: "institution-box",
                      data: [
@@ -318,26 +458,75 @@ const sectionState = {
                   },
                ],
             },
-            "pre-university": {
-               title: "Pre-University",
+            informal: {
+               title: "Informal Ed",
                content: [
                   {
-                     type: "institution-box",
+                     type: "description",
                      data: [
                         {
-                           name: "Mt. San Antonio College",
-                           subheading: "Walnut, CA",
-                           logo: mtSacLogo,
+                           element: "h3",
+                           children: ["Major Interests"],
                         },
                         {
-                           name: "Irvine Valley College",
-                           subheading: "Irvine, CA",
-                           logo: ivcLogo,
+                           element: "p",
+                           children: [
+                              "Every bit of this world fascinates me. I have an insatiable appetite for information and I voraciously consume it every hour of the day.",
+                           ],
                         },
+
                         {
-                           name: "Chaffey College",
-                           subheading: "Rancho Cucamonga, CA",
-                           logo: chaffeyLogo,
+                           element: "p",
+                           children: [
+                              "Although my interests are infinitely broad, here is a less-than-infinite list of my most passionate interests:",
+                           ],
+                        },
+
+                        {
+                           element: "ul",
+                           children: [
+                              {
+                                 element: "li",
+                                 children: ["Technology, naturally"],
+                              },
+                              {
+                                 element: "li",
+                                 children: [
+                                    "Finance, capitalism and the global markets.",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 children: ["Economics and economic data"],
+                              },
+                              {
+                                 element: "li",
+                                 children: ["Foreign policy"],
+                              },
+                              {
+                                 element: "li",
+                                 children: [
+                                    "Journalism (I've been obsessed with NY Times coverage for years)",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 children: [
+                                    "Politics, both domestic and international",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 children: ["Human cultures and languages"],
+                              },
+                           ],
+                        },
+
+                        {
+                           element: "p",
+                           children: [
+                              "My personal interests may or may not be relevant to my candidacy, but I include them here just in case this information proves valuable.",
+                           ],
                         },
                      ],
                   },
@@ -345,85 +534,61 @@ const sectionState = {
                      type: "description",
                      data: [
                         {
-                           element: "p",
-                           attr: [],
-                           children: [
-                              "Select classes I took before transferring to university. The overall course grade I received is indicated on the left.",
-                           ],
-                        },
-                        {
-                           element: "ul",
-                           attr: [],
-                           children: [
-                              {
-                                 element: "li",
-                                 attr: [],
-                                 children: [
-                                    "A | Calculus III (Multivariate &amp; Vector Calculus)",
-                                 ],
-                              },
-                              {
-                                 element: "li",
-                                 attr: [],
-                                 children: [
-                                    "A | Linear Algebra &amp; Differential Equations",
-                                 ],
-                              },
-                              {
-                                 element: "li",
-                                 attr: [],
-                                 children: ["A | Statistics"],
-                              },
-                              {
-                                 element: "li",
-                                 attr: [],
-                                 children: ["A | Financial Accounting"],
-                              },
-                              {
-                                 element: "li",
-                                 attr: [],
-                                 children: ["A | Managerial Accounting"],
-                              },
-                              {
-                                 element: "li",
-                                 attr: [],
-                                 children: ["A | Microeconomics"],
-                              },
-                              {
-                                 element: "li",
-                                 attr: [],
-                                 children: ["A | Programming in C++"],
-                              },
-                              {
-                                 element: "li",
-                                 attr: [],
-                                 children: [
-                                    "A | General Chemistry (I) &amp; Laboratory",
-                                 ],
-                              },
-                              {
-                                 element: "li",
-                                 attr: [],
-                                 children: [
-                                    "B | General Chemistry (II) &amp; Laboratory",
-                                 ],
-                              },
-                           ],
+                           element: "h3",
+                           children: ["Recent Books"],
                         },
                      ],
                   },
-               ],
-            },
-            university: {
-               title: "University",
-               content: [
                   {
-                     type: "institution-box",
+                     type: "books",
                      data: [
                         {
-                           name: "University of California",
-                           subheading: "Santa Barbara, CA (INCOMPLETE)",
-                           logo: logo,
+                           title: "Israel",
+                           author: "Noa Tishby",
+                        },
+                        {
+                           title: "After the Fall",
+                           author: "Ben Rhodes",
+                        },
+                        {
+                           title: "Caste",
+                           author: "Isabel Wilkerson",
+                        },
+                        {
+                           title: "How Democracies Die",
+                           author: "Steven Levitsky, Daniel Ziblatt",
+                        },
+                        {
+                           title: "The Cruelty Is the Point",
+                           author: "Adam Serwer",
+                        },
+                        {
+                           title: "Persist",
+                           author: "Elizabeth Warren",
+                        },
+                        {
+                           title: "Sapiens",
+                           author: "Yuval Noah Harari",
+                        },
+                        {
+                           title: "Antitrust",
+                           author: "Amy Klobuchar",
+                        },
+                        {
+                           title: "A People's History of the United States",
+                           author: "Howard Zinn",
+                        },
+                        {
+                           title: "How to Avoid a Climate Disaster",
+                           author: "Bill Gates",
+                        },
+                        {
+                           title: "The Price of Peace",
+                           author: "Zachary D. Carter",
+                        },
+                        {
+                           title: "Why We're Polarized",
+                           author: "Ezra Klein",
                         },
                      ],
                   },
@@ -431,52 +596,117 @@ const sectionState = {
                      type: "description",
                      data: [
                         {
-                           element: "p",
-                           children: [
-                              "A few of the upper-division economics courses I completed at UCSB before my withdrawal.",
-                           ],
+                           element: "h3",
+                           children: ["Podcasts"],
                         },
                         {
                            element: "ul",
                            children: [
                               {
                                  element: "li",
-                                 children: ["Econometrics I"],
+                                 children: ["Pod Save the World"],
                               },
+                              { element: "li", children: ["Pod Save America"] },
+                              { element: "li", children: ["Sway"] },
                               {
                                  element: "li",
-                                 children: ["Probability and Statistics I"],
+                                 children: ["The Ezra Klein Show"],
                               },
+                              { element: "li", children: ["The Weeds (Vox)"] },
                               {
                                  element: "li",
-                                 children: [
-                                    "Intermediate Microeconomic Theory I",
-                                 ],
-                              },
-                              {
-                                 element: "li",
-                                 children: [
-                                    "Intermediate Microeconomic Theory II",
-                                 ],
+                                 children: ["FiveThirtyEight Politics"],
                               },
                               {
                                  element: "li",
                                  children: [
-                                    "Intermediate Macroeconomic Theory",
+                                    "Checks and Balance (The Economist)",
                                  ],
                               },
                               {
                                  element: "li",
-                                 children: ["Economic Development"],
+                                 children: ["Wait Wait... Don't Tell Me (NPR)"],
                               },
                               {
                                  element: "li",
-                                 children: ["Intermediate Accounting I"],
+                                 children: ["Conan O'Brien Needs a Friend"],
                               },
-                              {
-                                 element: "li",
-                                 children: ["Foundations of Computer Science"],
-                              },
+                           ],
+                        },
+                     ],
+                  },
+                  {
+                     type: "description",
+                     data: [
+                        {
+                           element: "h3",
+                           children: ["Travel"],
+                        },
+                        {
+                           element: "p",
+                           children: [
+                              "As a child, I had always dreamed of going far, far away to escape my environment, and I managed to do so on occasion, whether or not I really had the means to do so. My solo explorations at home and abroad have had a profoundly positive impact on my growth as a person after I left university.",
+                           ],
+                        },
+
+                        {
+                           element: "p",
+                           children: [
+                              "A few of the countries I have thus far been fortunate to explore include:",
+                           ],
+                        },
+
+                        {
+                           element: "ul",
+                           children: [
+                              { element: "li", children: ["Canada"] },
+                              { element: "li", children: ["Mexico"] },
+                              { element: "li", children: ["Costa Rica"] },
+                              { element: "li", children: ["South Korea"] },
+                              { element: "li", children: ["Japan"] },
+                              { element: "li", children: ["Taiwan"] },
+                              { element: "li", children: ["Hong Kong"] },
+                              { element: "li", children: ["Macau"] },
+                              { element: "li", children: ["United Kingdom"] },
+                              { element: "li", children: ["France"] },
+                              { element: "li", children: ["Czech Republic"] },
+                              { element: "li", children: ["Germany"] },
+                              { element: "li", children: ["Netherlands"] },
+                              { element: "li", children: ["Belgium"] },
+                           ],
+                        },
+
+                        {
+                           element: "p",
+                           children: [
+                              "I lived about a year in Taiwan, and five months in Canada.",
+                           ],
+                        },
+                     ],
+                  },
+                  {
+                     type: "description",
+                     data: [
+                        {
+                           element: "h3",
+                           children: ["Life"],
+                        },
+                        {
+                           element: "p",
+                           children: [
+                              "My life's endeavor to educate myself has been fraught but unceasing. Owing to a largely chaotic childhood, my life has been decidedly nontraditional, especially when it came to education. I was expelled from 7th grade, dropped out permanently in 9th grade — but ultimately got into community college.",
+                           ],
+                        },
+                        {
+                           element: "p",
+                           children: [
+                              "By the time I got accepted to university, my mind had essentially melted from a lifetime of sickening stress and anxiety. I had health insurance and decent medical care for the first time in my life through the university, but world-class health insurance was not enough to erase two decades of insecurity. I withdrew — in good standing — from the university shortly before graduating in order to work on myself full-time.",
+                           ],
+                        },
+                        {
+                           element: "p",
+                           children: [
+                              "I've lived in my car in the past and have gone almost my entire life without a bed, but my optimism for the future has been unrelenting. A bright-eyed vision for the future is how I stay alive.",
                            ],
                         },
                      ],
@@ -484,39 +714,11 @@ const sectionState = {
                ],
             },
          },
-         allPages: ["index", "online", "pre-university", "university"],
+         allPages: ["index", "informal"],
       },
-      projects: {
+      "past-projects": {
          byPage: {
             index: {
-               title: "Intro",
-               content: [
-                  {
-                     type: "description",
-                     data: [
-                        {
-                           element: "p",
-                           children: [
-                              "I have had access to a computer in some form throughout my life, and coding was a hobby I engaged in whenever I had the opportunity. I never imagined, however, that coding could be a viable career option (for some strange reason).",
-                           ],
-                        },
-                        {
-                           element: "p",
-                           children: [
-                              "Here you will find some of the projects I have worked on over the years, sorted in ascending chronological order. Aside from this portfolio site, only projects from the past are listed. My recent projects are still in progress.",
-                           ],
-                        },
-                        {
-                           element: "p",
-                           children: [
-                              "All projects include a list of images at the bottom.",
-                           ],
-                        },
-                     ],
-                  },
-               ],
-            },
-            "lets-ask-bobby": {
                title: "Let's Ask Bobby",
                content: [
                   {
@@ -999,239 +1201,11 @@ const sectionState = {
          },
          allPages: [
             "index",
-            "lets-ask-bobby",
             "geller-portal",
             "collabolist",
             "year-2053",
             "wordpress",
          ],
-      },
-      interests: {
-         byPage: {
-            index: {
-               title: "Intro",
-               content: [
-                  {
-                     type: "description",
-                     data: [
-                        {
-                           element: "p",
-                           children: [
-                              "Every bit of this world fascinates me. I have an insatiable appetite for information and I voraciously consume it every hour of the day.",
-                           ],
-                        },
-
-                        {
-                           element: "p",
-                           children: [
-                              "Although my interests are infinitely broad, here is a less-than-infinite list of my most passionate interests:",
-                           ],
-                        },
-
-                        {
-                           element: "ul",
-                           children: [
-                              {
-                                 element: "li",
-                                 children: ["Technology, naturally"],
-                              },
-                              {
-                                 element: "li",
-                                 children: [
-                                    "Finance, capitalism and the global markets.",
-                                 ],
-                              },
-                              {
-                                 element: "li",
-                                 children: ["Economics and economic data"],
-                              },
-                              {
-                                 element: "li",
-                                 children: ["Foreign policy"],
-                              },
-                              {
-                                 element: "li",
-                                 children: [
-                                    "Journalism (I've been obsessed with NY Times coverage for years)",
-                                 ],
-                              },
-                              {
-                                 element: "li",
-                                 children: [
-                                    "Politics, both domestic and international",
-                                 ],
-                              },
-                              {
-                                 element: "li",
-                                 children: ["Human cultures and languages"],
-                              },
-                           ],
-                        },
-
-                        {
-                           element: "p",
-                           children: [
-                              "My personal interests may or may not be relevant to my candidacy, but I include them here just in case this information proves valuable.",
-                           ],
-                        },
-                     ],
-                  },
-               ],
-            },
-            "recent-books": {
-               title: "Recent Books",
-               content: [
-                  {
-                     type: "books",
-                     data: [
-                        {
-                           title: "Israel",
-                           author: "Noa Tishby",
-                        },
-                        {
-                           title: "After the Fall",
-                           author: "Ben Rhodes",
-                        },
-                        {
-                           title: "Caste",
-                           author: "Isabel Wilkerson",
-                        },
-                        {
-                           title: "How Democracies Die",
-                           author: "Steven Levitsky, Daniel Ziblatt",
-                        },
-                        {
-                           title: "The Cruelty Is the Point",
-                           author: "Adam Serwer",
-                        },
-                        {
-                           title: "Persist",
-                           author: "Elizabeth Warren",
-                        },
-                        {
-                           title: "Sapiens",
-                           author: "Yuval Noah Harari",
-                        },
-                        {
-                           title: "Antitrust",
-                           author: "Amy Klobuchar",
-                        },
-                        {
-                           title: "A People's History of the United States",
-                           author: "Howard Zinn",
-                        },
-                        {
-                           title: "How to Avoid a Climate Disaster",
-                           author: "Bill Gates",
-                        },
-                        {
-                           title: "The Price of Peace",
-                           author: "Zachary D. Carter",
-                        },
-                        {
-                           title: "Why We're Polarized",
-                           author: "Ezra Klein",
-                        },
-                     ],
-                  },
-               ],
-            },
-            podcasts: {
-               title: "Podcasts",
-               content: [
-                  {
-                     type: "description",
-                     data: [
-                        {
-                           element: "ul",
-                           children: [
-                              {
-                                 element: "li",
-                                 children: ["Pod Save the World"],
-                              },
-                              { element: "li", children: ["Pod Save America"] },
-                              { element: "li", children: ["Sway"] },
-                              {
-                                 element: "li",
-                                 children: ["The Ezra Klein Show"],
-                              },
-                              { element: "li", children: ["The Weeds (Vox)"] },
-                              {
-                                 element: "li",
-                                 children: ["FiveThirtyEight Politics"],
-                              },
-                              {
-                                 element: "li",
-                                 children: [
-                                    "Checks and Balance (The Economist)",
-                                 ],
-                              },
-                              {
-                                 element: "li",
-                                 children: ["Wait Wait... Don't Tell Me (NPR)"],
-                              },
-                              {
-                                 element: "li",
-                                 children: ["Conan O'Brien Needs a Friend"],
-                              },
-                           ],
-                        },
-                     ],
-                  },
-               ],
-            },
-            travel: {
-               title: "Travel",
-               content: [
-                  {
-                     type: "description",
-                     data: [
-                        {
-                           element: "p",
-                           children: [
-                              "As a child, I had always dreamed of going far, far away to escape my environment, and I managed to do so on occasion, whether or not I really had the means to do so. My solo explorations at home and abroad have had a profoundly positive impact on my growth as a person after I left university.",
-                           ],
-                        },
-
-                        {
-                           element: "p",
-                           children: [
-                              "A few of the countries I have thus far been fortunate to explore include:",
-                           ],
-                        },
-
-                        {
-                           element: "ul",
-                           children: [
-                              { element: "li", children: ["Canada"] },
-                              { element: "li", children: ["Mexico"] },
-                              { element: "li", children: ["Costa Rica"] },
-                              { element: "li", children: ["South Korea"] },
-                              { element: "li", children: ["Japan"] },
-                              { element: "li", children: ["Taiwan"] },
-                              { element: "li", children: ["Hong Kong"] },
-                              { element: "li", children: ["Macau"] },
-                              { element: "li", children: ["United Kingdom"] },
-                              { element: "li", children: ["France"] },
-                              { element: "li", children: ["Czech Republic"] },
-                              { element: "li", children: ["Germany"] },
-                              { element: "li", children: ["Netherlands"] },
-                              { element: "li", children: ["Belgium"] },
-                           ],
-                        },
-
-                        {
-                           element: "p",
-                           children: [
-                              "I lived about a year in Taiwan, and five months in Canada.",
-                           ],
-                        },
-                     ],
-                  },
-               ],
-            },
-         },
-         allPages: ["index", "recent-books", "podcasts", "travel"],
       },
       faq: {
          byPage: {
@@ -1282,10 +1256,6 @@ const sectionState = {
          },
          allPages: ["index"],
       },
-      contact: {
-         byPage: {},
-         allPages: [],
-      },
       "new-projects": {
          byPage: {
             index: {
@@ -1309,22 +1279,7 @@ const sectionState = {
 };
 
 /*
-export const University = () => {
-   return (
-      <div className="education-bottom animate__animated animate__fadeIn animate__faster">
-         // description area
-         <div className="floating-white-education floating-white-1">
 
-
-export const RecentBooks = () => {
-   return (
-      <div className="books-wrapper">
-         <div className="book">
-            <p className="book-title">Israel</p>
-            <p className="book-author">Noa Tishby</p>
-export const Online = () => {
-    return (
-        <div>
             <div className="online-institutions animate__animated animate__fadeIn animate__faster">
                 <Institution name="Codecademy" city="Full-Stack Engineering Cert" logo={codecademyLogo} />
                 <Institution name="HackerRank" city="Algorithms 6/6" logo={hackerRankLogo} />
@@ -1364,33 +1319,7 @@ export const FAQBlock = (props) => {
         </div>
     )
 }
-const Answer = (props) => {
-    return (
-        <div>
-            <p
-                style={{
-                    fontWeight: "200",
-                    color: "#fffa",
-                    fontSize: "1em",
-                    marginTop: "10px",
-                    lineHeight: "1.5",
-                }}
-            >
-                {" "}
-                {"> "}
-                {props.children}
-            </p>
-        </div>
-    );
-};
 
-export const Question = (props) => {
-    return (
-        <div style={{fontSize:"1em", fontWeight:"200", marginBottom:"0px"}}>
-            {props.children}
-        </div>
-    )
-}
 const ExtraCredit = () => {
     return (
         <div className="extra-credit baseskills-info animate__animated animate__faster">
@@ -1436,7 +1365,7 @@ export const Section = (props) => {
             </div>
          </div>
          <div className="section-bottom">
-            <Outlet context={sectionPath} />
+            <Outlet context={[sectionPath, sectionURL]} />
          </div>
       </>
    );

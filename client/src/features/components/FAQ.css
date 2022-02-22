@@ -1,0 +1,21 @@
+.faq-wrapper {
+   padding: 0 30px;
+   line-height: 1.66;
+}
+.faq-wrapper > div {
+   border-bottom: 1px dashed #fff1;
+   max-width: 550px;
+}
+.question {
+   margin-bottom: 5px;
+   font-size: 0.8em;
+   font-weight: 500;
+   color: #fffe;
+}
+.answer {
+   font-weight: 300;
+   color: #fffa;
+   font-size: 0.8em;
+   margin-top: 10px;
+   margin-bottom: 20px;
+}

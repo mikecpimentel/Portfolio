@@ -3,21 +3,24 @@ div.books-wrapper {
    flex-wrap: wrap;
    max-width: var(--standard-width);
    gap: 10px;
+   margin-bottom: 20px;
 }
 div.books-wrapper div {
-   padding: 10px 20px;
+   padding: 5px 20px;
    border-radius: 4px;
    background-color: #fff1;
 }
 div.books-wrapper div p:first-of-type {
    margin: 0;
-   font-size: 1em;
+   font-size: 0.8em;
    padding-bottom: 0px;
+   font-weight: 500;
+   color: #fffe;
    text-transform: capitalize;
 }
 div.books-wrapper div p:last-of-type {
    font-size: 0.8em;
    font-weight: var(--thin-text);
-   color: #fffa;
+   color: #fff6;
    margin: 0;
 }

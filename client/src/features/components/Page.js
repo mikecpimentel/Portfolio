@@ -6,10 +6,13 @@ import { Institutions } from "./Institutions";
 import { PokemonList } from "./PokemonList";
 import { Projects } from "./Projects";
 import { Skills } from "./Skills";
+import "./Page.css";
 import { v4 as uuid } from "uuid";
 
 export const Page = (props) => {
-   const currentSectionState = useOutletContext();
+   const outletContext = useOutletContext();
+   const currentSectionState = outletContext[0];
+   const sectionURL = outletContext[1];
    const whichPage = useParams();
    console.log(whichPage.which);
    let pageState;
@@ -20,21 +23,27 @@ export const Page = (props) => {
       pageState = currentSectionState.byPage["index"];
    }
 
-   return pageState.content.map((item) =>
-      item.type === "description" ? (
-         <Description key={uuid()} data={item.data} />
-      ) : item.type === "skills" ? (
-         <Skills key={uuid()} data={item.data} />
-      ) : item.type === "institution-box" ? (
-         <Institutions key={uuid()} data={item.data} />
-      ) : item.type === "project" ? (
-         <Projects key={uuid()} data={item.data} />
-      ) : item.type === "books" ? (
-         <Books key={uuid()} data={item.data} />
-      ) : item.type === "faq" ? (
-         <FAQ key={uuid()} data={item.data} />
-      ) : item.type === "pokemon" ? (
-         <PokemonList key={uuid()} />
-      ) : null
+   return (
+      <div className={`${sectionURL}-wrapper`}>
+         {pageState.content.map((item) =>
+            item.type === "description" ? (
+               <div className="description-outer">
+                  <Description key={uuid()} data={item.data} />
+               </div>
+            ) : item.type === "skills" ? (
+               <Skills key={uuid()} data={item.data} />
+            ) : item.type === "institution-box" ? (
+               <Institutions key={uuid()} data={item.data} />
+            ) : item.type === "project" ? (
+               <Projects key={uuid()} data={item.data} />
+            ) : item.type === "books" ? (
+               <Books key={uuid()} data={item.data} />
+            ) : item.type === "faq" ? (
+               <FAQ key={uuid()} data={item.data} />
+            ) : item.type === "pokemon" ? (
+               <PokemonList key={uuid()} />
+            ) : null
+         )}
+      </div>
    );
 };

@@ -13,16 +13,37 @@
    --text-size-6: 3.052rem;
    --standard-width: 850px;
 }
-
+* {
+   box-sizing: border-box;
+}
 body {
-   margin: 0;
    font-family: "Open Sans";
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-   background-color: #292f36;
+   margin: 0;
+   background-color: white;
    font-size: 16px;
    color: #fff;
+   display: flex;
+   height: 100vh;
+   padding: 20px 20px 20px 20px;
    overflow: hidden;
+}
+p {
+}
+#root {
+   background-color: #292f36;
+   box-shadow: 0 0 10px 0 #292f36;
+   border-radius: 5px;
+   flex-grow: 1;
+   flex-basis: 0;
+   width: 100%;
+   flex-shrink: 1;
+   max-width: 1600px;
+   display: flex;
+   margin: 0 auto;
+   padding-bottom: 10px;
+   flex-direction: column;
 }
 div.travel {
    max-width: var(--standard-width);
@@ -58,24 +79,8 @@ h1 {
    color: #fffe;
    padding: 5px 10px 0px 10px;
    text-transform: uppercase;
-   letter-spacing: 0.1em;
    display: inline-block;
    text-decoration: none;
-}
-
-p.welcome-1 {
-   font-size: 1em;
-   color: #fffc;
-   margin-bottom: 20px;
-   font-weight: 300;
-   letter-spacing: 0.05em;
-}
-
-p.welcome-2 {
-   font-size: 1.953em;
-   color: var(--lightest-text);
-   font-weight: 400;
-   margin: 0 0 25px 0;
 }
 
 div.intro-text-area {
@@ -98,130 +103,6 @@ div.intro-text-area ul li {
 }
 div.intro-text-area ul {
    margin-bottom: 30px;
-}
-
-span.skill {
-   font-weight: 400;
-   font-size: 1.25em;
-   display: inline-block;
-   flex-basis: 200px;
-   padding-right: 20px;
-}
-@media only screen and (max-width: 1000px) {
-   span.skill {
-      font-size: 1em;
-   }
-}
-span.skill-closed {
-   color: #fffe;
-}
-span.skill-open,
-span.skill-closed:hover {
-   color: var(--lightest-text);
-}
-span.levelBlock,
-span.fillerBlock {
-   font-size: 2.441em;
-   letter-spacing: 0.15em;
-   margin-top: 20px;
-   display: inline-block;
-   line-height: 1;
-}
-@media only screen and (max-width: 1000px) {
-   span.levelBlock,
-   span.fillerBlock {
-      font-size: 1.953em;
-   }
-}
-span.levelBlock {
-   color: #fff9;
-}
-span.fillerBlock {
-   color: #fff1;
-}
-span.levelBlock-open {
-   color: var(--lightest-text);
-}
-
-a.intro-button {
-   padding: 20px 30px;
-   display: inline-block;
-   border: 1px solid var(--blue-accent);
-   text-decoration: none;
-   color: var(--lightest-text);
-   font-weight: 400;
-}
-
-
-
-div.online-institutions {
-   display: flex;
-   max-width: var(--standard-width);
-}
-div.online-institutions .floating-white-institution {
-   margin-right: 15px;
-}
-div.floating-white {
-   background-color: #fff;
-   padding: 30px;
-   font-size: 1.25em;
-   line-height: 1.5;
-   box-shadow: -8px -8px 0 0px var(--blue-accent);
-   margin-top: 10px;
-   margin-left: 10px;
-   margin-top: 30px;
-   transition: 300ms;
-   overflow: hidden;
-}
-
-div.floating-white-institution,
-div.floating-white-education {
-   background-color: #fff;
-   box-shadow: -3px -3px 0 0px var(--blue-accent);
-   font-size: 1em;
-   margin-top: 3px;
-   margin-left: 3px;
-}
-
-div.floating-white-institution {
-   flex: 1 1 190px;
-   min-width: 160px;
-   max-width: 260px;
-   padding: 0px 5px;
-   margin-right: 0px;
-   display: flex;
-   justify-content: space-between;
-   height: 120px;
-   position: relative;
-}
-div.floating-white-education {
-   padding: 10px 25px;
-   color: #000;
-   font-weight: 300;
-   line-height: 1.5;
-   margin-top: 30px;
-   transition: 300ms;
-   overflow: hidden;
-}
-
-.project-buttons {
-   width: 50%;
-   text-align: center;
-   padding: 15px;
-   font-size: 1em;
-   font-weight: 300;
-   background-color: #ffffff11;
-}
-.project-buttons:hover {
-   cursor: pointer;
-   background-color: #ffffff05;
-   transition: background-color 300ms;
-}
-.project-buttons-disabled {
-   background-color: #292f36;
-   width: 50%;
-   cursor: pointer;
-   padding: 15px;
 }
 
 .modal-content-style {
@@ -295,17 +176,30 @@ div.podcast {
    margin-top: 5px;
 }
 
-.online-certs-links {
-   margin: 20px 0;
-}
-.online-certs-links a {
-   text-decoration: none;
-   color: var(--blue-accent);
-}
-.online-certs-links a:hover {
-   text-decoration: underline;
-}
 div.questions-wrapper {
    max-width: var(--standard-width);
    padding-right: 30px;
+}
+#contact-info {
+   font-weight: 400;
+   font-size: 0.8em;
+   color: #fffc;
+   padding-bottom: 20px;
+   padding-left: 10px;
+}
+#contact-info ul {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+#contact-info ul li {
+   line-height: 1.7;
+}
+#contact-info a {
+   text-decoration: none;
+   color: #4ecdc4;
+   font-weight: 400;
+}
+#contact-info a:hover {
+   text-decoration: underline;
 }

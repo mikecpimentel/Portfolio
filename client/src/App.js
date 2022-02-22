@@ -18,24 +18,12 @@ const portfolioState = {
          section_url: "education",
       },
       {
-         name: "Projects",
-         section_url: "projects",
-      },
-      {
-         name: "Interests",
-         section_url: "interests",
+         name: "Past Projects",
+         section_url: "past-projects",
       },
       {
          name: "FAQ",
          section_url: "faq",
-      },
-      {
-         name: "Contact",
-         section_url: "contact",
-      },
-      {
-         name: "New Projects",
-         section_url: "new-projects",
       },
    ],
 };
@@ -63,6 +51,21 @@ function App() {
                      </NavLink>
                   ))}
                </ul>
+               <div id="contact-info">
+                  <ul>
+                     <li>(408) 365-4328</li>
+                     <li>mikecpimentel@gmail.com</li>
+                     <li>
+                        <a
+                           href="https://www.linkedin.com/in/mikecpimentel/"
+                           target="_blank"
+                           rel="noreferrer"
+                        >
+                           LinkedIn
+                        </a>
+                     </li>
+                  </ul>
+               </div>
             </div>
 
             <div className="main-content-area">

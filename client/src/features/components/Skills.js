@@ -5,9 +5,27 @@ import { v4 as uuid } from "uuid";
 export const Skills = (props) => {
    const data = props.data;
 
-   return data.map((item) => (
-      <SkillItem key={uuid()} skillType={item[0]} level={item[1]}>
-         {item[2]}
+   const newState = data.map((item) => ({ ...item, open: false }));
+
+   const [skillsState, setSkillsState] = useState(newState);
+
+   const toggle = (id) => {
+      const updatedSkillsState = skillsState.map((item) =>
+         item.id === id  && !item.open ? { ...item, open: true } : { ...item, open: false }
+      );
+      setSkillsState(updatedSkillsState);
+   };
+
+   return skillsState.map((item) => (
+      <SkillItem
+         key={item.id}
+         id={item.id}
+         open={item.open}
+         toggleHandler={toggle}
+         skillType={item.skill}
+         level={item.level}
+      >
+         {item.description}
       </SkillItem>
    ));
 };
@@ -15,17 +33,11 @@ export const Skills = (props) => {
 const SkillItem = (props) => {
    let levelMeter = [];
    let filler = [];
-   const [open, setOpen] = useState(false);
+   const skillId = props.id;
+   const open = props.open;
+   const toggle = props.toggleHandler;
 
-   const handleClick = () => {
-      if (open) {
-         console.log("element is false");
-         setOpen(false);
-      } else {
-         console.log("element is true");
-         setOpen(true);
-      }
-   };
+   console.log("rendered");
 
    for (let i = 0; i < 10; i++) {
       if (i < props.level) {
@@ -37,7 +49,7 @@ const SkillItem = (props) => {
 
    return (
       <div
-         onClick={handleClick}
+         onClick={() => toggle(skillId)}
          className={
             open
                ? "skill-div-outer skill-div-outer-open"
