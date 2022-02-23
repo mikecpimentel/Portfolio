@@ -1,4 +1,6 @@
 import { Outlet, NavLink } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./Section.css";
 import aphoto1 from "../../images/letsaskbobby_logo.gif";
 import bphoto1 from "../../images/geller-portal/Folder1-300x199.png";
@@ -67,43 +69,16 @@ const sectionState = {
                         {
                            element: "p",
                            children: [
-                              "I could list a few hundred things I plan to learn this decade, but my immediate priority is to learn anything and everything that will make me a more effective team member and employee. High on my priority list are Python, server-side rendering technologies (Next.js), GraphQL, and so, so many others.",
+                              "Here are some of the technologies I am experienced with, including my subjective skill level in each. I am a very quick learner, so this list is subject to frequent expansion.",
                            ],
                         },
                         {
                            element: "p",
-                           children: [
-                              "A few other things I might learn in the near future include:",
-                           ],
+                           children: ["Click a skill for more info."],
                         },
                         {
-                           element: "ul",
-                           children: [
-                              {
-                                 element: "li",
-                                 children: [
-                                    "Using code to create internal and consumer financial products",
-                                 ],
-                              },
-                              {
-                                 element: "li",
-                                 children: [
-                                    "Learning how to use artificial intelligence to improve decision making",
-                                 ],
-                              },
-                              {
-                                 element: "li",
-                                 children: [
-                                    "Learning blockchain technology and its potential applications",
-                                 ],
-                              },
-                              {
-                                 element: "li",
-                                 children: [
-                                    "Mastering a few more spoken languages",
-                                 ],
-                              },
-                           ],
+                           element: "p",
+                           children: ["Values current as of Feb. 23, 2022"],
                         },
                      ],
                   },
@@ -112,87 +87,87 @@ const sectionState = {
                      data: [
                         {
                            id: "skill-1",
-                           skill: "HTML",
+                           skill: "HTML/CSS",
                            level: 9,
                            description:
-                              "Extensive experience using HTML and CSS, including many advanced concepts. I'm also great at optimizing pages for small screens. I have not yet fully optimized this site for mobile, however 😐 It's coming soon.",
+                              "Extensive experience using HTML and CSS, including many advanced concepts. I coded this portfolio site by hand, as I do with all my projects.",
                         },
                         {
                            id: "skill-2",
                            skill: "React",
-                           level: 4,
+                           level: 6,
                            description:
-                              "I am relatively new with React but have a firm grasp of the technology (this site was created using React). I know the latest API features and have used various common libraries, including react-router-dom, which is used extensively on this site. I will no doubt gain a lot more advanced knowledge over the coming months.",
+                              "I am relatively new with React (around 8 months) but I feel fairly confident in my ability to do just about anything with the technology. I created this site using React and am working on other React projects on the side. I know the latest features and many common libraries.",
                         },
                         {
                            id: "skill-3",
                            skill: "Redux",
-                           level: 4,
+                           level: 5,
                            description:
-                              "Like with React, my experience with Redux is relatively recent but growing. I have used it for managing application state, and have implemented many of its modern features including those included in Redux Toolkit (e.g., RTK Query). I am gaining more experience with Redux every day.",
+                              "Like with React, I started using Redux somewhat recently. I am confident in my ability to manage complex application state with Redux, but I am still a few months away from complete mastery. I know how to use many of its modern features including the Redux Toolkit and RT Query.",
                         },
                         {
                            id: "skill-4",
                            skill: "JavaScript",
                            level: 8,
                            description:
-                              "I have extensive knowledge of JavaScript, from many of its most modern features to some of its older, now-obsolete features (useful for understanding legacy code, perhaps). My recent use of JavaScript has centered much around Node development.",
+                              "I have extensive knowledge of JavaScript, from many of its most modern features to some of its older, now-obsolete features (useful for understanding legacy code). My recent use of JavaScript has centered much around Node development.",
                         },
                         {
                            id: "skill-5",
                            skill: "APIs",
                            level: 4,
                            description:
-                              "My understanding is solid but my experience is incomplete. I have some experience using and creating REST APIs, but I have room to learn things in greater depth. I have used Express and have a basic knowledge of authentication and security concerns, including the use of Express middlewares.",
+                              "I have limited but growing experience using and creating REST APIs.",
                         },
                         {
                            id: "skill-6",
-                           skill: "Databases",
+                           skill: "SQL",
                            level: 7,
                            description:
-                              "I love databases (perhaps it reflects my love for data in general). I have a decent amount of experience designing stable and efficient tables, and using SQL to find exactly what I need. I have been using PostgreSQL recently, but I also have much past experience using MySQL. I have much to learn to fully master many of the most advanced features, but I have already had a pretty good start.",
+                              "I have a lot of experience designing stable and efficient tables. I can use SQL adeptly to find the exact information I need. I have been using PostgreSQL recently, but most of my experience is with using MySQL.",
                         },
                         {
                            id: "skill-7",
                            skill: "Algorithms",
-                           level: 5,
+                           level: 6,
                            description:
-                              "I have earned 6 / 6 stars for Problem Solving (i.e., Algorithms) on HackerRank. There's still much to learn, but I think I have a lot of the basics down. I can create algorithms that are efficient in runtime and memory use.",
+                              "I have earned 6 / 6 stars for Problem Solving (i.e., Algorithms) on HackerRank and have learned many advanced data structures concepts. There's still much I need to learn, but I think I have a lot of the basics down.",
                         },
                         {
                            id: "skill-8",
                            skill: "Design",
                            level: 7,
                            description:
-                              "I have an intermediate understanding of web design and usability principles. I have designed many websites (including this one, of course), but I certainly have more to improve upon.",
+                              "I have an intermediate understanding of web design and usability principles. I have designed many websites (including this one), but I certainly have more to improve upon.",
                         },
                         {
                            id: "skill-9",
                            skill: "Mandarin",
                            level: 5,
                            description:
-                              "One of my greastest passions in life is learning and using foreign languages. I have learned so many in my life, far more than the two listed here, but I have lost language skills in many of them due to lack of opportunity for use. Mandarin is one language I can still communicate in with at least marginal competence. I used to be able to read and write many traditional characters, but that knowledge has recently grown a bit stale.",
+                              "One of my greastest passions in life is learning and using foreign languages. I have learned so many in my life, but have lost fluency in many of them due to lack of use. Mandarin is one language I can still communicate in with at least marginal competence. My ability to read and write has grown a bit stale, however.",
                         },
                         {
                            id: "skill-10",
                            skill: "Spanish",
                            level: 5,
                            description:
-                              "I can speak and understand a lot of Spanish, but I've never spent too much time around Spanish speakers. When I was younger, I used to work in a warehouse where virtually all the other employees spoke only Spanish. Working there allowed me to practice my Spanish over a relatively extended period of time, but that time has long passed.",
+                              "I can speak and understand a lot of Spanish. I learned the language by purposefully watching a lot of Spanish-language television as a teenager. Long ago, I also worked in a warehouse where virtually all the other employees spoke Spanish exclusively.",
                         },
                         {
                            id: "skill-12",
                            skill: "PHP",
                            level: 5,
                            description:
-                              "My first several personal projects were coded in PHP. However, it has been a long while since I have used it.",
+                              "My first several personal projects were coded in PHP. It has, however, been a long time since I have used it.",
                         },
                         {
                            id: "skill-13",
                            skill: "Java",
-                           level: 3,
+                           level: 4,
                            description:
-                              "I have created an Android app using Java, but that was years ago. I have also used c++ in the past, so overall I have some experience with object-oriented programming.",
+                              "I created an Android app using Java, but that was years ago. I also have some experience in other object-oriented programming languages.",
                         },
                      ],
                   },
@@ -242,7 +217,7 @@ const sectionState = {
                            element: "p",
                            attr: [],
                            children: [
-                              "Select classes I took before transferring to university. The overall course grade I received is indicated on the left.",
+                              "Here are a few of the classes I took before transferring to university. The overall course grade I received for each is indicated on the left. I had a near-perfect GPA the last couple of years I was studying (despite my brutal living conditions at the time).",
                            ],
                         },
                         {
@@ -286,14 +261,7 @@ const sectionState = {
                               {
                                  element: "li",
                                  attr: [],
-                                 children: ["A | Programming in C++"],
-                              },
-                              {
-                                 element: "li",
-                                 attr: [],
-                                 children: [
-                                    "A | General Chemistry (I) w/ Lab",
-                                 ],
+                                 children: ["A | General Chemistry (I) w/ Lab"],
                               },
                               {
                                  element: "li",
@@ -331,7 +299,13 @@ const sectionState = {
                         {
                            element: "p",
                            children: [
-                              "A few of the upper-division economics courses I completed at UCSB before my withdrawal.",
+                              "I studied economics at UCSB and had virtually everything paid for by the state and the university, but I withdrew a couple quarters short of graduation due to a lifetime of untreated health problems. I had health insurance for the first time in my life through the university, so I was able to access much-needed services. I would love to discuss my history further if you have any questions.",
+                           ],
+                        },
+                        {
+                           element: "p",
+                           children: [
+                              "Here are a few of the upper-division courses I completed at UCSB before my withdrawal.",
                            ],
                         },
                         {
@@ -471,14 +445,14 @@ const sectionState = {
                         {
                            element: "p",
                            children: [
-                              "Every bit of this world fascinates me. I have an insatiable appetite for information and I voraciously consume it every hour of the day.",
+                              "I am eternally fascinated and in love with the world around me. I have an insatiable appetite for information and consume it every hour of the day.",
                            ],
                         },
 
                         {
                            element: "p",
                            children: [
-                              "Although my interests are infinitely broad, here is a less-than-infinite list of my most passionate interests:",
+                              "Although my interests are infinitely broad, my most passionate interests include:",
                            ],
                         },
 
@@ -487,17 +461,15 @@ const sectionState = {
                            children: [
                               {
                                  element: "li",
-                                 children: ["Technology, naturally"],
+                                 children: ["Technology"],
                               },
                               {
                                  element: "li",
-                                 children: [
-                                    "Finance, capitalism and the global markets.",
-                                 ],
+                                 children: ["Finance"],
                               },
                               {
                                  element: "li",
-                                 children: ["Economics and economic data"],
+                                 children: ["Economics"],
                               },
                               {
                                  element: "li",
@@ -505,27 +477,16 @@ const sectionState = {
                               },
                               {
                                  element: "li",
-                                 children: [
-                                    "Journalism (I've been obsessed with NY Times coverage for years)",
-                                 ],
+                                 children: ["Journalism"],
                               },
                               {
                                  element: "li",
-                                 children: [
-                                    "Politics, both domestic and international",
-                                 ],
+                                 children: ["Politics"],
                               },
                               {
                                  element: "li",
-                                 children: ["Human cultures and languages"],
+                                 children: ["Languages"],
                               },
-                           ],
-                        },
-
-                        {
-                           element: "p",
-                           children: [
-                              "My personal interests may or may not be relevant to my candidacy, but I include them here just in case this information proves valuable.",
                            ],
                         },
                      ],
@@ -537,11 +498,29 @@ const sectionState = {
                            element: "h3",
                            children: ["Recent Books"],
                         },
+                        {
+                           element: "p",
+                           children: [
+                              "As an adult, I've read hundreds of books on topics spanning my various interests. Most recently, I have read:",
+                           ],
+                        },
                      ],
                   },
                   {
                      type: "books",
                      data: [
+                        {
+                           title: "Antitrust",
+                           author: "Amy Klobuchar",
+                        },
+                        {
+                           title: "The Price of Peace",
+                           author: "Zachary D. Carter",
+                        },
+                        {
+                           title: "Why We're Polarized",
+                           author: "Ezra Klein",
+                        },
                         {
                            title: "Israel",
                            author: "Noa Tishby",
@@ -571,24 +550,12 @@ const sectionState = {
                            author: "Yuval Noah Harari",
                         },
                         {
-                           title: "Antitrust",
-                           author: "Amy Klobuchar",
-                        },
-                        {
                            title: "A People's History of the United States",
                            author: "Howard Zinn",
                         },
                         {
                            title: "How to Avoid a Climate Disaster",
                            author: "Bill Gates",
-                        },
-                        {
-                           title: "The Price of Peace",
-                           author: "Zachary D. Carter",
-                        },
-                        {
-                           title: "Why We're Polarized",
-                           author: "Ezra Klein",
                         },
                      ],
                   },
@@ -600,6 +567,12 @@ const sectionState = {
                            children: ["Podcasts"],
                         },
                         {
+                           element: "p",
+                           children: [
+                              "I listen to podcasts several hours a day as I clean, drive, cook, etc.",
+                           ],
+                        },
+                        {
                            element: "ul",
                            children: [
                               {
@@ -607,10 +580,10 @@ const sectionState = {
                                  children: ["Pod Save the World"],
                               },
                               { element: "li", children: ["Pod Save America"] },
-                              { element: "li", children: ["Sway"] },
+                              { element: "li", children: ["Sway (NYT)"] },
                               {
                                  element: "li",
-                                 children: ["The Ezra Klein Show"],
+                                 children: ["The Ezra Klein Show (NYT)"],
                               },
                               { element: "li", children: ["The Weeds (Vox)"] },
                               {
@@ -622,10 +595,6 @@ const sectionState = {
                                  children: [
                                     "Checks and Balance (The Economist)",
                                  ],
-                              },
-                              {
-                                 element: "li",
-                                 children: ["Wait Wait... Don't Tell Me (NPR)"],
                               },
                               {
                                  element: "li",
@@ -645,14 +614,14 @@ const sectionState = {
                         {
                            element: "p",
                            children: [
-                              "As a child, I had always dreamed of going far, far away to escape my environment, and I managed to do so on occasion, whether or not I really had the means to do so. My solo explorations at home and abroad have had a profoundly positive impact on my growth as a person after I left university.",
+                              "As a child, I had always dreamed of going far, far away to escape my environment, and I managed to do so on occasion, whether or not I really had the means to do so. My explorations here and abroad (and all the wonderful people I have met) have had a profoundly positive impact on my growth as a person.",
                            ],
                         },
 
                         {
                            element: "p",
                            children: [
-                              "A few of the countries I have thus far been fortunate to explore include:",
+                              "A few of the countries I have thus far been fortunate to [budget] explore include:",
                            ],
                         },
 
@@ -694,19 +663,19 @@ const sectionState = {
                         {
                            element: "p",
                            children: [
-                              "My life's endeavor to educate myself has been fraught but unceasing. Owing to a largely chaotic childhood, my life has been decidedly nontraditional, especially when it came to education. I was expelled from 7th grade, dropped out permanently in 9th grade — but ultimately got into community college.",
+                              "Owing to a largely chaotic childhood, my education has been very nontraditional. ",
                            ],
                         },
                         {
                            element: "p",
                            children: [
-                              "By the time I got accepted to university, my mind had essentially melted from a lifetime of sickening stress and anxiety. I had health insurance and decent medical care for the first time in my life through the university, but world-class health insurance was not enough to erase two decades of insecurity. I withdrew — in good standing — from the university shortly before graduating in order to work on myself full-time.",
+                              "I had very little guidance as a child. I began drinking hard liquor at age 9, lived with adult friends at age 12 and 13, was expelled from 7th grade, and dropped out of high school in 9th grade. After many horrible years, and with insane effort, I managed to get into community college and go to university. But tragically, I never took a moment to heal from it all (nor did I have the ability to do so before university).",
                            ],
                         },
                         {
                            element: "p",
                            children: [
-                              "I've lived in my car in the past and have gone almost my entire life without a bed, but my optimism for the future has been unrelenting. A bright-eyed vision for the future is how I stay alive.",
+                              "Much of my life was difficult and extremely insecure, but my hope for the future never relented. I have lived in my car and gone almost my entire life without a bed, but my goals have always kept me moving forward. Things are better today than ever before, and I am eager for what comes next.",
                            ],
                         },
                      ],
@@ -732,6 +701,7 @@ const sectionState = {
                               {
                                  small: aphoto1,
                                  large: aphoto1,
+                                 subtitle: "Logo I put together at the time.",
                               },
                            ],
                            description: [
@@ -739,42 +709,35 @@ const sectionState = {
                                  element: "p",
                                  attr: [],
                                  children: [
-                                    "Let's Ask Bobby was a social networking site I developed as a teen. An avid MySpace user, this was my attempt to improve upon what I perceived to be the many shortcomings of MySpace. Like MySpace, Let's Ask Bobby had core user functionalities like a login system, profile area, and sections for uploading photos and albums.",
+                                    "Let's Ask Bobby was a social networking site I developed as a teen (my name used to be Bobby, legally changed to Michael as a teen). An avid MySpace user, this was my attempt at improving what I perceived to be the many shortcomings of the platform. Like MySpace, Let's Ask Bobby had core user functionalities like a login system, profile area, and sections for uploading photos and albums.",
                                  ],
                               },
                               {
                                  element: "p",
                                  attr: [],
                                  children: [
-                                    "The project comes from my former name. I used to be called Bobby until I changed it legally as a teen.",
+                                    "The biggest improvement I made over MySpace was the ability to send messages and perform certain functions without needing to refresh the page (using AJAX).",
                                  ],
                               },
                               {
                                  element: "p",
                                  attr: [],
                                  children: [
-                                    "The biggest improvement I made over MySpace was the ability to send messages and perform certain functions without the need to refresh the page (using AJAX).",
+                                    "I learned HTML and CSS by staring at MySpace code for hours, but I quickly learned the limits of using only client-side technologies. I learned JavaScript but also PHP, XML, JSON, AJAX, and SQL, among others.",
                                  ],
                               },
                               {
                                  element: "p",
                                  attr: [],
                                  children: [
-                                    "I learned HTML and CSS by staring at MySpace code for hours, but I quickly learned the limits of only using client-side technologies. For this project, I learned JavaScript, PHP, XML, AJAX, and SQL.",
+                                    "I coded everything using the Notepad app on Windows. I remember often having to count through thousands of lines of code in different files just to locate bugs (since the editor had no line numbers). It was painfully inefficient. I didn't know better.",
                                  ],
                               },
                               {
                                  element: "p",
                                  attr: [],
                                  children: [
-                                    "I coded everything using the Notepad app on Windows. I remember often having to count through thousands of lines of code in different files just to locate bugs (since the editor had no line numbers). It was painfully inefficient.",
-                                 ],
-                              },
-                              {
-                                 element: "p",
-                                 attr: [],
-                                 children: [
-                                    "I never took any screenshots of this project, but I found the comically dated logo among the files.",
+                                    "I never took any screenshots of this project, but I found my comically dated logo among the site files I still have.",
                                  ],
                               },
                            ],
@@ -791,13 +754,13 @@ const sectionState = {
                      data: [
                         {
                            title: "Collabolist",
-                           period: "Aug 2012 to Feb 2013; Feb 2015 to Jan 2016",
+                           period: "Aug 2012 to Feb 2013",
                            tech: "HTML, CSS, JavaScript, PHP, SQL, MySQL, AJAX, XML, Apache",
                            images: [
                               {
                                  small: cphoto5,
                                  large: cphoto5Big,
-                                 subtitle: "Add new row (dummy data)",
+                                 subtitle: "Add new row",
                               },
                               {
                                  small: cphoto4,
@@ -830,25 +793,25 @@ const sectionState = {
                               {
                                  element: "p",
                                  children: [
-                                    "At the time, I worked at a company called TransPerfect where I helped set up computers, essentially. We frequently used unwieldy Excel files for managing passwords, and these files usually took several minutes to sync and load. I was once again witness to the inefficiency of Excel spreadsheets. Collabolist was my attempt at a solution.",
+                                    "I worked at a company called TransPerfect where I essentially helped set up computers for employees. We frequently used unwieldy Excel files for managing passwords, and these files usually took several minutes to sync and load. I was once again witness to the inefficiency of Excel spreadsheets for some applications, and Collabolist was my attempt at a solution.",
                                  ],
                               },
                               {
                                  element: "p",
                                  children: [
-                                    "I worked on Collabolist every hour I was not at work. I had just recently finished work on Geller Portal, so programming was still fresh in my mind. As with my previous projects, I used AJAX extensively to enable functionality without the need to refresh the browser page.",
+                                    "I worked on Collabolist every hour I was not at work. Having recently worked on Geller Portal, I still had programming fresh in my mind. As with my previous projects, I used AJAX extensively to enable functionality without the need to refresh the browser page.",
                                  ],
                               },
                               {
                                  element: "p",
                                  children: [
-                                    "The photos do not reflect the final product, but I cannot locate other, more recent screenshots.",
+                                    "The photos do not reflect the final product, but I cannot locate more recent screenshots.",
                                  ],
                               },
                               {
                                  element: "p",
                                  children: [
-                                    'Note: The images have the plural "Collabolists" since I ultimately changed the name due to the singular already being reserved. I preferred the singular, however.',
+                                    'Note: The images have the plural "Collabolists" since I changed the name at the last minute due to my preferred domain already being reserved.',
                                  ],
                               },
                            ],
@@ -907,31 +870,25 @@ const sectionState = {
                               {
                                  element: "p",
                                  children: [
-                                    "Geller Portal was a system I created for my then employer Geller International. Originally hired to perform basic tasks such as driving and delivering things, I was passively witness to their many inefficient in-office processes.",
+                                    "Geller Portal was a system I created for my employer at the time, Geller International. Originally hired to perform basic tasks such as driving and delivering things, I was passively witness to their many inefficient in-office processes.",
                                  ],
                               },
                               {
                                  element: "p",
                                  children: [
-                                    "Determined to help them better organize the company's data, as well as help them streamline the creation of purchase orders, invoices, reports, and statistics, I took it upon myself to develop for them a system that could help tame the chaos.",
+                                    "Determined to help the company better organize its data and streamline the creation of documents, I took it upon myself to develop for them a system to help tame the chaos.",
                                  ],
                               },
                               {
                                  element: "p",
                                  children: [
-                                    "I worked on Geller Portal at home after work every day for a couple of months before revealing the project to my boss. He was very pleased and quickly demanded its implementation and use.",
+                                    "I worked on Geller Portal at home after work every day for a couple of months before revealing the project to my boss. He was very pleased and quickly demanded its implementation and use (the company only had several employees, so this wasn't a radical change). I stored much of the company's data in a MySQL database and retrieved it using the Geller Portal as well as a few database-connected Excel templates I made to create pre-filled documents.",
                                  ],
                               },
                               {
                                  element: "p",
                                  children: [
-                                    "Building off the knowledge I had gained from working on Let's Ask Bobby years earlier, I once again used PHP, JavaScript, and SQL to create the system. I stored all the data in a MySQL database and retrieved it using the Geller Portal as well as Excel templates that I created to queue the database and create pre-filled documents.",
-                                 ],
-                              },
-                              {
-                                 element: "p",
-                                 children: [
-                                    "I remember enjoying this project very much, especially as it required working with a lot of numbers and data.",
+                                    "I built this system with the knowledge I gained from working on Let's Ask Bobby years earlier, using many of the same technologies.",
                                  ],
                               },
                            ],
@@ -954,49 +911,48 @@ const sectionState = {
                               {
                                  small: dphoto1,
                                  large: dphoto1Big,
-                                 subtitle: "",
+                                 subtitle: "Dialogue",
                               },
                               {
                                  small: dphoto2,
                                  large: dphoto2Big,
-                                 subtitle: "",
+                                 subtitle: "Bookmarks",
                               },
                               {
                                  small: dphoto3,
                                  large: dphoto3Big,
-                                 subtitle: "",
+                                 subtitle: "Title screen",
                               },
                               {
                                  small: dphoto4,
                                  large: dphoto4Big,
-                                 subtitle: "",
+                                 subtitle: "Another screen",
                               },
                               {
                                  small: dphoto5,
                                  large: dphoto5Big,
-                                 subtitle: "",
+                                 subtitle: "Main",
                               },
-                              { small: dphoto6, large: dphoto6, subtitle: "" },
+                              {
+                                 small: dphoto6,
+                                 large: dphoto6,
+                                 subtitle: "App logo",
+                              },
                            ],
                            description: [
                               {
                                  element: "p",
                                  children: [
-                                    "Year 2053 was a text-based choose-your-own-adventure-type text game complete with background sound effects and voice acting (myself doing all the voices). Every choice the app user makes in the game affects the story. It seemed like a fun-ish project to work on. This was my one and only foray into Android development.",
+                                    "Year 2053 was a satirical, dark-humor-laden, text-based choose-your-own-adventure-type game complete with background sound effects and voice acting (myself doing all the voices). Gameplay starts in year 2018, but was meant to eventually arrive at mid-21st-century America. Every choice the game player makes affects the story. This was my one and only foray into Android development.",
                                  ],
                               },
                               {
                                  element: "p",
                                  children: [
-                                    "There were so many challenging components to this project that I had to solve. I had to figure out how to program the evolving nature of the story, especially with the algorithmic diverging and intersecting of storylines. I programmed the game to dynamically and seamlessly connect over a hundred audio files in different orders and patterns depending on choices made in the past. I made huge online diagrams to help me connect all the pieces.",
+                                    "There were many interesting challenges to this project that I needed to solve. I had to program the evolving nature of the story, especially with the algorithmic diverging and intersecting of storylines. I programmed the game to dynamically and seamlessly connect over a hundred audio files in different orders and patterns depending on choices made in the past. I made huge flowcharts to help me connect all the pieces.",
                                  ],
                               },
-                              {
-                                 element: "p",
-                                 children: [
-                                    "One interesting challenge was developing the functions that enabled the audio and text to sync up perfectly.",
-                                 ],
-                              },
+
                               {
                                  element: "p",
                                  children: [
@@ -1031,9 +987,7 @@ const sectionState = {
                                     },
                                     {
                                        element: "li",
-                                       children: [
-                                          "I also learned how to create basic graphics",
-                                       ],
+                                       children: ["Creating basic graphics"],
                                     },
                                  ],
                               },
@@ -1060,20 +1014,6 @@ const sectionState = {
                            period: "Mar 2019 to Jun 2021",
                            tech: "WordPress, Elementor, PHP, CSS, HTML, Photoshop, Illustrator, Google Analytics",
                            images: [
-                              {
-                                 small: ephoto2,
-                                 large: ephoto2Big,
-                                 subtitle:
-                                    "Example of a cover image for one of my articles on one of my websites.",
-                              },
-
-                              {
-                                 small: ephoto3,
-                                 large: ephoto3Big,
-                                 subtitle:
-                                    "I compiled information for most common chemicals used in baby wipes for one of my websites.",
-                              },
-
                               {
                                  small: ephoto4,
                                  large: ephoto4Big,
@@ -1103,93 +1043,21 @@ const sectionState = {
                               {
                                  element: "p",
                                  children: [
-                                    "I discovered WordPress in 2019. I had heard of it before, but had not the slightest idea of what it was. Over a period of two years, I started about eight websites covering everything from finance to travel to parenting (even though I am not a parent myself.. it seemed like a fun project during lockdown).",
+                                    "This project was a little unusual. I discovered WordPress in 2019 and started about eight or nine websites covering everything from finance to travel. None of these websites are online anymore, but I still have backups for each.",
                                  ],
                               },
 
                               {
                                  element: "p",
                                  children: [
-                                    "Since I did everything myself (writing, designing, etc), I couldn't produce enough high-quality articles to garner sufficient web traffic.",
+                                    "Using WordPress was not the most fulfilling thing I'd ever done, but I learned a lot of useful information. I read countless books on marketing, time management, productivity, business management, and others. I learned how to create graphics, manage projects (my own), legal topics (copyrights, privacy, etc), basic web security, and web analytics, just to name a few. I gained a deep understanding of how the modern internet functions. I also learned how to take nice photos of cookies, which is of dubious usefulness in most domains of life.",
                                  ],
                               },
 
                               {
                                  element: "p",
                                  children: [
-                                    "None of these websites are online anymore, mostly because I couldn't afford the web hosting. I still have backups for each. Experimenting with WordPress was not super fulfilling, but I learned a lot of worthwhile information. I read countless books on marketing, time management, productivity, business management, and others. I also gained a deep understanding of the operations side of the modern internet.",
-                                 ],
-                              },
-
-                              {
-                                 element: "p",
-                                 children: [
-                                    "A few of the things I learned over the two years were:",
-                                 ],
-                              },
-
-                              {
-                                 element: "ul",
-                                 children: [
-                                    {
-                                       element: "li",
-                                       children: [
-                                          "Content writing and editing",
-                                       ],
-                                    },
-                                    {
-                                       element: "li",
-                                       children: [
-                                          "How to create decent web graphics using Adobe products",
-                                       ],
-                                    },
-                                    {
-                                       element: "li",
-                                       children: ["Basic project management"],
-                                    },
-                                    {
-                                       element: "li",
-                                       children: [
-                                          "How to organize large amounts of information",
-                                       ],
-                                    },
-                                    {
-                                       element: "li",
-                                       children: [
-                                          "Legal topics (e.g., copyrights, privacy)",
-                                       ],
-                                    },
-                                    {
-                                       element: "li",
-                                       children: [
-                                          "Web security (e.g., firewalls, Cloudflare, TLS)",
-                                       ],
-                                    },
-                                    { element: "li", children: ["UX/UI"] },
-                                    {
-                                       element: "li",
-                                       children: [
-                                          "Search engine optimization and marketing",
-                                       ],
-                                    },
-                                    {
-                                       element: "li",
-                                       children: ["Web analytics"],
-                                    },
-                                 ],
-                              },
-
-                              {
-                                 element: "p",
-                                 children: [
-                                    "My final WordPress project was Omaha Cookie Co., an online-only cookie shop specializing in premium cookies. I learned a lot about food chemistry and the like. I probably baked over a thousand cookies to test recipes, most of which I sent to my best friend by mail.",
-                                 ],
-                              },
-
-                              {
-                                 element: "p",
-                                 children: [
-                                    "For Omaha Cookie Co., I created an ingredient-management and costing system to perfectly account for per-cookie and per-product costs. I also made a nutrition facts system to generate accurate labels using my recipes.",
+                                    "My final WordPress project was Omaha Cookie Co., an online-only premium cookie shop. I moved to Nebraska when the novel coronavirus struck since Omaha had some of the cheapest apartment rents in the country. Since I had an oven (albeit very cheap one), I figured I would sell cookies. I learned a lot about food chemistry and baked over a thousand cookies to test recipes, most of which I sent to my best friend by mail. I created an ingredient-management and costing system to perfectly account for per-cookie and per-product costs. I also made a nutrition facts system to generate accurate labels using my recipes.",
                                  ],
                               },
                            ],
@@ -1247,7 +1115,7 @@ const sectionState = {
                         {
                            question: "Are you fully vaccinated?",
                            answer:
-                              "Yes, three (3) Modernas: two (2) Moderna standard doses + one (1) Moderna booster. My bloodstream is full of delicious antibodies.",
+                              "Yes, three (3) Modernas: two Moderna standard doses + one Moderna booster. My bloodstream is teeming with antibodies.",
                         },
                      ],
                   },
@@ -1278,71 +1146,16 @@ const sectionState = {
    },
 };
 
-/*
-
-            <div className="online-institutions animate__animated animate__fadeIn animate__faster">
-                <Institution name="Codecademy" city="Full-Stack Engineering Cert" logo={codecademyLogo} />
-                <Institution name="HackerRank" city="Algorithms 6/6" logo={hackerRankLogo} />
-            </div>
-            <div style={{marginTop:"40px"}}>
-                <p className="online-certs-links"><a href="https://www.codecademy.com/profiles/michaelPimentel9180632744/certificates/5f7e644d833c070013ef47c4" rel="noreferrer" target="_blank">Codecademy Cert</a></p>
-                <p className="online-certs-links"><a href="https://www.hackerrank.com/mikecpimentel" rel="noreferrer" target="_blank">HackerRank Profile</a></p>
-            </div>
-        </div>
-    )
-}
-< className="podcasts-wrapper">
-            <div className="podcasts">Pod Save the World</div>
-export const FAQ = () => {
-    return (
-        <>
-            <h3
-                className="section-header animate__animated animate__fadeIn animate__faster"
-                style={{ marginBottom: "50px" }}
-            >
-                FAQ section
-            </h3>
-            <div className="questions-wrapper">
-                <FAQBlock>
-                    <Question></Question>
-                    <Answer></Answer>
-                </FAQBlock>
-            </div>
-        </>
-    );
-};
-
-export const FAQBlock = (props) => {
-    return (
-        <div style={{marginBottom:"50px"}}>
-            {props.children}
-        </div>
-    )
-}
-
-const ExtraCredit = () => {
-    return (
-        <div className="extra-credit baseskills-info animate__animated animate__faster">
-            <SkillItem skillType="UI/UX" level="7"></SkillItem>
-
-            <div style={{backgroundColor:"#292f3655", padding:"5px", fontWeight:"200", marginTop:"30px", fontSize:"0.8em"}}>Click rows for more information</div>
-        </div>
-    )
-}
-export const SkillsIntro = () => {
-  return (
-    <div className="animate__animated quick-fade-in-up animate__faster intro-text-area">
-    
-    <Link to="base-skills" className="intro-button">View Current Skills</Link>
-    </div>
-  )
-}
-*/
 
 export const Section = (props) => {
    const sectionURL = props.url;
    const sectionName = props.name;
    const sectionPath = sectionState.bySection[sectionURL];
+   const { pathname } = useLocation();
+
+   useEffect(() => {
+      document.getElementById("section-bottom").scroll(0, 0);
+   }, [pathname]);
 
    return (
       <>
@@ -1352,7 +1165,7 @@ export const Section = (props) => {
             <div className="sub-section-links">
                {sectionPath.allPages.length > 1 ? (
                   <NavLink key={uuid()} to={`/${sectionURL}`} end>
-                     Intro
+                     {sectionPath.byPage[sectionPath.allPages[0]].title}
                   </NavLink>
                ) : null}
                {sectionPath.allPages.map((name) =>
@@ -1364,7 +1177,7 @@ export const Section = (props) => {
                )}
             </div>
          </div>
-         <div className="section-bottom">
+         <div id="section-bottom" className="section-bottom">
             <Outlet context={[sectionPath, sectionURL]} />
          </div>
       </>

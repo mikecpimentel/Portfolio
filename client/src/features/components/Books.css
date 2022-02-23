@@ -1,9 +1,10 @@
 div.books-wrapper {
    display: flex;
    flex-wrap: wrap;
-   max-width: var(--standard-width);
+   max-width: 750px;
    gap: 10px;
    margin-bottom: 20px;
+   margin-top: 20px;
 }
 div.books-wrapper div {
    padding: 5px 20px;

@@ -16,12 +16,11 @@ export const Welcome = () => {
             Hello 👋🏼 and Welcome. I am a..
          </p>
          <p className="welcome-2">Full-Stack Software Dev/Eng</p>
-         <p className="welcome-1">Thank you for visiting!</p>
          <p className="welcome-1">
-            Entry-level developer here, experienced with many of the latest
-            frontend and backend tools, including React, Redux, and Node.
+            I am an entry-level-ish developer experienced with the latest
+            frontend and backend tools, including React, Redux, Node, APIs and SQL.
          </p>
-         <p className="welcome-1">I am eager and ready to join your team.</p>
+         <p className="welcome-1">I am eager to join your team.</p>
          <Link
             to="/skills"
             className="intro-button"

@@ -34,8 +34,8 @@ const Project = (props) => {
          </div>
          {imageArray
             ? imageArray.map((photo, index) => (
-                 <div className="image-div">
-                    <img key={uuid()} src={photo.large} alt={photo.subtitle} />
+                 <div key={uuid()} className="image-div">
+                    <img src={photo.large} alt={photo.subtitle} />
                     <p className="caption">{photo.subtitle}</p>
                  </div>
               ))

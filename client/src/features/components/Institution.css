@@ -1,34 +1,4 @@
-div.online-institutions {
-   display: flex;
-   max-width: var(--standard-width);
-}
-div.online-institutions .floating-white-institution {
-   margin-right: 15px;
-}
-div.floating-white {
-   background-color: #fff;
-   padding: 30px;
-   font-size: 1.25em;
-   line-height: 1.5;
-   box-shadow: -8px -8px 0 0px var(--blue-accent);
-   margin-top: 10px;
-   margin-left: 10px;
-   margin-top: 30px;
-   transition: 300ms;
-   overflow: hidden;
-}
-
-div.floating-white-institution,
-div.floating-white-education {
-   background-color: #fff;
-   box-shadow: 0px 0px 10px 0px #000;
-   font-size: 1em;
-   margin-top: 3px;
-
-   opacity: 0.9;
-}
-
-div.floating-white-institution {
+.institution-list > div {
    flex: 1 1 190px;
    min-width: 160px;
    max-width: 260px;
@@ -36,33 +6,44 @@ div.floating-white-institution {
    margin-right: 0px;
    display: flex;
    justify-content: space-between;
-   height: 120px;
+   height: 90px;
    position: relative;
-}
-div.floating-white-education {
-   padding: 10px 25px;
-   color: #000;
-   font-weight: 300;
-   line-height: 1.5;
-   margin-top: 30px;
-   transition: 300ms;
-   overflow: hidden;
+   border-radius: 10px;
+   background-color: #fff;
+   box-shadow: 0px 0px 10px 0px #000;
+   font-size: 1em;
+   margin-top: 3px;
+   opacity: 0.9;
 }
 
 .institution-list {
    display: flex;
-   gap: 20px;
+   max-width: 750px;
+   gap: 15px;
+}
+.institution div .name {
+   color: #000;
+   padding: bottom 0;
+   margin-bottom: 0;
+   font-size: 0.8em;
+   font-weight: 500;
+}
+.institution div .subtitle {
+   color: #0008;
+   font-size: 0.8em;
+   margin-top: 0px;
+   font-weight: 200;
 }
 .education-wrapper {
-   padding: 20px 40px;
+   padding: 10px 40px;
 }
 .education-wrapper .description-outer {
-   max-width: 850px;
+   max-width: 750px;
    padding-top: 10px;
    font-weight: 400;
-   line-height: 2;
+   line-height: 1.66;
    font-size: 0.8em;
-   color: #ddd;
+   color: #fffc;
 }
 .education-wrapper .description-outer p {
    margin-bottom: 20px;
@@ -78,11 +59,12 @@ div.floating-white-education {
 
 .education-wrapper .description-outer h3 {
    margin: 0;
-   margin-bottom: 10px;
+   margin-bottom: 15px;
    border-bottom: 1px solid #fffc;
    color: #fffe;
    padding-bottom: 5px;
    font-weight: 500;
+   padding-top: 10px;
 }
 .education-wrapper .description-outer ul {
    display: flex;
@@ -91,6 +73,7 @@ div.floating-white-education {
    padding: 0;
    margin: 0;
    margin-bottom: 20px;
+   margin-top: 20px;
 }
 .education-wrapper .description-outer ul li {
    list-style-type: none;

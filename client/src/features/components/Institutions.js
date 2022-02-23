@@ -20,25 +20,15 @@ export const Institutions = (props) => {
 
 const Institution = (props) => {
    return (
-      <div className="floating-white-institution">
+      <div className="institution">
          <div style={{ paddingLeft: "10px", zIndex: "5" }}>
             <p
-               style={{
-                  color: "#000",
-                  paddingBottom: "0",
-                  marginBottom: "0",
-                  fontWeight: "400",
-               }}
+               className="name"
             >
                {props.name}
             </p>
             <p
-               style={{
-                  color: "#000",
-                  fontSize: "0.8em",
-                  marginTop: "2px",
-                  fontWeight: "200",
-               }}
+               className="subtitle"
             >
                {props.subheading}
             </p>

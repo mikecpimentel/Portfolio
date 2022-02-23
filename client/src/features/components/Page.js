@@ -14,7 +14,6 @@ export const Page = (props) => {
    const currentSectionState = outletContext[0];
    const sectionURL = outletContext[1];
    const whichPage = useParams();
-   console.log(whichPage.which);
    let pageState;
 
    if (whichPage.which) {
@@ -24,10 +23,10 @@ export const Page = (props) => {
    }
 
    return (
-      <div className={`${sectionURL}-wrapper`}>
+      <div key={uuid()} className={`${sectionURL}-wrapper`}>
          {pageState.content.map((item) =>
             item.type === "description" ? (
-               <div className="description-outer">
+               <div key={uuid()} className="description-outer">
                   <Description key={uuid()} data={item.data} />
                </div>
             ) : item.type === "skills" ? (
