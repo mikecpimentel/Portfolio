@@ -54,7 +54,7 @@ div.floating-white-project p {
    flex-shrink: 1;
    gap: 30px;
    /* padding: 40px 0 60px 40px; */
-   padding: 40px 0px 40px 0px;
+   padding: 30px 0px 40px 0px;
    box-sizing: border-box;
    overflow-x: auto;
    margin-left: 30px;
@@ -63,6 +63,7 @@ div.floating-white-project p {
    /* box-shadow: inset 0 0 20px 0 #0003; */
    background-color: var(--background-dark);
 }
+
 /*
 .past-projects-wrapper {
    scrollbar-width: thin;
@@ -118,4 +119,31 @@ div.floating-white-project p {
    max-width: 650px;
    line-height: 1.66;
    color: #ddd;
+}
+@media only screen and (max-width: 900px) {
+   .past-projects-wrapper {
+      flex-direction: column;
+      overflow-y: scroll;
+   }
+   .past-projects-wrapper div.image-div {
+      height: fit-content;
+   }
+}
+
+@media only screen and (max-width: 900px) {
+   .project-text-area {
+      min-width: 0;
+      max-width: none;
+      margin-right: 0;
+      border-radius: 5px;
+      height: unset;
+   }
+   .past-projects-wrapper {
+      margin: 0;
+      overflow-x: hidden;
+   }
+   .past-projects-wrapper div img {
+      width: 100%;
+      display: inline-block;
+   }
 }

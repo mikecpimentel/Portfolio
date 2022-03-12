@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Page } from "./features/components/Page";
 import { Welcome } from "./features/sections/Welcome";
 import { Section } from "./features/components/Section";
+import { Sandbox } from "./features/sections/Sandbox";
 import { v4 as uuid } from "uuid";
 
 // only query the sections
@@ -25,8 +26,14 @@ const portfolioState = {
          name: "FAQ",
          section_url: "faq",
       },
+      {
+         name: "Sandbox",
+         section_url: "sandbox",
+      },
    ],
 };
+
+// &#x27F6;&#x27F6;&#x27F6;
 
 function App() {
    return (
@@ -43,7 +50,7 @@ function App() {
                      <NavLink key={uuid()} to={`/${section.section_url}`}>
                         {({ isActive }) =>
                            isActive ? (
-                              <li>&#x27F6;&#x27F6;&#x27F6;</li>
+                              <li>{section.name}</li>
                            ) : (
                               <li>{section.name}</li>
                            )

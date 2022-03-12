@@ -5,7 +5,7 @@ ul.vertical-nav {
 ul.vertical-nav a {
    color: #fff;
    list-style-type: none;
-   font-weight: 300;
+
    font-size: var(--text-size-2);
    text-decoration: none;
    transition: color 300ms;
@@ -15,27 +15,44 @@ ul.vertical-nav a:hover {
    transition: 300ms;
 }
 ul.vertical-nav a.active:hover {
-   color: #fff;
 }
 ul.vertical-nav a.active {
-   font-size: 32px;
-   line-height: 0;
-   letter-spacing: 0em;
-   transition: font-size 300ms;
+   color: var(--blue-accent);
 }
 ul.vertical-nav a.active li {
-   padding: 30px 10px;
+   background-color: var(--blue-accent);
+   color: #000;
+   font-weight: 500;
 }
 ul.vertical-nav a li {
-   padding: 14px 10px;
+   padding: 14px 30px;
    border-bottom: 1px solid #fff1;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
+   ul.vertical-nav {
+      display: flex;
+      background-color: #fff1;
+   }
    ul.vertical-nav a {
       font-size: 1em;
+      flex-grow: 1;
+   }
+   ul.vertical-nav a.active:hover {
+      color: #000;
    }
    ul.vertical-nav a.active {
-      font-size: 20px;
+      color: #000;
+      font-weight: 500;
+   }
+   ul.vertical-nav a.active li {
+      background-color: var(--blue-accent);
+   }
+   ul.vertical-nav a li {
+      display: inline-block;
+      padding: 10px 10px;
+      width: 100%;
+      text-align: center;
+      border-bottom: none;
    }
 }

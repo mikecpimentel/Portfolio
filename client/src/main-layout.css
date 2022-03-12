@@ -8,7 +8,7 @@
 }
 .welcome-wrapper {
    margin-top: 40px;
-   padding-right: 20px;
+   padding-right: 10px;
    padding-left: 40px;
    line-height: 1.5;
    max-width: 700px;
@@ -52,8 +52,6 @@ header a {
 
 header {
    border-bottom: 1px solid #fff;
-   margin-right: 20px;
-   margin-left: 20px;
 }
 
 main {
@@ -61,6 +59,11 @@ main {
    flex-direction: row;
    flex-grow: 1;
    flex-shrink: 1;
+}
+@media only screen and (max-width: 900px) {
+   main {
+      flex-direction: column;
+   }
 }
 .main-content-area {
    display: flex;
@@ -79,7 +82,7 @@ main {
 .nav-list {
    flex-basis: 240px;
    min-width: 120px;
-   padding-left: 20px;
+
    border-right: 1px solid #fff1;
    flex-shrink: 2;
    display: flex;
@@ -89,4 +92,19 @@ main {
 
 .education-bottom {
    max-width: 850px;
+}
+
+@media only screen and (max-width: 900px) {
+   header {
+      border-bottom:none;
+   }
+   .nav-list {
+      flex-basis: 0;
+   }
+   .main-content-area {
+      padding-left: 10px;
+   }
+   .welcome-wrapper {
+      padding-left:10px;
+   }
 }

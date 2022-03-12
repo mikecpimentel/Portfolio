@@ -1,5 +1,5 @@
 .skills-wrapper {
-   padding: 40px 30px 20px 40px;
+   padding: 30px 30px 20px 30px;
    column-count: 2;
    column-fill: auto;
    column-gap: 30px;
@@ -13,7 +13,15 @@
       column-count: auto;
    }
 }
+.level-fraction {
+   color: #fff5;
+   font-size: 0.8em;
+   padding-left: 10px;
+}
 
+.skill-outer-outer {
+   padding: 8px 0 0 0;
+}
 .skill-div {
    display: flex;
    align-items: center;
@@ -97,7 +105,7 @@ span.skill {
    min-width: 110px;
    padding-right: 20px;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
    span.skill {
       font-size: 1em;
    }
@@ -117,10 +125,10 @@ span.fillerBlock {
    display: inline-block;
    line-height: 1;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
    span.levelBlock,
    span.fillerBlock {
-      font-size: 1.953em;
+      font-size: 1.563em;
    }
 }
 span.levelBlock {
@@ -149,4 +157,33 @@ span.levelBlock-open {
 .skills-wrapper .description-outer p {
    margin-top: 0;
    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+   .skills-wrapper {
+      padding: 0;
+      /* display: flex;
+      flex-direction: column; */
+      padding: 5px;
+   }
+   .level-fraction {
+      display: none;
+   }
+   .skill-info-button {
+      display: none;
+   }
+   .skill-div-outer {
+      max-width: none;
+   }
+   .skill-div-outer-open {
+      width: fit-content;
+   }
+   .skills-wrapper .description-outer {
+      width: fit-content;
+      padding: 10px 15px;
+      margin-bottom: 5px;
+   }
+   .skills-wrapper .description-outer p:last-child {
+      margin-bottom: 0;
+   }
 }

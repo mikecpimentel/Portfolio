@@ -1,24 +1,12 @@
-h3.section-header {
-   color: var(--blue-accent);
-   font-size: 1.25em;
-   padding-right: 40px;
-   margin-top: 10px;
-   margin-bottom: 9px;
-   vertical-align: middle;
-   transition: 300ms;
-   font-weight: 500;
-   display: inline-block;
-   white-space: nowrap;
-}
 div.section-top {
-   border-bottom: 1px solid #fff1;
-   padding: 12px 10px 8px 30px;
+   border-bottom: 1px dashed #fff5;
    display: flex;
 }
 div.sub-section-links {
-   padding: 0px 0;
+   padding: 15px 10px 10px 25px;
    gap: 10px;
    display: flex;
+   width: 100%;
 }
 
 div.sub-section-links a {
@@ -27,10 +15,11 @@ div.sub-section-links a {
    font-weight: 400;
    text-align: center;
    flex-shrink: 1;
-   flex-basis: 0;
+   flex-basis: 50px;
    flex-grow: 1;
+   max-width: 135px;
    white-space: nowrap;
-   padding: 10px 20px;
+   padding: 10px 15px;
    height: fit-content;
    /* flex: 0 1 fit-content; */
    /* box-shadow: 0px 0px 4px 0 var(--blue-accent);*/
@@ -39,7 +28,7 @@ div.sub-section-links a {
    border-radius: 4px;
    transition: background-color 300ms;
    /*    background-color: #ffffff05; */
-   color: #fffa;
+   color: #fff;
 }
 div.sub-section-links a.active {
    color: var(--lightest-text);
@@ -70,4 +59,26 @@ div.sub-section-links a:not(.active):hover {
    display: flex;
    flex-direction: column;
    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+   div.section-top {
+      display: block;
+      /* padding: 5px 10px 8px 10px; */
+      padding: 0;
+   }
+   h3.section-header {
+      display: none;
+   }
+   .section-bottom {
+      padding-right: 0px;
+      padding-left: 0;
+   }
+   div.sub-section-links {
+      padding: 0px 0px 0px 0;
+      flex-wrap: wrap;
+      row-gap: 10px;
+   }
+   div.sub-section-links a {
+   }
 }

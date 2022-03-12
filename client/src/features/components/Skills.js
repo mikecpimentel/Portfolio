@@ -52,7 +52,7 @@ const SkillItem = (props) => {
    }
 
    return (
-      <div key={uuid()} style={{ padding: "8px 0 0 0" }}>
+      <div key={uuid()} className="skill-outer-outer">
          <div
             onClick={() => toggle(skillId)}
             className={
@@ -87,13 +87,7 @@ const SkillItem = (props) => {
                      {filler}
                   </span>
                </span>
-               <span
-                  style={{
-                     color: "#fff5",
-                     fontSize: "0.8em",
-                     paddingLeft: "10px",
-                  }}
-               >
+               <span className="level-fraction">
                   {props.level}/10
                </span>
                <span

@@ -35,8 +35,9 @@
    font-weight: 200;
 }
 .education-wrapper {
-   padding: 10px 40px;
+   padding: 10px 30px;
 }
+
 .education-wrapper .description-outer {
    max-width: 750px;
    padding-top: 10px;
@@ -83,4 +84,13 @@
    border-radius: 5px;
    display: inline-block;
    padding: 5px 15px;
+}
+
+@media only screen and (max-width: 900px) {
+   .education-wrapper {
+      padding: 0px;
+   }
+   .institution-list {
+      flex-wrap: wrap;
+   }
 }

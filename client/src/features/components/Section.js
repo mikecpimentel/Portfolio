@@ -36,10 +36,6 @@ import dphoto4Big from "../../images/year-2053/Screenshot_2017-12-24-04-59-07-57
 import dphoto5 from "../../images/year-2053/Year-2053-Screenshot-1-169x300.png";
 import dphoto5Big from "../../images/year-2053/Year-2053-Screenshot-1-576x1024.png";
 import dphoto6 from "../../images/year-2053/Year-2053-Logo-Revised-2-300x300.png";
-import ephoto2 from "../../images/wordpress/how-to-learn-a-language-300x169.png";
-import ephoto2Big from "../../images/wordpress/how-to-learn-a-language-768x432.png";
-import ephoto3 from "../../images/wordpress/Screenshot-2021-06-24-145705-289x300.png";
-import ephoto3Big from "../../images/wordpress/Screenshot-2021-06-24-145705-768x797.png";
 import ephoto4 from "../../images/wordpress/Screenshot-2021-06-25-152251-300x256.png";
 import ephoto4Big from "../../images/wordpress/Screenshot-2021-06-25-152251-768x656.png";
 import ephoto5 from "../../images/wordpress/Screenshot-2021-06-25-152304-300x161.png";
@@ -1146,7 +1142,6 @@ const sectionState = {
    },
 };
 
-
 export const Section = (props) => {
    const sectionURL = props.url;
    const sectionName = props.name;
@@ -1159,24 +1154,24 @@ export const Section = (props) => {
 
    return (
       <>
-         <div className="section-top">
-            <h3 className="section-header">{sectionName}</h3>
-
-            <div className="sub-section-links">
-               {sectionPath.allPages.length > 1 ? (
-                  <NavLink key={uuid()} to={`/${sectionURL}`} end>
-                     {sectionPath.byPage[sectionPath.allPages[0]].title}
-                  </NavLink>
-               ) : null}
-               {sectionPath.allPages.map((name) =>
-                  name !== "index" ? (
-                     <NavLink key={uuid()} to={`/${sectionURL}/${name}`}>
-                        {sectionPath.byPage[name].title}
+         {sectionPath.allPages.length > 1 ? (
+            <div className="section-top">
+               <div className="sub-section-links">
+                  {sectionPath.allPages.length > 1 ? (
+                     <NavLink key={uuid()} to={`/${sectionURL}`} end>
+                        {sectionPath.byPage[sectionPath.allPages[0]].title}
                      </NavLink>
-                  ) : null
-               )}
+                  ) : null}
+                  {sectionPath.allPages.map((name) =>
+                     name !== "index" ? (
+                        <NavLink key={uuid()} to={`/${sectionURL}/${name}`}>
+                           {sectionPath.byPage[name].title}
+                        </NavLink>
+                     ) : null
+                  )}
+               </div>
             </div>
-         </div>
+         ) : null}
          <div id="section-bottom" className="section-bottom">
             <Outlet context={[sectionPath, sectionURL]} />
          </div>
