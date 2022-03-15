@@ -65,7 +65,7 @@ const sectionState = {
                         {
                            element: "p",
                            children: [
-                              "Here are some of the technologies I am experienced with, including my subjective skill level in each. I am a very quick learner, so this list is subject to frequent expansion.",
+                              "Here are some of the technologies I am experienced with. As I spend a lot of time studying, this list is subject to frequent expansion and updating.",
                            ],
                         },
                         {
@@ -74,7 +74,92 @@ const sectionState = {
                         },
                         {
                            element: "p",
-                           children: ["Values current as of Feb. 23, 2022"],
+                           children: ["Values current as of March 14, 2022"],
+                        },
+                        {
+                           element: "ul",
+                           children: [
+                              {
+                                 element: "li",
+                                 children: [
+                                    {
+                                       element: "span",
+                                       attr: [
+                                          {
+                                             name: "className",
+                                             value: "skill-5",
+                                          },
+                                       ],
+                                       children: ["▀ ▀ ▀ ▀ ▀"],
+                                    },
+                                    "Advanced Proficiency",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 children: [
+                                    {
+                                       element: "span",
+                                       attr: [
+                                          {
+                                             name: "className",
+                                             value: "skill-4",
+                                          },
+                                       ],
+                                       children: ["▀ ▀ ▀ ▀"],
+                                    },
+                                    "Decent Proficiency",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 children: [
+                                    {
+                                       element: "span",
+                                       attr: [
+                                          {
+                                             name: "className",
+                                             value: "skill-3",
+                                          },
+                                       ],
+                                       children: ["▀ ▀ ▀"],
+                                    },
+                                    "Functional Proficiency",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 children: [
+                                    {
+                                       element: "span",
+                                       attr: [
+                                          {
+                                             name: "className",
+                                             value: "skill-2",
+                                          },
+                                       ],
+                                       children: ["▀ ▀"],
+                                    },
+                                    "Some Knowledge and Experience",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 children: [
+                                    {
+                                       element: "span",
+                                       attr: [
+                                          {
+                                             name: "className",
+                                             value: "skill-1",
+                                          },
+                                       ],
+                                       children: ["▀"],
+                                    },
+                                    "Minimal Knowledge (recently begun learning)",
+                                 ],
+                              },
+                           ],
                         },
                      ],
                   },
@@ -84,86 +169,190 @@ const sectionState = {
                         {
                            id: "skill-1",
                            skill: "HTML/CSS",
-                           level: 9,
+                           level: 5,
                            description:
                               "Extensive experience using HTML and CSS, including many advanced concepts. I coded this portfolio site by hand, as I do with all my projects.",
                         },
                         {
                            id: "skill-2",
                            skill: "React",
-                           level: 6,
+                           level: 3,
                            description:
                               "I am relatively new with React (around 8 months) but I feel fairly confident in my ability to do just about anything with the technology. I created this site using React and am working on other React projects on the side. I know the latest features and many common libraries.",
                         },
                         {
                            id: "skill-3",
                            skill: "Redux",
-                           level: 5,
+                           level: 2,
                            description:
                               "Like with React, I started using Redux somewhat recently. I am confident in my ability to manage complex application state with Redux, but I am still a few months away from complete mastery. I know how to use many of its modern features including the Redux Toolkit and RT Query.",
                         },
                         {
                            id: "skill-4",
                            skill: "JavaScript",
-                           level: 8,
+                           level: 4,
                            description:
-                              "I have extensive knowledge of JavaScript, from many of its most modern features to some of its older, now-obsolete features (useful for understanding legacy code). My recent use of JavaScript has centered much around Node development.",
+                              "I have extensive knowledge of JavaScript, including its modern features.",
                         },
                         {
                            id: "skill-5",
-                           skill: "APIs",
-                           level: 4,
+                           skill: "Rest APIs",
+                           level: 3,
                            description:
                               "I have limited but growing experience using and creating REST APIs.",
                         },
                         {
                            id: "skill-6",
                            skill: "SQL",
-                           level: 7,
+                           level: 4,
                            description:
                               "I have a lot of experience designing stable and efficient tables. I can use SQL adeptly to find the exact information I need. I have been using PostgreSQL recently, but most of my experience is with using MySQL.",
                         },
                         {
                            id: "skill-7",
                            skill: "Algorithms",
-                           level: 6,
+                           level: 3,
                            description:
                               "I have earned 6 / 6 stars for Problem Solving (i.e., Algorithms) on HackerRank and have learned many advanced data structures concepts. There's still much I need to learn, but I think I have a lot of the basics down.",
                         },
                         {
                            id: "skill-8",
                            skill: "Design",
-                           level: 7,
+                           level: 4,
                            description:
                               "I have an intermediate understanding of web design and usability principles. I have designed many websites (including this one), but I certainly have more to improve upon.",
                         },
                         {
                            id: "skill-9",
                            skill: "Mandarin",
-                           level: 5,
+                           level: 2,
                            description:
                               "One of my greastest passions in life is learning and using foreign languages. I have learned so many in my life, but have lost fluency in many of them due to lack of use. Mandarin is one language I can still communicate in with at least marginal competence. My ability to read and write has grown a bit stale, however.",
                         },
                         {
                            id: "skill-10",
                            skill: "Spanish",
-                           level: 5,
+                           level: 3,
                            description:
                               "I can speak and understand a lot of Spanish. I learned the language by purposefully watching a lot of Spanish-language television as a teenager. Long ago, I also worked in a warehouse where virtually all the other employees spoke Spanish exclusively.",
                         },
                         {
                            id: "skill-12",
                            skill: "PHP",
-                           level: 5,
+                           level: 2,
                            description:
                               "My first several personal projects were coded in PHP. It has, however, been a long time since I have used it.",
                         },
                         {
                            id: "skill-13",
                            skill: "Java",
-                           level: 4,
+                           level: 2,
                            description:
                               "I created an Android app using Java, but that was years ago. I also have some experience in other object-oriented programming languages.",
+                        },
+                        {
+                           id: "skill-14",
+                           skill: "Git",
+                           level: 2,
+                           description:
+                              "I am in the process of gaining git fluency. I am actively practicing and reading a large git book to fully master the technology.",
+                        },
+                        {
+                           skill: "HTTP",
+                           id: "skill-15",
+                           level: 2,
+                           description:
+                              "I have a basic understanding of how the JavaScript fetch and XHR APIs use HTTP to communicate with servers, and how Node APIs consume the HTTP instructions and respond. I understand CORS and the concept of pre-flighting.",
+                        },
+                        {
+                           skill: "Express",
+                           id: "skill-16",
+                           level: 3,
+                           description:
+                              "I have basic experience using Express to handle and route HTTP requests.",
+                        },
+                        {
+                           skill: "Authorization",
+                           id: "skill-17",
+                           level: 1,
+                           description:
+                              "Basic understanding of authorization frameworks, including OAuth 2.0. I plan to implement authorization features in my next projects.",
+                        },
+                        {
+                           skill: "TypeScript",
+                           id: "skill-18",
+                           level: 1,
+                           description: "I plan to learn TypeScript soon.",
+                        },
+                        {
+                           skill: "Containers",
+                           id: "skill-19",
+                           level: 1,
+                           description:
+                              "Limited knowledge of containers and containerization, but I undertand their importance and plan to soon learn the technology.",
+                        },
+                        {
+                           skill: "Jest",
+                           id: "skill-20",
+                           level: 1,
+                           description:
+                              "I plan to thoroughly learn the Jest testing API (among others). I understand the basics of test-driven development, but have yet to put the practice into use myself.",
+                        },
+                        {
+                           skill: "Authentication",
+                           id: "skill-21",
+                           level: 2,
+                           description:
+                              "Basic understanding of the OpenID Connect layer of OAuth 2.0, and have experience with basic authentication.",
+                        },
+                        {
+                           id: "skill-22",
+                           skill: "NPM",
+                           level: 3,
+                           description:
+                              "I use NPM on a regular basis, but have not personally published any projects on there, private or otherwise.",
+                        },
+                        {
+                           id: "skill-23",
+                           skill: "Apache",
+                           level: 2,
+                           description:
+                              "Basic understanding of Apache for use as a reverse-proxy and for SSL/TSL authentication.",
+                        },
+                        {
+                           id: "skill-24",
+                           skill: "RegEx",
+                           level: 2,
+                           description:
+                              "I've trained myself to use regular expressions, but I still need more practice.",
+                        },
+                        {
+                           id: "skill-25",
+                           skill: "React Native",
+                           level: 1,
+                           description:
+                              "I am not yet skilled with React Native, but learning to use it is high on my priority list.",
+                        },
+                        {
+                           id: "skill-26",
+                           skill: "VS Code",
+                           level: 4,
+                           description:
+                              "A staple of any developer's toolbox. I know how to use VS Code to [almost] its full potential.",
+                        },
+                        {
+                           id: "skill-27",
+                           skill: "Remote dev.",
+                           level: 4,
+                           description:
+                              "All development for my current personal projects are done using remote servers. I know how to use SSH to securely connect to servers and use port-forwarding to connect my browser and apps to server ports. I currently use Digital Ocean for development.",
+                        },
+                        {
+                           id: "skill-28",
+                           skill: "Linux/Ubuntu",
+                           level: 2,
+                           description:
+                              "All my development is done remotely on Ubuntu 20.04 LTS.",
                         },
                      ],
                   },

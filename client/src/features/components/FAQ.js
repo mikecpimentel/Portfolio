@@ -4,10 +4,10 @@ import "./FAQ.css";
 
 export const FAQ = (props) => {
    const data = props.data;
-
+   /*
    const [users, setUsers] = useState(null);
    const [fetching, setFetching] = useState(true);
-
+   
    useEffect(() => {
       const run = async () => {
          const response = await fetch("http://localhost:3010");
@@ -24,9 +24,8 @@ export const FAQ = (props) => {
       return null;
    }
 
-   return (
-      <>
-         <div>
+
+   <div>
             {users.rows.map((item) => (
                <div>
                   <p>Name: {item.name}</p>
@@ -34,6 +33,9 @@ export const FAQ = (props) => {
                </div>
             ))}
          </div>
+*/
+   return (
+      <>
          {data.map((item) => (
             <div key={uuid()}>
                <p className="question">{item.question}</p>

@@ -26,10 +26,12 @@ const portfolioState = {
          name: "FAQ",
          section_url: "faq",
       },
+      /*
       {
          name: "Sandbox",
          section_url: "sandbox",
       },
+      */
    ],
 };
 

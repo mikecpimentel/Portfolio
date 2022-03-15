@@ -3,7 +3,7 @@ import "./Skills.css";
 import { v4 as uuid } from "uuid";
 
 export const Skills = (props) => {
-   const data = props.data;
+   const data = props.data.sort((ob1, ob2) => ob2.level - ob1.level);
 
    const newState = data.map((item) => ({ ...item, open: false }));
 
@@ -38,11 +38,24 @@ const SkillItem = (props) => {
    const skillId = props.id;
    const open = props.open;
    const toggle = props.toggleHandler;
+   let unitClass =
+      props.level === 1
+         ? "skill-1"
+         : props.level === 2
+         ? "skill-2"
+         : props.level === 3
+         ? "skill-3"
+         : props.level === 4
+         ? "skill-4"
+         : props.level === 5
+         ? "skill-5"
+         : null;
+   unitClass += " skill-unit";
 
-   for (let i = 0; i < 10; i++) {
-      if (i < props.level) {
+   for (let i = 1; i <= 5; i++) {
+      if (i <= props.level) {
          levelMeter.push(
-            <span key={uuid()} className="skill-unit">
+            <span key={uuid()} className={unitClass}>
                ▀
             </span>
          );
@@ -87,9 +100,7 @@ const SkillItem = (props) => {
                      {filler}
                   </span>
                </span>
-               <span className="level-fraction">
-                  {props.level}/10
-               </span>
+               <span className="level-fraction">{props.level}/5</span>
                <span
                   className={
                      open

@@ -32,6 +32,12 @@ export const Description = (props) => {
          <h3 key={uuid()}>
             <Description key={uuid()} data={item.children} />
          </h3>
+      ) : item.element === "span" ? (
+         <span 
+            key={uuid()}
+            className={item.attr[0].value}>
+            <Description key={uuid()} data={item.children} />
+         </span>
       ) : null
    );
 };
