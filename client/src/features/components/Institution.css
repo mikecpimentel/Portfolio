@@ -20,6 +20,7 @@
    display: flex;
    max-width: 750px;
    gap: 15px;
+   flex-wrap: wrap;
 }
 .institution div .name {
    color: #000;

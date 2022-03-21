@@ -13,9 +13,9 @@ export const Welcome = () => {
                marginBottom: "5px",
             }}
          >
-            Hello 👋🏼 and Welcome. I am a..
+            Hello 👋🏼 and Welcome. I am an aspiring..
          </p>
-         <p className="welcome-2">Full-Stack Software Dev/Eng</p>
+         <p className="welcome-2">Full-Stack Software Engineer</p>
          <p className="welcome-1">
             I am an entry-level-ish developer experienced with the latest
             frontend and backend tools, including React, Redux, Node, APIs and SQL.

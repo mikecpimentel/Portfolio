@@ -1,26 +1,18 @@
-import { useOutletContext, useParams } from "react-router-dom";
+import { Outlet, useOutletContext, useParams } from "react-router-dom";
 import { Books } from "./Books";
 import { Description } from "./Description";
 import { FAQ } from "./FAQ";
 import { Institutions } from "./Institutions";
-import { PokemonList } from "./PokemonList";
+import { PokemonList } from "../sandbox/pokemon-explorer/PokemonList";
 import { Projects } from "./Projects";
 import { Skills } from "./Skills";
 import "./Page.css";
 import { v4 as uuid } from "uuid";
+import { Blank } from "./Blank";
 
 export const Page = (props) => {
-   const outletContext = useOutletContext();
-   const currentSectionState = outletContext[0];
-   const sectionURL = outletContext[1];
-   const whichPage = useParams();
-   let pageState;
-
-   if (whichPage.which) {
-      pageState = currentSectionState.byPage[whichPage.which];
-   } else {
-      pageState = currentSectionState.byPage["index"];
-   }
+   const pageState = props.data;
+   const sectionURL = props.url;
 
    return (
       <div key={uuid()} className={`${sectionURL}-wrapper`}>
@@ -39,8 +31,8 @@ export const Page = (props) => {
                <Books key={uuid()} data={item.data} />
             ) : item.type === "faq" ? (
                <FAQ key={uuid()} data={item.data} />
-            ) : item.type === "pokemon" ? (
-               <PokemonList key={uuid()} />
+            ) : item.type === "sandbox" ? (
+               <Blank key={uuid()} data={item.data} />
             ) : null
          )}
       </div>

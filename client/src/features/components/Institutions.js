@@ -22,16 +22,8 @@ const Institution = (props) => {
    return (
       <div className="institution">
          <div style={{ paddingLeft: "10px", zIndex: "5" }}>
-            <p
-               className="name"
-            >
-               {props.name}
-            </p>
-            <p
-               className="subtitle"
-            >
-               {props.subheading}
-            </p>
+            <p className="name">{props.name}</p>
+            <p className="subtitle">{props.subheading}</p>
          </div>
          <div
             className="logo-div"
@@ -41,10 +33,12 @@ const Institution = (props) => {
                height: "100%",
                bottom: "10px",
                opacity: "1",
-               width: "70px",
+               width: "100%",
+               maxHeight: "40px",
+               maxWidth: "100px",
                backgroundImage: `url("${props.logo}")`,
-               backgroundSize: "100%",
-               backgroundPosition: "bottom",
+               backgroundSize: "contain",
+               backgroundPosition: "right bottom",
                backgroundRepeat: "no-repeat",
             }}
          >
