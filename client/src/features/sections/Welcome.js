@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import myPhoto from "../../images/port-photo.jpeg";
+import myPhoto from "../../images/me2.jpg";
 
 export const Welcome = () => {
    return (
@@ -8,7 +8,7 @@ export const Welcome = () => {
          <p
             style={{
                fontWeight: "300",
-               fontSize: "1em",
+               fontSize: "1.25em",
                color: "#fffc",
                marginBottom: "5px",
             }}
@@ -18,7 +18,8 @@ export const Welcome = () => {
          <p className="welcome-2">Full-Stack Software Engineer</p>
          <p className="welcome-1">
             I am an entry-level-ish developer experienced with the latest
-            frontend and backend tools, including React, Redux, Node, APIs and SQL.
+            frontend and backend tools, including React, Redux, Node, APIs and
+            SQL.
          </p>
          <p className="welcome-1">I am eager to join your team.</p>
          <Link

@@ -3,6 +3,8 @@ import { PokemonExplorer } from "../sandbox/pokemon-explorer/PokemonExplorer";
 import { PokemonList } from "../sandbox/pokemon-explorer/PokemonList";
 import { ToDoList } from "../sandbox/todo-list/ToDoList";
 import { v4 as uuid } from "uuid";
+import { SiteOne } from "../sandbox/site-one/SiteOne";
+import Globalicious from "../sandbox/globalicious/Globalicious";
 
 export const Blank = (props) => {
    const projectName = props.data;
@@ -18,14 +20,14 @@ export const Blank = (props) => {
                   display: "flex",
                   flex: "1 1 0px",
                   overflow: "auto",
-                  paddingTop: "20px",
+
                   gap: "10px",
                }}
             >
                <div
                   style={{
                      overflow: "auto",
-                     flexBasis: "40%",
+                     flexBasis: "50%",
                      padding: "0px 20px 20px 20px",
                   }}
                >
@@ -34,18 +36,22 @@ export const Blank = (props) => {
                <div
                   style={{
                      overflow: "auto",
-                     flexBasis: "60%",
+                     flexBasis: "50%",
                      backgroundColor: "#fff1",
                      padding: "20px 20px 20px 20px",
                   }}
                >
                   {!extraParams.pokemonName ? (
-                     <h2>Please select a Pokemon</h2>
+                     <h3>Please select a Pokemon</h3>
                   ) : (
                      <Outlet />
                   )}
                </div>
             </div>
+         ) : projectName === "site-one" ? (
+            <SiteOne />
+         ) : projectName === "globalicious" ? (
+            <Globalicious />
          ) : null}
       </>
    );

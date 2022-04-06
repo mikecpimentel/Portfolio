@@ -46,7 +46,7 @@ div.floating-white-project p {
 .project-text-area h3 {
    margin: 0;
 }
-.past-projects-wrapper {
+.old-projects-wrapper {
    display: flex;
    height: 100%;
    flex-grow: 1;
@@ -65,40 +65,40 @@ div.floating-white-project p {
 }
 
 /*
-.past-projects-wrapper {
+.old-projects-wrapper {
    scrollbar-width: thin;
    scrollbar-color: blue orange;
 }
 */
-.past-projects-wrapper::-webkit-scrollbar {
+.old-projects-wrapper::-webkit-scrollbar {
    height: 25px;
 }
 
-.past-projects-wrapper::-webkit-scrollbar-track {
+.old-projects-wrapper::-webkit-scrollbar-track {
    background: #eee;
    border-radius: 30px;
 }
 
-.past-projects-wrapper::-webkit-scrollbar-thumb {
+.old-projects-wrapper::-webkit-scrollbar-thumb {
    background-color: var(--blue-accent);
    border-radius: 30px;
    border: 0px solid #eee;
 }
-.past-projects-wrapper::-webkit-scrollbar-thumb:hover {
+.old-projects-wrapper::-webkit-scrollbar-thumb:hover {
    background-color: #47b9b2;
 }
-.past-projects-wrapper::-webkit-scrollbar-thumb:active {
+.old-projects-wrapper::-webkit-scrollbar-thumb:active {
    background-color: var(--blue-accent);
 }
 
-.past-projects-wrapper div.image-div {
+.old-projects-wrapper div.image-div {
    text-align: center;
    height: 100%;
 }
-.past-projects-wrapper div.image-div:last-child {
+.old-projects-wrapper div.image-div:last-child {
    padding-right: 80px;
 }
-.past-projects-wrapper div p.caption {
+.old-projects-wrapper div p.caption {
    display: inline-block;
    padding: 20px;
    margin-top: 30px;
@@ -106,7 +106,7 @@ div.floating-white-project p {
    background-color: #fff1;
    box-sizing: border-box;
 }
-.past-projects-wrapper div img {
+.old-projects-wrapper div img {
    object-fit: contain;
    height: 80%;
    display: block;
@@ -114,18 +114,18 @@ div.floating-white-project p {
    opacity: 0.9;
    max-width: 600px;
 }
-.past-projects-wrapper .description-outer {
+.old-projects-wrapper .description-outer {
    font-weight: 300;
    max-width: 650px;
    line-height: 1.66;
    color: #ddd;
 }
 @media only screen and (max-width: 900px) {
-   .past-projects-wrapper {
+   .old-projects-wrapper {
       flex-direction: column;
       overflow-y: scroll;
    }
-   .past-projects-wrapper div.image-div {
+   .old-projects-wrapper div.image-div {
       height: fit-content;
    }
 }
@@ -138,11 +138,11 @@ div.floating-white-project p {
       border-radius: 5px;
       height: unset;
    }
-   .past-projects-wrapper {
+   .old-projects-wrapper {
       margin: 0;
       overflow-x: hidden;
    }
-   .past-projects-wrapper div img {
+   .old-projects-wrapper div img {
       width: 100%;
       display: inline-block;
    }

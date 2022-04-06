@@ -1,4 +1,4 @@
-const db = require("./db");
+const db = require(".");
 
 const getUsers = (req, res) => {
    db.query("SELECT * FROM users ORDER BY name", []);

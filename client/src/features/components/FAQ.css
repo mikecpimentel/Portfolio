@@ -7,16 +7,16 @@
    max-width: 550px;
 }
 .question {
-   margin-bottom: 5px;
-   font-size: 0.8em;
+   margin-bottom: 0px;
+   font-size: 1em;
    font-weight: 500;
-   color: #fffe;
+   color: #fff;
 }
 .answer {
-   font-weight: 300;
-   color: #fffa;
+   font-weight: 400;
+   color: #fff8;
    font-size: 0.8em;
-   margin-top: 10px;
+   margin-top: 0px;
    margin-bottom: 20px;
 }
 @media only screen and (max-width: 900px) {

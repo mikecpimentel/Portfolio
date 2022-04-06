@@ -1,0 +1,5 @@
+PGUSER=todo_admin
+PGHOST=localhost
+PGPASSWORD=f?E^r)Qn\_3$wHU
+PGDATABASE=todo
+PGPORT=5432

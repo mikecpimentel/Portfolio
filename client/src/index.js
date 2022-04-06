@@ -4,14 +4,17 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import "./main-layout.css";
 import App from "./App";
+import { AccessTokenProvider } from './features/sandbox/site-one/AccessTokenContext'
 
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
    <React.StrictMode>
-      <BrowserRouter>
-         <App />
-      </BrowserRouter>
+      <AccessTokenProvider>
+         <BrowserRouter>
+            <App />
+         </BrowserRouter>
+      </AccessTokenProvider>
    </React.StrictMode>,
    document.getElementById("root")
 );

@@ -77,9 +77,9 @@ export const PokemonList = () => {
                   paddingBottom: "20px",
                }}
             >
-               <h2 style={{ display: "inline", margin: "0", padding: "0" }}>
+               <h3 style={{ display: "inline", margin: "0", padding: "0" }}>
                   Pokemon Explorer
-               </h2>
+               </h3>
                <div>
                   <button
                      style={navButtonStyles}

@@ -11,22 +11,22 @@
    padding-right: 10px;
    padding-left: 40px;
    line-height: 1.5;
-   max-width: 700px;
+   max-width: 800px;
 }
 
 p.welcome-1 {
-   font-size: 0.8em;
+   font-size: 1.25em;
    color: #fffc;
    margin-bottom: 20px;
-   font-weight: 400;
+   font-weight: 200;
    letter-spacing: 0.05em;
 }
 
 p.welcome-2 {
-   font-size: 1.563em;
+   font-size: 2.441em;
    color: var(--lightest-text);
    font-weight: 500;
-   margin: 0 0 25px 0;
+   margin: 0 0 20px 0;
 }
 a.intro-button {
    padding: 12px 30px;
@@ -38,11 +38,11 @@ a.intro-button {
    font-weight: 400;
 }
 img.profile-photo {
-   width: 50px;
-   height: 50px;
+   width: 100px;
+   height: 100px;
    margin-bottom: 5px;
    border-radius: 50px;
-   opacity: 0.8;
+   opacity: 1;
    border: 2px solid #4ecdc4;
 }
 
@@ -96,7 +96,7 @@ main {
 
 @media only screen and (max-width: 900px) {
    header {
-      border-bottom:none;
+      border-bottom: none;
    }
    .nav-list {
       flex-basis: 0;
@@ -105,6 +105,6 @@ main {
       padding-left: 10px;
    }
    .welcome-wrapper {
-      padding-left:10px;
+      padding-left: 10px;
    }
 }

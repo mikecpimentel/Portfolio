@@ -1,7 +1,8 @@
-const db = require("./db");
 const cors = require("cors");
 const express = require("express");
-const testRouter = require("./routers/test-router");
+const testRouter = require("./test-router");
+const todoRouter = require("./sandbox/todo/todo-router");
+const jwt = require('jsonwebtoken')
 
 const app = new express();
 
@@ -12,14 +13,22 @@ const sayHello = (req, res, next) => {
    next();
 };
 
-app.use(cors());
+app.use(express.json());
 
-app.get("/", async (req, res) => {
-   const response = await db.query("SELECT * FROM users ORDER BY name", []);
-   const niceRes = JSON.stringify(response, null, 4);
-   // res.type("json");
-   console.log("app.get is run");
-   res.status(200).send(niceRes);
+
+app.post('/login', (req, res) => {
+   // Authentication
+
+   const username = req.body.username
+
+
+
+   res.send({token: 'test123'});
+})
+
+app.use("/todo", cors(), todoRouter);
+
+app.listen(3010, () => {
+   console.log(`Now listening on port 3010`);
 });
-
-app.listen(3010);
+console.log('testing')
