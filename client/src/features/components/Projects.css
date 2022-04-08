@@ -30,12 +30,12 @@ div.floating-white-project p {
    column-gap: 50px;
    background-color: #fffc;
    color: #000;
-   padding: 30px;
+   padding: 30px 30px;
    box-sizing: border-box;
-   border-radius: 40px 0 0 40px;
-   margin-right: 40px;
-   min-width: 540px;
-   max-width: 541px;
+   overflow-y: auto;
+   margin-right: 0px;
+   min-width: 450px;
+   max-width: 451px;
 }
 .project-text-area p,
 .project-text-area h3 {
@@ -54,10 +54,10 @@ div.floating-white-project p {
    flex-shrink: 1;
    gap: 30px;
    /* padding: 40px 0 60px 40px; */
-   padding: 30px 0px 40px 0px;
+   padding: 15px 0px 40px 0px;
    box-sizing: border-box;
    overflow-x: auto;
-   margin-left: 30px;
+   margin-left: 0px;
    overflow-y: hidden;
    border-radius: 0px;
    /* box-shadow: inset 0 0 20px 0 #0003; */
@@ -82,7 +82,7 @@ div.floating-white-project p {
 .old-projects-wrapper::-webkit-scrollbar-thumb {
    background-color: var(--blue-accent);
    border-radius: 30px;
-   border: 0px solid #eee;
+   border: 3px solid #eee;
 }
 .old-projects-wrapper::-webkit-scrollbar-thumb:hover {
    background-color: #47b9b2;
@@ -110,9 +110,8 @@ div.floating-white-project p {
    object-fit: contain;
    height: 80%;
    display: block;
-   border-radius: 10px;
    opacity: 0.9;
-   max-width: 600px;
+   max-width: 1000px;
 }
 .old-projects-wrapper .description-outer {
    font-weight: 300;

@@ -33,7 +33,7 @@ const Project = (props) => {
             {props.children}
          </div>
          {imageArray
-            ? imageArray.map((photo, index) => (
+            ? imageArray.map((photo) => (
                  <div key={uuid()} className="image-div">
                     <img src={photo.large} alt={photo.subtitle} />
                     <p className="caption">{photo.subtitle}</p>

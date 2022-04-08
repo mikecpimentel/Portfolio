@@ -4,50 +4,29 @@ import { Link } from "react-router-dom";
 import { Page } from "./features/components/Page";
 import { Welcome } from "./features/sections/Welcome";
 import { Section } from "./features/components/Section";
-import { Sandbox } from "./features/sandbox/Sandbox";
 import { v4 as uuid } from "uuid";
 import { PokemonExplorer } from "./features/sandbox/pokemon-explorer/PokemonExplorer";
 import aphoto1 from "./images/letsaskbobby_logo.gif";
-import bphoto1 from "./images/geller-portal/Folder1-300x199.png";
 import bphoto1Big from "./images/geller-portal/Folder1.png";
-import bphoto2 from "./images/geller-portal/Folder3-300x200.png";
 import bphoto2Big from "./images/geller-portal/Folder3.png";
-import bphoto3 from "./images/geller-portal/Main-Menu-300x201.png";
 import bphoto3Big from "./images/geller-portal/Main-Menu.png";
-import bphoto4 from "./images/geller-portal/gellerVendorsProgress1-300x200.jpg";
 import bphoto4Big from "./images/geller-portal/gellerVendorsProgress1.jpg";
-import bphoto5 from "./images/geller-portal/PO-Creator-300x200.png";
 import bphoto5Big from "./images/geller-portal/PO-Creator.png";
-import bphoto6 from "./images/geller-portal/PO-Creator2-300x200.png";
 import bphoto6Big from "./images/geller-portal/PO-Creator2.png";
-import cphoto1 from "./images/collabolist/This-is-Collabolists-1-300x149.jpg";
-import cphoto1Big from "./images/collabolist/This-is-Collabolists-1.jpg";
-import cphoto2 from "./images/collabolist/This-is-Collabolists-2-300x149.jpg";
+import cphoto1Big from "./images/collabolist/1.JPG";
 import cphoto2Big from "./images/collabolist/This-is-Collabolists-2.jpg";
-import cphoto3 from "./images/collabolist/This-is-Collabolists-3-300x163.jpg";
 import cphoto3Big from "./images/collabolist/This-is-Collabolists-3.jpg";
-import cphoto4 from "./images/collabolist/This-is-Collabolists-4-300x147.jpg";
 import cphoto4Big from "./images/collabolist/This-is-Collabolists-4.jpg";
-import cphoto5 from "./images/collabolist/This-is-Collabolists-5-300x162.jpg";
-import cphoto5Big from "./images/collabolist/This-is-Collabolists-5.jpg";
-import dphoto1 from "./images/year-2053/Phone-Screenshot-1-169x300.png";
+import cphoto6 from "./images/collabolist/menu3.png";
 import dphoto1Big from "./images/year-2053/Phone-Screenshot-1.png";
-import dphoto2 from "./images/year-2053/Phone-Screenshot-2-169x300.png";
 import dphoto2Big from "./images/year-2053/Phone-Screenshot-2.png";
-import dphoto3 from "./images/year-2053/Phone-Screenshot-4-169x300.png";
 import dphoto3Big from "./images/year-2053/Phone-Screenshot-4.png";
-import dphoto4 from "./images/year-2053/Screenshot_2017-12-24-04-59-07-169x300.png";
 import dphoto4Big from "./images/year-2053/Screenshot_2017-12-24-04-59-07-576x1024.png";
-import dphoto5 from "./images/year-2053/Year-2053-Screenshot-1-169x300.png";
 import dphoto5Big from "./images/year-2053/Year-2053-Screenshot-1-576x1024.png";
 import dphoto6 from "./images/year-2053/Year-2053-Logo-Revised-2-300x300.png";
-import ephoto4 from "./images/wordpress/Screenshot-2021-06-25-152251-300x256.png";
 import ephoto4Big from "./images/wordpress/Screenshot-2021-06-25-152251-768x656.png";
-import ephoto5 from "./images/wordpress/Screenshot-2021-06-25-152304-300x161.png";
 import ephoto5Big from "./images/wordpress/Screenshot-2021-06-25-152304-1024x550.png";
-import ephoto6 from "./images/wordpress/Screenshot-2021-06-25-152312-300x154.png";
 import ephoto6Big from "./images/wordpress/Screenshot-2021-06-25-152312-1024x526.png";
-import ephoto7 from "./images/wordpress/20210404_055244-2-300x300.jpg";
 import ephoto7Big from "./images/wordpress/20210404_055244-2-768x768.jpg";
 import codecademyLogo from "./images/education/320px-Codecademy.svg.png";
 import hackerRankLogo from "./images/education/800px-HackerRank_Icon-1000px.png";
@@ -74,16 +53,16 @@ const sectionState = {
                         {
                            element: "p",
                            children: [
-                              "Here are some of the technologies I am experienced with. As I spend a lot of time studying, this list is subject to frequent expansion and updating.",
+                              "Here are some of the technologies I am experienced with. As I spend a lot of time studying, this list is subject to frequent expansion and updating. Click a skill for more info. Values current as of April 8, 2022",
                            ],
                         },
                         {
                            element: "p",
-                           children: ["Click a skill for more info."],
+                           children: [""],
                         },
                         {
                            element: "p",
-                           children: ["Values current as of March 14, 2022"],
+                           children: [""],
                         },
                         {
                            element: "ul",
@@ -517,7 +496,7 @@ const sectionState = {
                         {
                            element: "p",
                            children: [
-                              "I studied economics at UCSB and had virtually everything paid for by the state and the university, but I withdrew a couple quarters short of graduation due to a lifetime of untreated health problems. I had health insurance for the first time in my life through the university, so I was able to access much-needed services. I would love to discuss my history further if you have any questions.",
+                              "I studied economics at UCSB and had virtually everything paid for by the state and the university, but I withdrew a couple quarters short of graduation due to a lifetime of untreated health problems. I had health insurance for the first time in my life through the university, so I was able to access much-needed services. Please see the Q and A section for more information. I would love to discuss my history further if you have any questions.",
                            ],
                         },
                         {
@@ -998,29 +977,26 @@ const sectionState = {
                            tech: "HTML, CSS, JavaScript, PHP, SQL, MySQL, AJAX, XML, Apache",
                            images: [
                               {
-                                 small: cphoto5,
-                                 large: cphoto5Big,
-                                 subtitle: "Add new row",
+                                 large: cphoto1Big,
+                                 subtitle: "Main",
                               },
                               {
-                                 small: cphoto4,
-                                 large: cphoto4Big,
-                                 subtitle: "Column functions",
-                              },
-                              {
-                                 small: cphoto3,
                                  large: cphoto3Big,
                                  subtitle: "Row functions",
                               },
                               {
-                                 small: cphoto2,
+                                 large: cphoto4Big,
+                                 subtitle: "Column functions",
+                              },
+
+                              {
                                  large: cphoto2Big,
                                  subtitle: "Search function",
                               },
+
                               {
-                                 small: cphoto1,
-                                 large: cphoto1Big,
-                                 subtitle: "Alternate view",
+                                 large: cphoto6,
+                                 subtitle: "Early draft, column creation",
                               },
                            ],
                            description: [
@@ -1033,13 +1009,13 @@ const sectionState = {
                               {
                                  element: "p",
                                  children: [
-                                    "I worked at a company called TransPerfect where I essentially helped set up computers for employees. We frequently used unwieldy Excel files for managing passwords, and these files usually took several minutes to sync and load. I was once again witness to the inefficiency of Excel spreadsheets for some applications, and Collabolist was my attempt at a solution.",
+                                    "I worked at a company called TransPerfect where I essentially helped set up computers for employees. We frequently used unwieldy Excel files for managing passwords, and these files usually took several minutes to sync and load. I was once again witness to the inefficiency of Excel spreadsheets for some applications. Collabolist was my attempt at a solution.",
                                  ],
                               },
                               {
                                  element: "p",
                                  children: [
-                                    "I worked on Collabolist every hour I was not at work. Having recently worked on Geller Portal, I still had programming fresh in my mind. As with my previous projects, I used AJAX extensively to enable functionality without the need to refresh the browser page.",
+                                    "I worked on Collabolist every hour I was at home. Having recently worked on Geller Portal, I still had programming fresh in my mind. As with my previous projects, I used AJAX extensively to enable functionality without the need to refresh the browser page.",
                                  ],
                               },
                               {
@@ -1051,7 +1027,7 @@ const sectionState = {
                               {
                                  element: "p",
                                  children: [
-                                    'Note: The images have the plural "Collabolists" since I changed the name at the last minute due to my preferred domain already being reserved.',
+                                    'Note: The images have the plural "Collabolists" since I changed the name at the last minute due to my preferred domain already being reserved at the time.',
                                  ],
                               },
                            ],
@@ -1072,35 +1048,29 @@ const sectionState = {
                            tech: "HTML, CSS, JavaScript, PHP, SQL, MySQL, AJAX, XML, Apache",
                            images: [
                               {
-                                 small: bphoto4,
                                  large: bphoto4Big,
                                  subtitle: "Vendor profile with dummy data",
                               },
                               {
-                                 small: bphoto5,
                                  large: bphoto5Big,
                                  subtitle:
                                     "Purchase order creator w/dummy data",
                               },
                               {
-                                 small: bphoto6,
                                  large: bphoto6Big,
                                  subtitle:
                                     "Purchase order creator w/dummy data, alternate view",
                               },
                               {
-                                 small: bphoto3,
                                  large: bphoto3Big,
                                  subtitle: "Dashboard",
                               },
                               {
-                                 small: bphoto1,
                                  large: bphoto1Big,
                                  subtitle:
                                     "In-progress customer order, P.O. tab",
                               },
                               {
-                                 small: bphoto2,
                                  large: bphoto2Big,
                                  subtitle:
                                     "Closed customer order, documents tab",
@@ -1110,25 +1080,20 @@ const sectionState = {
                               {
                                  element: "p",
                                  children: [
-                                    "Geller Portal was a system I created for my employer at the time, Geller International. Originally hired to perform basic tasks such as driving and delivering things, I was passively witness to their many inefficient in-office processes.",
+                                    "Geller Portal was a system I created for my employer at the time, Geller International, a tiny company with several employees. Originally hired at Geller to perform basic tasks such as driving and delivering things, I was passively witness to their many inefficient in-office processes and wanted to see if I could create something to help organize their data.",
+                                 ],
+                              },
+
+                              {
+                                 element: "p",
+                                 children: [
+                                    "I worked on Geller Portal at home, in secret, after work every day for a couple of months before revealing the project to my boss. He was very pleased and quickly demanded its implementation and use in the office. I stored much of the company's data in a MySQL database and retrieved it using the Geller Portal and a few database-connected Excel templates for the pre-filled documents.",
                                  ],
                               },
                               {
                                  element: "p",
                                  children: [
-                                    "Determined to help the company better organize its data and streamline the creation of documents, I took it upon myself to develop for them a system to help tame the chaos.",
-                                 ],
-                              },
-                              {
-                                 element: "p",
-                                 children: [
-                                    "I worked on Geller Portal at home after work every day for a couple of months before revealing the project to my boss. He was very pleased and quickly demanded its implementation and use (the company only had several employees, so this wasn't a radical change). I stored much of the company's data in a MySQL database and retrieved it using the Geller Portal as well as a few database-connected Excel templates I made to create pre-filled documents.",
-                                 ],
-                              },
-                              {
-                                 element: "p",
-                                 children: [
-                                    "I built this system with the knowledge I gained from working on Let's Ask Bobby years earlier, using many of the same technologies.",
+                                    "I built this system with the knowledge I gained from working on personal projects as a teenager, using many of the technologies I already knew.",
                                  ],
                               },
                            ],
@@ -1149,32 +1114,26 @@ const sectionState = {
                            tech: "Java, SQLite, Android Studio, Audacity, Photoshop",
                            images: [
                               {
-                                 small: dphoto1,
                                  large: dphoto1Big,
                                  subtitle: "Dialogue",
                               },
                               {
-                                 small: dphoto2,
                                  large: dphoto2Big,
                                  subtitle: "Bookmarks",
                               },
                               {
-                                 small: dphoto3,
                                  large: dphoto3Big,
                                  subtitle: "Title screen",
                               },
                               {
-                                 small: dphoto4,
                                  large: dphoto4Big,
                                  subtitle: "Another screen",
                               },
                               {
-                                 small: dphoto5,
                                  large: dphoto5Big,
                                  subtitle: "Main",
                               },
                               {
-                                 small: dphoto6,
                                  large: dphoto6,
                                  subtitle: "App logo",
                               },
@@ -1183,13 +1142,13 @@ const sectionState = {
                               {
                                  element: "p",
                                  children: [
-                                    "Year 2053 was a satirical, dark-humor-laden, text-based choose-your-own-adventure-type game complete with background sound effects and voice acting (myself doing all the voices). Gameplay starts in year 2018, but was meant to eventually arrive at mid-21st-century America. Every choice the game player makes affects the story. This was my one and only foray into Android development.",
+                                    "Year 2053 was a satirical, dark-humor-laden, text-based choose-your-own-adventure-type game complete with background sound effects and voice acting (myself doing all the voices). Gameplay starts in year 2018, but was meant to eventually arrive at mid-21st-century America (specifically 2053). Every choice the game player makes affects the story. This was my one and only foray into Android development. As with all projects, I did everything from the coding to the graphic design.",
                                  ],
                               },
                               {
                                  element: "p",
                                  children: [
-                                    "There were many interesting challenges to this project that I needed to solve. I had to program the evolving nature of the story, especially with the algorithmic diverging and intersecting of storylines. I programmed the game to dynamically and seamlessly connect over a hundred audio files in different orders and patterns depending on choices made in the past. I made huge flowcharts to help me connect all the pieces.",
+                                    "There were many interesting challenges to this project that I needed to solve. I had to program the evolving nature of the story, especially with the algorithmic diverging and converging of storylines. I programmed the game to dynamically and seamlessly connect over a hundred audio files in different orders and patterns depending on choices made in the past. I made huge flowcharts to help me visualize all the pieces.",
                                  ],
                               },
 
@@ -1255,26 +1214,22 @@ const sectionState = {
                            tech: "WordPress, Elementor, PHP, CSS, HTML, Photoshop, Illustrator, Google Analytics",
                            images: [
                               {
-                                 small: ephoto4,
                                  large: ephoto4Big,
                                  subtitle:
                                     "I got really good at making cookies...",
                               },
 
                               {
-                                 small: ephoto5,
                                  large: ephoto5Big,
                                  subtitle:
                                     "..but ultimately finalized only three recipes.",
                               },
 
                               {
-                                 small: ephoto6,
                                  large: ephoto6Big,
                                  subtitle: "Landing page.",
                               },
                               {
-                                 small: ephoto7,
                                  large: ephoto7Big,
                                  subtitle: "Label I designed on Illustrator.",
                               },
@@ -1307,13 +1262,8 @@ const sectionState = {
                ],
             },
          },
-         allPages: ["index", "collabolist", "year-2053", "wordpress"],
-         allPageTitles: [
-            "index",
-            "Collabolist",
-            "Year 2053",
-            "WordPress Stuff",
-         ],
+         allPages: ["index", "collabolist", "year-2053"],
+         allPageTitles: ["index", "Collabolist", "Year 2053"],
       },
       faq: {
          name: "FAQ",
@@ -1325,9 +1275,97 @@ const sectionState = {
                      type: "faq",
                      data: [
                         {
-                           question: "What is the purpose of this FAQ?",
+                           question: "What is the purpose of this Q and A?",
                            answer:
-                              "To help explain my deeply complex history and explain how I will be a great candidate. To convince you that I would be a fantastic candidate despite my non-traditional past. It may be a bit TMI, but i hope it will help answer any lingering questions you may have.",
+                              "I created this Q and A to help explain my deeply complex and non-traditional history. I hope to provide a satisfying explanation for the employment and education gaps in my history. I hope you will leave convinced that I would be a fantastic candidate for a role at your company despite the meandering path I took throughout life.\n\nThis page is organized in an interview-like format. There is a lot to take in (brevity is a skill I have yet to master), but I hope it proves useful for those who have questions about my ability to perform and thrive in my new role.",
+                        },
+
+                        {
+                           question:
+                              "Why didn't you finish university? Why didn't you seize every available opportunity?",
+                           answer:
+                              "I did attempt to take advantage of every opportunity. I pushed myself hard, so much so that it almost killed me. I came from the chaotic bottom of American society and worked insanely hard just to climb to the surface. Even before my first quarter at UCSB began, I had already applied and been accepted to study abroad at the University of Copenhagen for six months, all expenses paid by the school. After Copenhagen, I was planning to apply for a term at the London School of Economics. But I was a complete mess. I took hold of a slew of opportunities that I was fully incapable of seizing at the time. I was so deeply broken from a lifetime of harsh conditions that my brain eventually fell apart.",
+                        },
+                        {
+                           question: "What harsh conditions?",
+                           answer:
+                              "A short history might provide some context. My mother left me when I was 5 and my father was not at all present. I drank alone and often heavily from the age of 9, already determined to numb the pain and insecurity I felt daily. At ages 12 and 13 I smoked marijuana daily and lived with a group of adult friends. I was expelled from 7th grade and dropped out in 9th grade. I never had a permanent place to live growing up. I spent most of my childhood on the floor of different relative's houses, going weekly from one house to another. I kept all my belongings in plastic bags and dreamed of one day having a permanent place to store them. I was often alone and completely in charge of my own life. Even before adolescence, I already cooked my own food most and got my own groceries on foot. I had OCD and other medical ailments that were never treated. There was rarely an adult who had my back; rarely a person to protect or guide me. No one to suggest I brush my teeth or go to bed (I slept absolutely whenever I felt the need to). To top it off, I had attrocious self-esteem issues. I was a self-hating gay kid with heavily worn clothes and uncorrected eyesight. I was deeply embarrassed to show emotion, go barefoot or even wear shorts as I was ashamed to expose too much skin.",
+                        },
+                        {
+                           question: "How did you begin educating yourself?",
+                           answer:
+                              "Even from a very young age, I had an deep fascination with the world. I could have cared less about formal education and I disdained authority, but I did always love learning. Even before quitting high school, I spent countless hours educating myself on things I was fascinated with, languages and world cultures being chief among them. The Spanish I know today was self-taught starting at 13, and I can still read and write the Japanese Hiragana and Katakana I learned a year later (although I don't remember much vocabulary anymore). I eventually took the California high school equivalency exam (the CHSPE) and started classes at the community college.\n\nI knew nothing about college. For several years, my overall view of formal education was pretty dour. As I understood it at the time, community college was a place to learn basic facts with the hopes of earning an extra $3 more per hour in the long run. Community college seemed like a dead end. In my mind, not attending high school was already a death knell for my career prospects, and a regular college (i.e., university) was only available to high-achieving high school students. I therefore thought that any chance I had in this life had to come from my own efforts, to make the money myself somehow. At 15 I made incredible MySpace layouts and spent months creating my own alternative to MySpace using PHP and MySQL. I even used JSON (and raw XML) for the AJAX. I eventually realized I wasn't smart enough to get it off the ground myself, so I moved on. At ages 19-20, I read dozens of books to master stocks, currencies, and the various derivative markets like options and futures. I obsessed for many months over charts and graphs, trying my best to understand the psychology of the markets. I never had a spare dime to invest real money, so I eventually moved on from that endeavor as well. In addition to the occasional class or personal project, I also worked much of the time. One warehouse job had me commuting up to four hours daily (two hours each way). The congested commute was the most peaceful part of my day.",
+                        },
+
+                        {
+                           question:
+                              "How did you ultimately get accepted to university?",
+                           answer:
+                              "Once I was aware that community college offered a chance of transferring to UCLA, UC Berkeley, or one of the other UC schools, I started pushing myself to the extreme, way beyond any healthy boundaries. I demanded of myself perfect grades in my classes and sought to take the hardest classes the community college offered. I was fortunate to have some relatives who allowed me to sleep on their living room floor while I studied. It was awfully uncomfortable, crowded, and noisy almost 24 hours a day, but it was certainly better than nothing. I studied upwards of 20 hours per day, sleeping pitifully few hours. I wouldn't see friends for months at a time, I didn't even spend much time eating. Already suffering from truly extreme anxiety, I slipped into an even deeper depression and misery. I had trouble breathing virtually every minute of every day, often standing or pacing while studying as I was much too anxious to sit down. Whenever I managed to get any sleep, I would wake up every single hour panicking and breathless, often not knowing where I was for several seconds each episode. I felt claustrophobic and anxious while closing my eyes to apply shampoo, anxious whenever my phone rang, panic if I didn't know exactly where my car was, and even panic whenever I misplaced my phone for just a few seconds (in my mind, the phone would help me call for help if I needed it).\n\nI survived those years by feeling completely numb. While I had never known a sense of well-being in my lifetime, I never felt as broken as I did then. I was utterly miserable, more so than what was usual throughout my life, but I never once complained. Who would I complain to? If I was going to make it in this world, I had no choice but to endure, no matter the costs to my sanity. I eventually got accepted to UCSB. The state of California and the university would pay for everything, including a stipend for living expenses. I would have health insurance for the first time in my life, one which covered virtually every medical expense with zero out of pocket. But by the time I was accepted, I was exhausted and had no room for relief or positivity. To make matters worse, nobody around me even cared that I got into university. If anything, people thought I was foolish. It would have been nice to have someone who cared.",
+                        },
+
+                        {
+                           question:
+                              "What happened that caused you to leave university?",
+                           answer:
+                              "I had the summer off before my first term started. I worked a few jobs over the summer so that I could fly overseas to clear my head before classes began. I ended up getting alcohol poisoning within hours of arriving in Germany and had all of my money stolen. I woke up covered in my own vomit 12 hours after everything went black. Even on the flight to and from Europe, my heart pounded every minute I was on the plane. I arrived back in the U.S. more in crisis than when I left. Come the beginning of classes at UCSB, I was not at all excited; rather, I was desperate for the madness to end. But I wasn't giving up, I was determined to do my best and take advantage of every opportunity I could. I joined the Model UN and continued to study day and night.\n\nThe culture shock at the university was intense. I was surrounded by young adults who were a lifetime more well-rounded than I was. The average high school GPA of incoming students was more than 4.0. Before UCSB, I had never even seen a suit up close. I was astounded by the confidence and brilliance of these kids who were years younger than me. I rented a room in a home shared with a university director and the current undergraduate dean, both of whom I shared weekend meals with. I was determined to catch up with my peers and be the best person I could be, but I continued to rapidly deteriorate mentally. I got a DUI driving back from a Model UN meeting, the first social gathering I had been to in years. I didn't drink often at all (since I was always studying and had no social life), but when I did drink, I always did my best to black out in order to find some peace. A couple of weeks later, I reached a state of unending panic where I couldn't even leave my room. I finally sought help for the first time in my life. It was already too late, however. I withdrew from university, in utter despair, before my first quarter had even ended.",
+                        },
+                        {
+                           question:
+                              "Why didn't you get help before university?",
+                           answer:
+                              "There are plenty of reasons why I didn't get help sooner. First, health insurance is something I didn't have for almost my entire life up to that point; there was no way I could have possibly afforded mental health services out of pocket.\n\nSecond, I didn't even realize that I had a severe problem. Misery to varying degrees was all I had ever known, so it was not obvious that there was something that urgently needed fixing, or even that my issues could be fixed. I simply did not have the information to self-diagonose. In retrospect, it is obvious that I had OCD, severe anxiety, and quite a bit of trauma to work through.\n\nThird, I never had the outside perspective of a caring adult who could have recognized that something was wrong with me.",
+                        },
+
+                        {
+                           question:
+                              "So you got help. Why didn't you return to UCSB?",
+                           answer:
+                              "I returned to the university for a quarter here and there, and managed to complete most of my upper-division courses. But after my calamitous mental breakdown a year earlier, I had grown deeeply apathetic. All I could think about was how I had endured such torment for years to get to where I was, only to see my future fall apart in a matter of days. There would be no more Denmark or London to look forward to. I felt sick thinking about what a mess everything was. Even though medication ensured that I wouldn't have hourly panic attacks, I just needed to get away from Santa Barbara and take a break from life somehow. I was told I had PTSD, which I thought was absurd at the time but now accept as a reasonable assessment. A lifetime of stress flooded my mind with horrible memories and I was simply exhausted.",
+                        },
+
+                        {
+                           question: "When did things start to turn around?",
+                           answer:
+                              "Over the next few years, there are two specific environments in which I found a great deal of healing. I spent a total of roughly one year in Taiwan and 1.5 years in rural Indiana, moving back an forth a couple of times. I went to Taiwan because I wanted to be somewhere affordable, non-English speaking, and free of other Americans like myself. I also really wanted to learn Mandarin Chinese. I found the perfect environment in one of Taiwan's minor cities. Food was as little as $0.50 a meal and my apartment was $120 per month (and after a few months there, a couple of new Taiwan friends invited me to stay at their home). My time spent in Taiwan was exactly what I needed. I made a ton of good friends and learned to speak passable Mandarin within a few months. I talked to everyone and studied the language half of every day, eventually training myself to write hundreds of characters and read most sentences. My first few months there were perhaps the best of my life. Since finding the right pharmaceutical regimen takes a long time, my anxiety was still pretty severe there, but it was far more manageable than at any point in my entire life up to that point.\n\nBack in the states, an aunt and uncle in rural Indiana offered me a place to stay with them. While Taiwan provided much needed adventure, Indiana provided me a sense of security I had never had. I helped care for my 11 and 13-year-old cousins like they were my brothers. I didn't have to worry about rent or shelter. I was able to work on getting my symptoms under control. For the first time in my life, I got to see what being in a family was like. I was baffled by what parents actually did for their children. They spoke with their kids' teachers, told the kids to do their homework, brought them to extracurricular activities. The kids didn't even have to set their own alarms or wash their own clothes. When I wasn't doing chores or engaged in activities with the kids, I learned to clean pools and even created an Android app. Over time, my panic went from a daily occurence to weekly to monthly, and it would not have been possible without the environment that my aunt and uncle offered. Between Taiwan and Indiana, my sanity was able to be glued back together.",
+                        },
+                        {
+                           question:
+                              "How did you spend your time during COVID?",
+                           answer:
+                              "Come early autumn 2019, I was back in California after my final 5-month stay in Taiwan. My Indiana relatives moved to Hawaii and I was back on my own. I drove to Tucson, Arizona, as it seemed like a cheap and somewhat nearby location to figure things out. When I couldn't figure things out quickly enough, I ended up living out of my car for a few weeks. It was tough, but I knew that I had no real problems to complain about. My anxiety was under control and that mattered more than anything else. I spent all day, every day, at Starbucks so that I could figure stuff out on my computer. I ended up returning to same living room I used while trying to get into university years earlier. Fortunately, this time around, not as many people were living there anymore, so it was definitely more peaceful. I got a cheap coworking space and spent practically 24 hours a day there trying to figure out what to do with my life. The novel coronavirus soon washed ashore, so the coworking thing didn't last too long. I knew I had to find my own space as soon as possible. Fortunately, the COVID relief money arrived and it changed my life.\n\nI searched for the cheapest place in the country for apartments, and Omaha, Nebraska, was high on the list. I quickly moved into an apartment in Nebraska to ride out the virus and await the arrival of a vaccine. While in Nebraska I read countless books on marketing, time-management, personal growth, and a large smattering of history and global politics books, on top of the hours I already spent each day reading the NYT. I cooked every single meal and cleaned the apartment for up the three hours a day (washing dishes took up half that time). I listened to hundreds of hours of wonderful podcasts and started around 8 or 9 internet projects. I never had such freedom and privacy in my entire life. I reveled in the uninterrupted silence and solitude. My year in Nebraska rivaled the therapeutic value of my time in Taiwan and Indiana. In Nebraska, I learned who I was, what I liked, what I disliked, and I was able to more clearly develop my dreams for the future. I felt not a hint of loneliness for at least eight months. I was just so happy to have a bed, a kitchen, a private bathroom; these luxuries were unimaginable in California for the price I was paying. My well-being and confidence in Nebraska improved week after week, and month after month. I left Nebraska a lot stronger than I had ever been.",
+                        },
+
+                        {
+                           question: "Where are you now?",
+                           answer:
+                              "My time in Nebraska came to a close when my grandmother needed someone to live with. She has two children but simply didn't want to live with either of them. It was October 2021 and I was fully vaxxed and already in the process of searching online for a job in New York. Overburdened with empathy, I made the excruciatingly painful decision to postpone my plans and care for my grandmother. I figured I would try hard to convince her kids to care for her together somehow, allowing me to move on with a clear conscience. Within the first week, she almost died when she obstinately refused to let me take her to the emergency room for a very high fever. I had to call the ambulance to come get her. After an inauspicious, and frankly traumatic, first week, I decided that we should move near her retired son in Texas so that he might help relieve some of the burden. The move brought little value as we only see him and his wife every six weeks or so for a quick meal. I take wonderful care of my grandmother and she is so much happier with me, which I am very glad for, but my well-being has obviously taken a hit and I now realize that this arrangement is unsustainable. She wasn't always there for me when I was younger, so should I really be sacrificing so much for her? I want her to remain happy, but I feel like I have given way too much of myself. I cannot place my lifelong aspirations on hold any longer. It is more than reasonable for her two children to care for her. For the sake of much-needed brevity here (I'm still working on it!): I currently live near Houston, Texas, but actively looking to move to New York City.",
+                        },
+
+                        {
+                           question:
+                              "As your old projects show, you were developing software years ago, even before you went to university. Why did you ever stop?",
+                           answer:
+                              "Until somewhat recently, I didn't even realize that software development was a viable career option. I distinctly remember sifting through job listings on Craiglist when I was 18 and finding that virtually all positions paid about $12 per hour, and many of the listings even seemed to be fake. For some reason, that job hunt always stuck with me. From then on I just accepted that I couldn't make a living creating software. I knew of the successes of MySpace, Facebook, Google, and the like, but as far as I knew, they were all developed into their current glory by one or two brilliant people. I therefore figured that software development was an all or nothing proposition: self-publish a successful project or don't enter the field at all. I wasn't aware of the existence of a thriving middle ground. This misconception continued into adulthood owing perhaps to my limited exposure to the kinds of folks who might have known better. I have rediscovered software engineering and have no intention of ever stopping.",
+                        },
+
+                        {
+                           question:
+                              "Why is your professional network so sparse?",
+                           answer:
+                              "The concept of professional networking was completely foreign to me until a few years ago. It wasn't until long after UCSB that I began to understand the importance of nurturing a professional network. Broadening my network is high on my list of priorities.",
+                        },
+                        {
+                           question:
+                              "What are your career priorities after getting hired?",
+                           answer:
+                              "(1) Massively expand my skillset, (2) Grow my professional network, (3) Go to conferences and tech-related meetups, (4) Start writing tutorials and tech-related articles, (5) Buy a better computer, (6) Do everything in my power to become a capable and reliable colleague.",
+                        },
+                        {
+                           question:
+                              "How about your personal priorities? What are your dreams for the future.",
+                           answer:
+                              "[1st Quarter]: (1) Get very healthy, (2) Learn how to dress like an adult, (3) Buy adult clothes, (4) Make new friends, (5) See a therapist regularly, (6) Buy all the books I've been wanting to read, (7) Join toastmasters, or something similar. [2nd Quarter]: (8) Do some much-needed overseas exploration for a week (work-permitting), (9) Attend meetups to practice my Frech, Spanish and Mandarin, (10) Do some volunteer work. [3rd Quarter]: (11) Start a podcast, (12) Learn to read music and play the piano, (13) Start dating. This list is not exhaustive.",
                         },
                         {
                            question: "When can you start?",
@@ -1355,7 +1393,7 @@ const sectionState = {
                         {
                            question: "How many hours per week can you work?",
                            answer:
-                              "I am not bound by any time constraints. My focus is on delivering results and growing as an individual and professional.",
+                              "I am not bound by any time constraints. My focus is on delivering results and growing as an individual and as a professional.",
                         },
 
                         {
@@ -1363,97 +1401,10 @@ const sectionState = {
                            answer:
                               "Yes, three (3) Modernas: two Moderna standard doses + one Moderna booster. My bloodstream is teeming with antibodies.",
                         },
-
-                        {
-                           question:
-                              "You got into a good university. Why didn't you finish? Why didn't you seize the opportunity?",
-                           answer:
-                              "I did, so much so that it almost killed me. I came from the torturous underbelly of American society and worked so, so hard to just climb to the surface. But I was always there to grasp every opportunity I could get. Even before my first quarter at UCSB, I had already been accepted to study abroad at the University of Copenhagen for half a year, all expenses paid. I was also already planning to apply for a term at the London School of Economics after Copenhagen. But I was a complete mess. UCSB extended to me a grand opportunity that I was fully incapable of seizing at the time. I was so deeply broken that my mind completely fell apart after a couple of months. A lifetime of harsh conditions had finally destroyed me.",
-                        },
-                        {
-                           question: "What was life like growing up?",
-                           answer:
-                              "A short history might provide some context. My mother left me when I was 5 and my father was not at all present. I drank alone and often heavily from the age of 9, already determined to numb the pain and insecurity I felt daily. At ages 12 and 13 I smoked marijuana and lived with adult friends. I was expelled from 7th grade and dropped out in 9th grade. I never had a permanent place to live growing up. I spent most of my childhood on the floor of different relative's houses, going weekly from home to home over the course of a decade. I kept all my belongings in plastic bags and dreamed of one day having a permanent place to put them down permanently. I was often alone and completely in charge of my own life. Even before adolescence, I already cooked my own food and walked to store to get my own groceries. There was never an adult who really had my back, no one to protect or guide me. No one to suggest I brush my teeth or go to bed. I had OCD and other medical ailments that were never treated. I was a gay brown kid with heavily worn clothes, bad eyesight, and attrocious self-esteem, deeply embarrassed to show emotion, embarrassed to go barefoot or even wear shorts.",
-                        },
-                        {
-                           question: "How did you begin educating yourself?",
-                           answer:
-                              "Even from a very young age, I had an deep fascination with the world. Even in the few months before dropping out in 9th grade, I couldn't care less about my school grades, but I spent countless hours after school and into the night learning Japanese. I have forgotten practically all vocabularly, but I can still read and write their two phonetic character systems. I eventually took the California high school equivalency exam (the CHSPE) and started community college. I knew nothing about college, so it took me a while to even recognize the opportunities. ",
-                        },
-                        {
-                           question:
-                              "While in community college, what occupied your time while classes were not in session?",
-                           answer:
-                              "For several years, before I realized that transferring to a university from community college was even possible, my overall view of formal education was pretty dour. In my mind, not attending high school was already a death knell for my career prospects, so it was entirely up to me, outside of the formal education system, to figure out how to escape my situation. For years, I thought my only option for escaping poverty was to make the money myself. At age 18, I read a couple dozen books to master the the stocks, options, and futures markets as well as currencies. I obsessed for months over charts and graphs. Ultimately, I didn't have a spare dime to invest. I also programmed whenever I could, thinking that building online software would be the way to make money. I even built software for jobs I was working at, not . As far as I knew at the time, community college was a dead end with no hope for. I had no concept of there was no such thing as working one's way up a ladder. I didn't even know anyone for whom that was true. Aside from diving into my various interests, I also worked much of the time. One warehouse job had me commuting up to four hours daily (two hours each way).",
-                        },
-                        {
-                           question:
-                              "How did you eventually make it to university?",
-                           answer:
-                              "Once I was aware of the possibility of transferring to UCLA, UC Berkeley, or other UC schools, I pushed myself to the extreme, way beyond any healthy boundaries. I demanded of myself perfect grades in my classes. I studied upwards of 20 hours per day, sleeping insanely few hours. I wouldn't see friends for months at a time; I didn't even spend much time eating. I was fortunate to have some relatives who allowed me to sleep on their living room floor, but it was awfully uncomfortable, crowded, and noisy almost 24 hours a day. Already suffering from extreme and untreated anxiety, I slipped into an even deeper depression and panic. I couldn't breathe 90% of every day. I often studied while standing or pacing because I was much too anxious to sit down. Whenever I managed to get any sleep, I would wake up every single hour panicking and breathless, not knowing where I was for several seconds each episode. I felt claustrophobic and anxious while closing my eyes to apply shampoo, anxiety whenever my phone rang, panic if I didn't know exactly where my car was, and even panic whenever my phone left my hand for even a moment (the phone was a way to call for help if I needed it, according to my brain at the time). I survived those years by feeling completely numb. The world had no color whatsoever. While I never had a sense of security or wellbeing in my life, I never felt as broken as I did  during this time. Life was utterly miserable, but I never complained. This continued for many semesters. no congratulations for getting into university. no one cared.",
-                        },
-
-                        {
-                           question: "What made you leave university?",
-                           answer:
-                              "Fast forward to my first quarter at UCSB, I was determined to continue my progress and do.. It was all a complete culture shock since I was surrounded by young adults who were lifetimes more well-rounded than I was. I was determined to catch up. I joined the model UN where students were wearing suits. The communication skills of these young people baffled me. I had never even seen a suit up close in my life. I succeeded academically in community college, but I was not thriving. My greatest concern was just getting through each day without falling apart... I still had no concept of internships and.. After I transferred to university, the pressure I placed on myself only intensified. My anxiety eventually got so high that I couldn't even leave my room. I reached a state of unending panic. I cried for days and knew that I needed to get help. I really, really want to go back to university and finish my degree, but I also really, really want a job so that I can create for myself a long-lasting sense of stability. When I got to university, I still didn't even understand the purpose of internships, and I couldn't even fathom the idea of working for free.",
-                        },
-                        {
-                           question:
-                              "Why didn't you get help before university?",
-                           answer:
-                              "There are plenty of reasons why I didn't get help sooner. First, health insurance is something I didn't have for almost all of my pre-university life. Second, I didn't have the outside perspective of a caring adult who could recognize that something was wrong. Third, I myself didn't realize that my experience was terribly abnormal. I was pretty much in crisis my entire life; it had somewhat become part of who I was. I simply did not have enough information to self-diagonose. Only in retrospect was it obvious that I had OCD as a pre-teen. Misery to varying degrees was all I had ever known, so it was not obvious that there was a better way of living.",
-                        },
-
-                        {
-                           question:
-                              "After you got help, why didn't you return to UCSB?",
-                           answer:
-                              "I went back for a semester here and there, but I had by then grown deeply apathetic. I had endured such pain and torment for years to get to where I was, only to see my future fall apart in a matter of days. There would be no more Denmark or London to look forward to. but I felt sick just thinking about how awful I had felt all those years. Plus, the mind-numbing cost of living in Santa Barbara meant that my $750 rent was only enough to share a bedroom in a dirty, crowded apartment with no hot water. Mostly, I just wanted to get away from Santa Barbara. With the help of medication, I was no longer in a constant panic, but I couldn't bare thinking about the past. I was told I had PTSD, but I thought that was completely absurd. I now accept that it was. A lifetime of bad memories continuously flooded my mind. I knew I would be all right, but I needed a lot more help.",
-                        },
-
-                        {
-                           questions: "When did things start to turn around?",
-                           answers:
-                              "First, I went to Taiwan. Food was as little as $0.50 a meal, and my apartment cost only $120 per month. It was all I had ever wanted. I made a ton of good friends and managed to speak passable Mandarin within a few months. I spent roughly one year in Taiwan total over the span of Two years. I spent a ton of time writing chinese. Back in the U.S., I had a couple of relatives in rural Indiana who offered me a place to stay with them. This was the most therapeutic period of my life. I allowed myself to regress in age a bit, which.. I was absolutely astounded by what parents actually did for their children. I worked on an android app They spoke with their kids' teachers, told them to do their homework, brought them to extracurricular activities. I felt like a belonged to something meaningful: a family. taiwan, indiana. I saw what some parents did for their kids, and I experienced some of it myself. I felt secure for the first time in my life. Even though I was already 23, it was the most therapeutic thing I had ever experienced. Today, there is nothing I cannot handle. As long as my very basic needs are met, there is nothing I cannot handle. For everything else, my therapist will be the sole recipient of my baggage. Sure, but all manifestations of such shall be limited to the office of a therapist (once I can afford to get one). Otherwise, any baggage I have remains stowed in the overhead compartment. I still have painfully memories and insecurities, but it does not affect my daily life..  No one cared. . I am no longer burdened by .. I no longer wake up e. Because your high standards are mine as well. Circumstances that had once plagued me no longer exist. I am no longer gripped by panic. Panic that I felt on an hourly basis eventually decreased to daily to weekly to monthly and eventually not at all. My sanity is no longer held together with scotch tape",
-                        },
-                        {
-                           question:
-                              "How have you spent the past several years?",
-                           answer:
-                              "after taiwan, homeless. not once in my life did not go a day without learning something. Every day of my life is like university. In Taiwan, I spent up to 8 hours a day or more writing chinese characters. I do not drink , smoke, no interest in video games, . read. I was always extremely productive somehow. i am caring for my grandmother right now. politics are a huge interest of mine. Until today, I read the New York Times for at least four hours a day. podcasts. helps me forget about my plight. I have voted since I was 18, and never missed a presidential debate in the primaries or general. I have no other focus than on the future. read a ton of books on marketing and self-help. covid. I read countless books on marketing and",
-                        },
-
-                        {
-                           question:
-                              "You were developing software years ago. Why did you stop?",
-                           answer:
-                              "This might sound funny, but until somewhat recently I didn't even realize that software development was a viable career option. I distinctly remember looking up development jobs years ago and virtually all of them paid around $12 per hour, with many of the listings seemingly scams. From that point on, I realized that this was never going to be something I could make a living from. I figured it was an all or nothing proposition. I far as I knew, MySpace, Facebook, Google, and all the other popular .. arrived at their current state at the hands of just one person. As far as I knew, it was Zuckerberg alone who built Facebook. I either had to do it all, or not even try; there was no existence of a middle ground. It stuck with me for years. I was obviously sorely wrong, but I didn't have anyone to tell me otherwise. And as an adult, owing to my limited professional network, I remained unexposed to tech-related professions. Now that I have gained compentence in modern software technologies, I absolutely love it.",
-                        },
-
-                        {
-                           question:
-                              "Why is your professional network so sparse?",
-                           answer:
-                              " I plan on broadening my professional network drastically. I had no concept of moving up. I had no concept of college. I didn't even fully grasp what high school was like. I am very much convinced how vital a network will prove to be.",
-                        },
-                        {
-                           question:
-                              "What are your career priorities after getting hired?",
-                           answer:
-                              "(1) Expand my skillset dramatically, (2) Grow my professional network, (3) Go to conferences and tech-related meetups, (4) Start writing tutorials and tech-related articles, (5) Buy a better computer. I would do everything in my power to become a capable and reliable colleague.",
-                        },
-                        {
-                           question:
-                              "What are your *personal* priorities after getting hired?",
-                           answer:
-                              "[1st Quarter]: (1) Get very healthy, (2) Learn how to dress like an adult, (3) Buy adult clothes, (4) Make new friends, (5) See a therapist regularly, (6) Buy all the books I've been wanting to read. (7) Join toastmasters, or something similar. [2nd Quarter]: (8) Leave the country for a week (if possible), (9) Attend meetups to practice my Frech, Spanish and Mandarin, (10) Do some volunteer work. [3rd Quarter]: (11) Start a podcast, (12) Start dating",
-                        },
-
                         {
                            question: "Why should we hire you?",
                            answer:
-                              "Because I am still doing this, despite punishing obstacles.",
+                              "Because I never quit. I keep learning and growing despite punishing obstacles.",
                         },
                      ],
                   },
@@ -1578,20 +1529,19 @@ const sectionState = {
                         {
                            element: "p",
                            children: [
-                              'Why are there so few of them? Well, although I study around the clock, I have focused less on large production-ready projects and more on specialized "mini-projects" to try to master individual concepts before moving on to complete projects. For instance, I just spent the past couple of weeks mastering authentication and authorization using access tokens and refresh tokens. backend, front end. ',
+                              'Although I study around the clock, I have focused less on large production-ready projects and more on specialized "mini-projects" to try to master individual concepts before putting all the pieces together. I don\'t want to just build, I want to build apps that are extremely efficient and bug-free.',
                            ],
                         },
                         {
                            element: "p",
                            children: [
-                              "Instead of connecting the auth system to a specific project, I instead moved on to trying to gain an intimitate understanding of advanced React concepts and the exact workings of hooks such as useMemo, useEffect, useContext, and all the others.",
+                              "Or maybe I should focus on quantity over quality right now. Not sure. But things are happening.",
                            ],
                         },
+
                         {
                            element: "p",
-                           children: [
-                              "Should I have focused less on quality and more on quantity? Yes, I think so. Nevertheless, here are a couple of projects I plan to focus on soon.",
-                           ],
+                           children: ["Please stay tuned."],
                         },
                      ],
                   },
@@ -1739,7 +1689,9 @@ const sectionState = {
                         },
                         {
                            element: "p",
-                           children: ["It uses the REST Countries API."],
+                           children: [
+                              "It uses the REST Countries API. Nothing is functional just yet.",
+                           ],
                         },
                         {
                            element: "p",
@@ -1813,7 +1765,7 @@ const portfolioState = {
          section_url: "new-projects",
       },
       {
-         name: "FAQ",
+         name: "Q and A",
          section_url: "faq",
       },
    ],
@@ -1856,6 +1808,15 @@ function App() {
                            rel="noreferrer"
                         >
                            LinkedIn
+                        </a>
+                     </li>
+                     <li>
+                        <a
+                           href="https://www.hackerrank.com/mikecpimentel"
+                           target="_blank"
+                           rel="noreferrer"
+                        >
+                           HackerRank
                         </a>
                      </li>
                   </ul>

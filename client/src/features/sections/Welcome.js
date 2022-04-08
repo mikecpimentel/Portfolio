@@ -17,11 +17,10 @@ export const Welcome = () => {
          </p>
          <p className="welcome-2">Full-Stack Software Engineer</p>
          <p className="welcome-1">
-            I am an entry-level-ish developer experienced with the latest
-            frontend and backend tools, including React, Redux, Node, APIs and
-            SQL.
+            I am a developer experienced with the latest
+            frontend and backend tools, including React, Express, Node, and PostgreSQL.
          </p>
-         <p className="welcome-1">I am eager to join your team.</p>
+         <p className="welcome-1">I am ready to join your team.</p>
          <Link
             to="/skills"
             className="intro-button"
