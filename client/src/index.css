@@ -41,7 +41,6 @@ p {
 }
 #root {
    background-color: #292f36;
-   box-shadow: 0 0 10px 0 #292f36;
    border-radius: 5px;
    flex-grow: 1;
    flex-basis: 0;

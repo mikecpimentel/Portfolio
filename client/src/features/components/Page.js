@@ -1,9 +1,7 @@
-import { Outlet, useOutletContext, useParams } from "react-router-dom";
 import { Books } from "./Books";
 import { Description } from "./Description";
 import { FAQ } from "./FAQ";
 import { Institutions } from "./Institutions";
-import { PokemonList } from "../sandbox/pokemon-explorer/PokemonList";
 import { Projects } from "./Projects";
 import { Skills } from "./Skills";
 import "./Page.css";

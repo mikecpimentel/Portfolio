@@ -192,7 +192,7 @@ const sectionState = {
                         {
                            id: "skill-5",
                            skill: "REST APIs",
-                           level: 3,
+                           level: 4,
                            description:
                               "I can create a REST API from scratch. Good understanding of how clients and servers use HTTP to communicate. Understand security concepts, CORS, cookies, API authorization, and the client-side fetch library.",
                         },
@@ -263,14 +263,14 @@ const sectionState = {
                         {
                            skill: "Express",
                            id: "skill-16",
-                           level: 3,
+                           level: 4,
                            description:
                               "I have experience using Express to build APIs. I can create a REST API from scratch. Good understanding of how clients and servers use HTTP to communicate. Understand security concepts, CORS, cookies, and authorization.",
                         },
                         {
                            skill: "Auth/JWTs",
                            id: "skill-17",
-                           level: 3,
+                           level: 4,
                            description:
                               "Can build a secure authentication and authorization system from scratch using hashing algorithms (for login authentication) and JSON web tokens.",
                         },
@@ -291,16 +291,9 @@ const sectionState = {
                         {
                            id: "skill-24",
                            skill: "RegEx",
-                           level: 2,
-                           description:
-                              "I've trained myself to use regular expressions, but I still need more practice.",
-                        },
-                        {
-                           id: "skill-33",
-                           skill: "Axios",
                            level: 3,
                            description:
-                              "Initially using Fetch, I recently switched to using Axios for its more robust features. I can use features such as interceptors, but need more time to learn how to use the library to its fullest extent.",
+                              "I've trained myself to use regular expressions, but I still need more practice.",
                         },
                         {
                            id: "skill-25",
@@ -317,16 +310,9 @@ const sectionState = {
                               "I plan to soon learn Next.js for server-side rendering.",
                         },
                         {
-                           id: "skill-27",
-                           skill: "Remote dev.",
-                           level: 4,
-                           description:
-                              "All development for my current personal projects are done using remote servers (I currently use Digital Ocean). I know how to use SSH to securely connect to servers and use port-forwarding to connect my browser and apps to relevant ports.",
-                        },
-                        {
                            id: "skill-28",
                            skill: "Linux/Ubuntu",
-                           level: 3,
+                           level: 4,
                            description:
                               "All my development is done remotely on Ubuntu 20.04 LTS. I know how to use many CLI utilities, but there are still gaps in my knowledge that I am working to fill.",
                         },
@@ -343,13 +329,7 @@ const sectionState = {
                            description:
                               "Would like to learn React Spring. Either this, or Framer Motion (or both?)",
                         },
-                        {
-                           id: "skill-35",
-                           skill: "Debugging",
-                           level: 2,
-                           description:
-                              "I have some experience using VS Code's debugger.",
-                        },
+
                         {
                            id: "skill-36",
                            skill: "Cypress",
@@ -574,21 +554,6 @@ const sectionState = {
                         },
                         {
                            name: "SQL–Intermediate Test",
-                           subheading: "HackerRank",
-                           logo: hackerRankLogo,
-                        },
-                        {
-                           name: "JavaScript–Basic Test",
-                           subheading: "HackerRank",
-                           logo: hackerRankLogo,
-                        },
-                        {
-                           name: "Problem Solving–Basic Test",
-                           subheading: "HackerRank",
-                           logo: hackerRankLogo,
-                        },
-                        {
-                           name: "CSS Test",
                            subheading: "HackerRank",
                            logo: hackerRankLogo,
                         },
@@ -1677,54 +1642,108 @@ const sectionState = {
                   },
                ],
             },
-            globalicious: {
-               title: "Globalicious",
+            mapfroth: {
+               title: "MapFroth",
                content: [
                   {
                      type: "description",
                      data: [
                         {
                            element: "h3",
-                           children: ["Globalicious Introduction"],
+                           children: ["MapFroth Introduction"],
                         },
                         {
                            element: "p",
                            children: [
-                              "It uses the REST Countries API. Nothing is functional just yet.",
+                              "I love the world and dream of traveling everywhere. I am developing MapFroth to help people like myself plan their next adventures and enable the discovery of interesting destinations.",
                            ],
                         },
                         {
                            element: "p",
-                           children: ["List of technologies I plan to use:"],
+                           children: [
+                              "Tools I've used so far to start MapFroth development:",
+                           ],
                         },
                         {
                            element: "ul",
                            children: [
                               {
                                  element: "li",
-                                 children: ["React - User interface"],
-                              },
-                              {
-                                 element: "li",
-                                 children: ["Redux - State management"],
-                              },
-                              {
-                                 element: "li",
                                  children: [
-                                    "Redux Toolkit Query - Data retrieval and caching",
+                                    "Mapbox - I designed the static black and white base map on Mapbox using free Mapbox Studio tools.",
                                  ],
                               },
                               {
                                  element: "li",
-                                 children: ["PostgreSQL - Store user values"],
+                                 children: [
+                                    "Natural Earth - Hover overlay boundary data come from publicly available data provided by Natural Earth",
+                                 ],
                               },
                               {
                                  element: "li",
-                                 children: ["Nodejs - Backend"],
+                                 children: [
+                                    "Aspose GeoJSON converter - Boundary data from Natural Earth was not in a format usable by Mapbox. I converted the data to GeoJSON with help from the free converter provided by Aspose",
+                                 ],
                               },
                               {
                                  element: "li",
-                                 children: ["JWT - Authentication"],
+                                 children: [
+                                    "Auth0 - I use an Auth0 free plan to help with some of the social login integrations (Google and Github OAuth 2.0 authentication). I use the authorization code flow with PKCE (proof key for code exchange) as outlined in the OAuth 2.0 specifications. Communication between the client (this page), the back-end API, the auth providers (Google, Github, etc) and Auth0 servers are all secured with Auth0.",
+                                 ],
+                              },
+                              {
+                                 element: "li",
+                                 children: [
+                                    "Digital Ocean - Cloud virtual machine. I use Ubuntu 20.04 LTS.",
+                                 ],
+                              },
+                           ],
+                        },
+                        {
+                           element: "p",
+                           children: [
+                              "On the front-end, MapFroth is built with:",
+                           ],
+                        },
+                        {
+                           element: "ul",
+                           children: [
+                              {
+                                 element: "li",
+                                 children: ["React"],
+                              },
+                              {
+                                 element: "li",
+                                 children: ["React Router"],
+                              },
+                              {
+                                 element: "li",
+                                 children: ["mapbox-gl"],
+                              },
+                           ],
+                        },
+                        {
+                           element: "p",
+                           children: ["For the back-end API, I use:"],
+                        },
+                        {
+                           element: "ul",
+                           children: [
+                              {
+                                 element: "li",
+                                 children: ["Node"],
+                              },
+                              {
+                                 element: "li",
+                                 children: ["Express"],
+                              },
+                              {
+                                 element: "li",
+                                 children: ["PostgreSQL"],
+                              },
+                              {
+                                 element: "li",
+                                 children: ["PM2 (Node process manager)"],
                               },
                            ],
                         },
@@ -1732,13 +1751,13 @@ const sectionState = {
                   },
                   {
                      type: "sandbox",
-                     data: "globalicious",
+                     data: "mapfroth",
                   },
                ],
             },
          },
-         allPages: ["index", "pokemon", "globalicious"],
-         allPageTitles: ["Note", "Pokemon", "Globalicious"],
+         allPages: ["index", "mapfroth"],
+         allPageTitles: ["Note", "Mapfroth"],
       },
    },
    allSections: ["skills", "education", "old-projects", "new-projects", "faq"],
@@ -1849,8 +1868,8 @@ function App() {
                            (page) => (
                               <Route
                                  key={uuid()}
-                                 path={page == "index" ? undefined : page}
-                                 index={page == "index" ? true : false}
+                                 path={page === "index" ? undefined : page}
+                                 index={page === "index" ? true : false}
                                  element={
                                     <Page
                                        url={section}
@@ -1861,7 +1880,7 @@ function App() {
                                     />
                                  }
                               >
-                                 {page == "pokemon" ? (
+                                 {page === "pokemon" ? (
                                     <Route
                                        key={uuid()}
                                        path={":pokemonName"}

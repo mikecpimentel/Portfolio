@@ -1,4 +1,3 @@
-import useToggle from "../../hooks/useToggle";
 import { v4 as uuid } from "uuid";
 
 export function SkillItem(props) {
@@ -7,7 +6,6 @@ export function SkillItem(props) {
    const open = props.open;
    const toggleHandler = props.toggleHandler;
    const skillId = props.id;
-   // const [open, toggleopen] = useToggle();
    let unitClass =
       props.level === 1
          ? "skill-1"
@@ -21,8 +19,6 @@ export function SkillItem(props) {
          ? "skill-5"
          : null;
    unitClass += " skill-unit";
-
-   console.log("render: " + props.skillType);
 
    for (let i = 1; i <= 5; i++) {
       if (i <= props.level) {

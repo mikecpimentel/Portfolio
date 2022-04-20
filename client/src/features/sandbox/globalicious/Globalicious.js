@@ -1,25 +1,35 @@
 import React from "react";
-import CountryNamesFilters from "./components/CountryNamesFilters";
 import "./globalicious.css";
-import useCountryNames from "./useCountryNames";
+import mapfrothScreenshot from "../../../images/mapfroth/Screenshot 2022-04-20 073633.png";
 
 const Globalicious = () => {
-   console.log("Globalicious");
-   const [countryNames, isLoading, error] = useCountryNames();
-
-   
-   if (isLoading) {
-      console.log('Globalicious > Loading');
-      return "Loading"}
-   if (error) {
-      console.log('Globalicious > error');
-      return error}
    return (
       <div id="globalicious-wrapper">
-         <CountryNamesFilters />
-         {countryNames.map((item) => (
-            <a className="country-name" key={item.name.official}>{item.name.common}</a>
-         ))}
+         <a
+            href="https://mapfroth.com"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+               color: "#fff",
+               backgroundColor: "#D7263D",
+               textDecoration: "none",
+               padding: "7px 20px",
+               borderRadius: "5px",
+            }}
+         >
+            Visit MapFroth
+         </a>
+         <a href="https://mapfroth.com" target="_blank" rel="noreferrer">
+            <img
+               src={mapfrothScreenshot}
+               style={{
+                  width: "100%",
+                  display: "inline-block",
+                  marginTop: "20px",
+               }}
+               alt="MapFroth Screenshot"
+            />
+         </a>
       </div>
    );
 };

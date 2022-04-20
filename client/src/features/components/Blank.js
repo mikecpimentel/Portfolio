@@ -1,8 +1,6 @@
-import { Outlet, Route, useParams } from "react-router-dom";
-import { PokemonExplorer } from "../sandbox/pokemon-explorer/PokemonExplorer";
+import { Outlet, useParams } from "react-router-dom";
 import { PokemonList } from "../sandbox/pokemon-explorer/PokemonList";
 import { ToDoList } from "../sandbox/todo-list/ToDoList";
-import { v4 as uuid } from "uuid";
 import { SiteOne } from "../sandbox/site-one/SiteOne";
 import Globalicious from "../sandbox/globalicious/Globalicious";
 
@@ -50,7 +48,7 @@ export const Blank = (props) => {
             </div>
          ) : projectName === "site-one" ? (
             <SiteOne />
-         ) : projectName === "globalicious" ? (
+         ) : projectName === "mapfroth" ? (
             <Globalicious />
          ) : null}
       </>
