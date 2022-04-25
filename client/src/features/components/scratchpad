@@ -1,0 +1,27 @@
+ {portfolioState.sections.map(section => (
+                  <Route path={section.section_url} element={
+                      <Section which={section}>
+                        <NavLink to={'/' + section.section_url} end>Intro</NavLink>      
+                      </Section>
+                    }
+                  >
+
+                  
+                  <Route path={section.section_url + '/:which'} element={<Section which={section} />} />
+                  
+                    <Route index element={<Section which={section} /> } />
+                  </Route>
+                ))}
+
+
+
+
+
+                 {portfolioState.sections.map(section => (
+                  <Route path={section.section_url} element={
+                      <Section which={section}>
+                        <NavLink to={'/' + section.section_url} end>Intro</NavLink>      
+                      </Section>
+                    }
+                  />
+                ))}
