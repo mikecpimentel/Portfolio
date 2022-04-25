@@ -1,6 +1,6 @@
 import React from "react";
 import "./globalicious.css";
-import mapfrothScreenshot from "../../../images/mapfroth/Screenshot 2022-04-20 073633.png";
+import mapfrothScreenshot from "../../../images/mapfroth/Screenshot 2022-04-25 070639.png";
 
 const Globalicious = () => {
    return (

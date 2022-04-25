@@ -1818,8 +1818,6 @@ function App() {
                </ul>
                <div id="contact-info">
                   <ul>
-                     <li>(408) 365-4328</li>
-                     <li>mikecpimentel@gmail.com</li>
                      <li>
                         <a
                            href="https://www.linkedin.com/in/mikecpimentel/"
@@ -1838,6 +1836,26 @@ function App() {
                            HackerRank
                         </a>
                      </li>
+                     <li>
+                        <a
+                           href="https://github.com/mikecpimentel"
+                           target="_blank"
+                           rel="noreferrer"
+                        >
+                           GitHub
+                        </a>
+                     </li>
+                     <li>
+                        <a
+                           href="https://stackoverflow.com/users/18175653/michael-pimentel"
+                           target="_blank"
+                           rel="noreferrer"
+                        >
+                           StackOverflow
+                        </a>
+                     </li>
+                     <li>(408) 365-4328</li>
+                     <li>mikecpimentel@gmail.com</li>
                   </ul>
                </div>
             </div>
